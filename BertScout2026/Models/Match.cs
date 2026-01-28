@@ -1,9 +1,14 @@
-﻿namespace BertScout2026.Models
+﻿using SQLite;
+using System.Text.Json;
+
+namespace BertScout2026.Models
 {
-    public class Match
+    public class Match : BaseModel
     {
         // Meta data
+        [Indexed(Name = "TeamMatchUnique", Order = 1, Unique = true)]
         public int TeamNumber { get; set; }
+        [Indexed(Name = "TeamMatchUnique", Order = 2, Unique = true)]
         public int MatchNumber { get; set; }
         public string? ScoutName { get; set; }
 
@@ -26,5 +31,10 @@
         // End game
         public string? Comments { get; set; }
         public int Score { get; set; }
+
+        public override string ToString()
+        {
+            return JsonSerializer.Serialize(this, WriteOptions);
+        }
     }
 }
