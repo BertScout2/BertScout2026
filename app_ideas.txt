@@ -1,0 +1,20 @@
+Match data for teleop and autonomous separately:
+Number of cycles
+Balls per cycle (slider for estimate)
+Robot speed (slow, medium, fast)
+Climbing capabilities (level 1, 2, or 3)
+Floor pickup
+Human player pickup
+Comments (freeform and from a list)
+Match number
+Team number
+Scouter name
+Star rating for how good the robot was
+
+Pit scouting is separate (ask Joyce for questions)
+Type of drive
+Preferred starting position
+Climbing level
+Ball capacity
+Launching speed (fast or slow launcher)
+
