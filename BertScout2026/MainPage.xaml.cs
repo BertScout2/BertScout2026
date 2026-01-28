@@ -1,8 +1,11 @@
-﻿namespace BertScout2026
+﻿using BertScout2026.Models;
+
+namespace BertScout2026
 {
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        Match match = new Match();
 
         public MainPage()
         {
@@ -11,12 +14,12 @@
 
         private void OnCounterClicked(object? sender, EventArgs e)
         {
-            count++;
+            match.AutoNumberOfCycles++;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            if (match.AutoNumberOfCycles == 1)
+                CounterBtn.Text = $"Robot went {match.AutoNumberOfCycles} cycle";
             else
-                CounterBtn.Text = $"Clicked {count} times";
+                CounterBtn.Text = $"Robot went {match.AutoNumberOfCycles} cycles";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
