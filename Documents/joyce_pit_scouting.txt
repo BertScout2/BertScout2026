@@ -1,0 +1,16 @@
+Pit Scouting
+What is your Drive Train?
+
+Auto
+Preferred placement on the field?
+Can you climb in auto?
+Can you shoot in auto?
+What is your BEST auto?
+
+Teleop
+Max ball capacity?
+Can you climb?
+Middle or side climb?
+What are your strengths?
+What is your points per second?
+Preferred travel route?
