@@ -6,13 +6,15 @@
         public int TeamNumber { get; set; }
 
         // Robot properties
-        public int ClimbingLevel { get; set; }
+        public string? DriveTrain { get; set; }
         public string? PreferredStartingPosition { get; set; }
-        public string? DriveType { get; set; }
-        public int BallCapacity { get; set; }
-        public int LaunchingSpeed { get; set; }
-        public int RobotSpeed { get; set; }
-        public int NumberOfAutonomousPrograms { get; set; }
+        public bool ClimbInAuto { get; set; }
+        public bool ShootInAuto { get; set; }
+        public string? BestAuto { get; set; }
+        public int MaxBallCapacity { get; set; }
+        public int ClimbingLevel { get; set; }
+        public int ShootBallsPerSecond { get; set; }
+        public string? PreferredRoute { get; set; }
         public int NumberOfTeamMembers { get; set; }
     }
 }
