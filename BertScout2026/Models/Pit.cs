@@ -1,6 +1,6 @@
 ﻿namespace BertScout2026.Models
 {
-    internal class PitScouting
+    internal class Pit : BaseModel
     {
         // Meta data
         public int TeamNumber { get; set; }

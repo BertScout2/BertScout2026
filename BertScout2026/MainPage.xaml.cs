@@ -7,8 +7,7 @@ namespace BertScout2026
     {
         private readonly MatchDatabase db = new();
 
-        int count = 0;
-        Match match = new Match();
+        Match match = new();
 
         public MainPage()
         {
@@ -26,7 +25,7 @@ namespace BertScout2026
 
             SemanticScreenReader.Announce(CounterBtn.Text);
 
-            var taskSave = Task.Run(() => db.SaveItemAsync(match));
+            var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
             taskSave.Wait();
         }
     }
