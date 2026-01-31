@@ -14,17 +14,11 @@ namespace BertScout2026
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private void AutoNumberOfCyclesPlusClicked(object? sender, EventArgs e)
         {
             match.AutoNumberOfCycles++;
-
-            if (match.AutoNumberOfCycles == 1)
-                CounterBtn.Text = $"Robot went {match.AutoNumberOfCycles} cycle";
-            else
-                CounterBtn.Text = $"Robot went {match.AutoNumberOfCycles} cycles";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-
+            AutoNumberOfCyclesPlus.Text = match.AutoNumberOfCycles.ToString();
+            SemanticScreenReader.Announce("Auto Number Of Cycles" + AutoNumberOfCyclesPlus.Text);
             var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
             taskSave.Wait();
         }
