@@ -77,6 +77,106 @@
                     SemanticProperties.Hint="Auto Number of Cycles Plus"
                     Clicked="AutoNumberOfCyclesPlusClicked"
                     Margin="10,0,0,0"
+                    BackgroundColor="Green"
+                    WidthRequest="60"
+                    HorizontalOptions="Center" />
+                
+                <Button
+                    x:Name="AutoNumberOfCyclesMinus"
+                    Text="-"
+                    SemanticProperties.Hint="Auto Number of Cycles Minus"
+                    Clicked="AutoNumberOfCyclesMinusClicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="30"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="Auto Balls Per Cycle:"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Auto Number of Balls per Cycle" 
+                    Margin="0,9,0,0"
+                    FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                    />
+
+                <Button
+                    x:Name="AutoBallsPerCyclePlus"
+                    Text="0"
+                    SemanticProperties.Hint="Auto Number of Balls per Cycle Plus"
+                    Clicked="AutoBallsPerCyclePlusClicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Green"
+                    WidthRequest="60"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="AutoBallsPerCycleMinus"
+                    Text="-"
+                    SemanticProperties.Hint="Auto Number of Balls per Cycle Minus"
+                    Clicked="AutoBallsPerCycleMinusClicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="30"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="Auto Robot Speed:"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Auto Speed of Robot" 
+                    Margin="0,9,0,0"
+                    FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                    />
+
+                <Button
+                    x:Name="AutoRobotSpeedNoMovement"
+                    Text="No movement"
+                    SemanticProperties.Hint="No Robot Movement in Auto"
+                    Clicked="AutoRobotSpeedNoMovementClicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="130"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="AutoRobotSpeedSlow"
+                    Text="Slow"
+                    SemanticProperties.Hint="Slow Robot Auto Speed"
+                    Clicked="AutoRobotSpeedSlowClicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="60"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="AutoRobotSpeedMedium"
+                    Text="Medium"
+                    SemanticProperties.Hint="Medium Robot Auto Speed"
+                    Clicked="AutoRobotSpeedMediumClicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="90"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="AutoRobotSpeedFast"
+                    Text="Fast"
+                    SemanticProperties.Hint="Fast Robot Auto Speed"
+                    Clicked="AutoRobotSpeedFastClicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="60"
                     HorizontalOptions="Center" />
 
             </HorizontalStackLayout>

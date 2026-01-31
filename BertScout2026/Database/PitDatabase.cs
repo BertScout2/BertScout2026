@@ -47,6 +47,7 @@ public class PitDatabase
         try
         {
             Database = new(databasePath, Flags);
+            await Database.CreateTableAsync<Match>();
             await Database.CreateTableAsync<Pit>();
             _created = true;
         }

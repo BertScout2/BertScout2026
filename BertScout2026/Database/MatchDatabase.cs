@@ -48,6 +48,7 @@ public class MatchDatabase
         {
             Database = new(databasePath, Flags);
             await Database.CreateTableAsync<Match>();
+            await Database.CreateTableAsync<Pit>();
             _created = true;
         }
         catch (Exception ex)
