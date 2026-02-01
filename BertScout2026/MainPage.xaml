@@ -196,7 +196,7 @@
 
         <VerticalStackLayout
             x:Name="ErrorLayout"
-            IsVisible="True"
+            IsVisible="False"
             Grid.Row="1"
             Padding="30,0"
             >
