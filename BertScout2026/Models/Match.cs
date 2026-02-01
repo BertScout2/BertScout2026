@@ -16,17 +16,17 @@ namespace BertScout2026.Models
         public int AutoNumberOfCycles { get; set; }
         public int AutoBallsPerCycle { get; set; }
         public int AutoRobotSpeed { get; set; }
-        public int AutoClimbingLevel { get; set; }
         public bool AutoFloorPickup { get; set; }
         public bool AutoHumanPlayerPickup { get; set; }
+        public int AutoClimbingLevel { get; set; }
 
         // Teleop properties
         public int TeleNumberOfCycles { get; set; }
         public int TeleBallsPerCycle { get; set; }
         public int TeleRobotSpeed { get; set; }
-        public int TeleClimbingLevel { get; set; }
         public bool TeleFloorPickup { get; set; }
         public bool TeleHumanPlayerPickup { get; set; }
+        public int TeleClimbingLevel { get; set; }
 
         // End game
         public string? Comments { get; set; }
