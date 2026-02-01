@@ -3,11 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BertScout2026.MainPage">
 
-    <ScrollView>
+    <Grid
+        VerticalOptions="Start"
+        HorizontalOptions="Start">
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
         <VerticalStackLayout
+            x:Name="MainLayout"
+            Grid.Row="0"
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+            IsVisible="True"
+            >
 
             <Image
                 Source="bert_logo.png"
@@ -80,7 +91,7 @@
                     BackgroundColor="Green"
                     WidthRequest="60"
                     HorizontalOptions="Center" />
-                
+
                 <Button
                     x:Name="AutoNumberOfCyclesMinus"
                     Text="-"
@@ -92,7 +103,7 @@
                     HorizontalOptions="Center" />
 
             </HorizontalStackLayout>
-            
+
             <HorizontalStackLayout
                 HorizontalOptions="Center">
 
@@ -183,6 +194,22 @@
 
         </VerticalStackLayout>
 
-    </ScrollView>
+        <VerticalStackLayout
+            x:Name="ErrorLayout"
+            IsVisible="True"
+            Grid.Row="1"
+            Padding="30,0"
+            >
+
+            <Label
+                x:Name="ErrorMsg"
+                Text="ERROR"
+                TextColor="Red"
+                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+            />
+            
+        </VerticalStackLayout>
+        
+    </Grid>
 
 </ContentPage>

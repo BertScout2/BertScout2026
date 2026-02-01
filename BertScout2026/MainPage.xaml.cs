@@ -1,5 +1,6 @@
 ﻿using BertScout2026.Database;
 using BertScout2026.Models;
+using static BertScout2026.Utilities.PermissionManagement;
 
 namespace BertScout2026
 {
@@ -12,6 +13,12 @@ namespace BertScout2026
         public MainPage()
         {
             InitializeComponent();
+            var taskPerm = Task.Run(() => CheckAndRequestStoragePermissionsAsync());
+            if (!taskPerm.Result)
+            {
+                ShowError("Storage Permissions have been denied\n" +
+                    "Please turn on App Info / Permissions / Storage");
+            }
         }
 
         private void AutoNumberOfCyclesPlusClicked(object? sender, EventArgs e)
@@ -89,9 +96,23 @@ namespace BertScout2026
 
         private void SaveData()
         {
-            match.Changed = true;
-            var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
-            taskSave.Wait();
+            try
+            {
+                match.Changed = true;
+                var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
+                taskSave.Wait();
+            }
+            catch (Exception ex)
+            {
+                ShowError("Error saving data to database\n" + ex.Message);
+            }
+        }
+
+        private void ShowError(string message)
+        {
+            MainLayout.IsVisible = false;
+            ErrorLayout.IsVisible = true;
+            ErrorMsg.Text = message;
         }
     }
 }

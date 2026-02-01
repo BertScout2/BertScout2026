@@ -1,5 +1,6 @@
 ﻿using BertScout2026.Models;
 using SQLite;
+using static BertScout2026.Utilities.PermissionManagement;
 
 namespace BertScout2026.Database;
 
@@ -22,18 +23,18 @@ public class MatchDatabase
 
     public MatchDatabase()
     {
-#if ANDROID
-        if (Directory.Exists("/sdcard/Documents"))
-        {
-            MatchDBPath = "/sdcard/Documents";
-        }
-#elif WINDOWS
-        if (!Directory.Exists("C:\\Temp"))
-        {
-            Directory.CreateDirectory("C:\\Temp");
-        }
-        MatchDBPath = "C:\\Temp";
-#endif
+//#if ANDROID
+//        if (Directory.Exists("/sdcard/Documents"))
+//        {
+//            MatchDBPath = "/sdcard/Documents";
+//        }
+//#elif WINDOWS
+//        if (!Directory.Exists("C:\\Temp"))
+//        {
+//            Directory.CreateDirectory("C:\\Temp");
+//        }
+//        MatchDBPath = "C:\\Temp";
+//#endif
         MatchDBPath ??= FileSystem.AppDataDirectory;
     }
 
@@ -43,6 +44,7 @@ public class MatchDatabase
         {
             return;
         }
+
         var databasePath = Path.Combine(MatchDBPath, MatchDBFilename);
         try
         {
