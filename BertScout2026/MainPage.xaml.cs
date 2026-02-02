@@ -17,7 +17,7 @@ namespace BertScout2026
             if (!taskPerm.Result)
             {
                 ShowError("Storage Permissions have been denied\n" +
-                    "Please turn on App Info / Permissions / Storage");
+                    "Please turn on Storage permission in App Info / Permissions");
             }
         }
 

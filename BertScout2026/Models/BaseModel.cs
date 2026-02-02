@@ -1,24 +1,45 @@
-﻿using SQLite;
-using System.Text.Encodings.Web;
+﻿using System.Text.Encodings.Web;
 using System.Text.Json;
 
-namespace BertScout2026.Models
+namespace BertScout2026.Models;
+
+public class BaseModel
 {
-    public class BaseModel
+    public int Id { get; set; }
+
+    public string? Uuid { get; set; }
+
+    public string? AirtableId { get; set; }
+
+    public bool Changed { get; set; }
+
+    protected readonly JsonSerializerOptions WriteOptions = new()
     {
-        [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
+        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+    };
 
-        [Indexed(Unique = true)]
-        public string Uuid { get; set; } = "";
+    public static string BaseCreateTableFields()
+    {
+        return
+            @"Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                Uuid TEXT NOT NULL,
+                AirtableId TEXT,
+                Changed INTEGER,";
+    }
 
-        public string AirtableId { get; set; } = "";
+    public static string BaseFields()
+    {
+        return
+                @"Uuid,
+                AirtableId,
+                Changed,";
+    }
 
-        public bool Changed { get; set; }
-
-        protected readonly JsonSerializerOptions WriteOptions = new()
-        {
-            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-        };
+    public string BaseFieldValues()
+    {
+        return
+                @$"'{Uuid ?? Guid.NewGuid().ToString()}',
+                {"'" + AirtableId + "'" ?? "NULL"},
+                {(Changed ? 1 : 0)},";
     }
 }

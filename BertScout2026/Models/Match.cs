@@ -1,14 +1,11 @@
-﻿using SQLite;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace BertScout2026.Models
 {
     public class Match : BaseModel
     {
         // Meta data
-        [Indexed(Name = "TeamMatchUnique", Order = 1, Unique = true)]
         public int TeamNumber { get; set; }
-        [Indexed(Name = "TeamMatchUnique", Order = 2, Unique = true)]
         public int MatchNumber { get; set; }
         public string? ScoutName { get; set; }
 
@@ -29,12 +26,108 @@ namespace BertScout2026.Models
         public bool TeleHumanPlayerPickup { get; set; }
 
         // End game
-        public string? Comments { get; set; }
         public int Score { get; set; }
+        public string? Comments { get; set; }
 
         public override string ToString()
         {
             return JsonSerializer.Serialize(this, WriteOptions);
+        }
+
+        public static string CreateTableCommand()
+        {
+            return @$"
+            CREATE TABLE IF NOT EXISTS Match (
+                {BaseCreateTableFields()}
+                TeamNumber INTEGER NOT NULL,
+                MatchNumber INTEGER NOT NULL,
+                ScoutName TEXT,
+                AutoNumberOfCycles INTEGER,
+                AutoBallsPerCycle INTEGER,
+                AutoRobotSpeed INTEGER,
+                AutoClimbingLevel INTEGER,
+                AutoFloorPickup INTEGER,
+                AutoHumanPlayerPickup INTEGER,
+                TeleNumberOfCycles INTEGER,
+                TeleBallsPerCycle INTEGER,
+                TeleRobotSpeed INTEGER,
+                TeleClimbingLevel INTEGER,
+                TeleFloorPickup INTEGER,
+                TeleHumanPlayerPickup INTEGER,
+                Score INTEGER,
+                Comments TEXT
+            )";
+        }
+
+        public string AddCommand()
+        {
+            return @$"
+            INSERT INTO Match (
+                {BaseFields()}
+                TeamNumber,
+                MatchNumber,
+                ScoutName,
+                AutoNumberOfCycles,
+                AutoBallsPerCycle,
+                AutoRobotSpeed,
+                AutoClimbingLevel,
+                AutoFloorPickup,
+                AutoHumanPlayerPickup,
+                TeleNumberOfCycles,
+                TeleBallsPerCycle,
+                TeleRobotSpeed,
+                TeleClimbingLevel,
+                TeleFloorPickup,
+                TeleHumanPlayerPickup,
+                Score,
+                Comments,
+                Changed
+            ) VALUES (
+                {BaseFieldValues()}
+                {TeamNumber},
+                {MatchNumber},
+                {"'" + ScoutName + "'" ?? "NULL"},
+                {AutoNumberOfCycles},
+                {AutoBallsPerCycle},
+                {AutoRobotSpeed},
+                {AutoClimbingLevel},
+                {(AutoFloorPickup ? 1 : 0)},
+                {(AutoHumanPlayerPickup ? 1 : 0)},
+                {TeleNumberOfCycles},
+                {TeleBallsPerCycle},
+                {TeleRobotSpeed},
+                {TeleClimbingLevel},
+                {(TeleFloorPickup ? 1 : 0)},
+                {(TeleHumanPlayerPickup ? 1 : 0)},
+                {Score},
+                {"'" + Comments + "'" ?? "NULL"},
+                {(Changed ? 1 : 0)}
+            )";
+        }
+
+        public string UpdateCommand()
+        {
+            return @$"
+            UPDATE Match SET
+                TeamNumber = {TeamNumber},
+                MatchNumber = {MatchNumber},
+                ScoutName = '{ScoutName}',
+                AutoNumberOfCycles = {AutoNumberOfCycles},
+                AutoBallsPerCycle = {AutoBallsPerCycle},
+                AutoRobotSpeed = {AutoRobotSpeed},
+                AutoClimbingLevel = {AutoClimbingLevel},
+                AutoFloorPickup = {(AutoFloorPickup ? 1 : 0)},
+                AutoHumanPlayerPickup = {(AutoHumanPlayerPickup ? 1 : 0)},
+                TeleNumberOfCycles = {TeleNumberOfCycles},
+                TeleBallsPerCycle = {TeleBallsPerCycle},
+                TeleRobotSpeed = {TeleRobotSpeed},
+                TeleClimbingLevel = {TeleClimbingLevel},
+                TeleFloorPickup = {(TeleFloorPickup ? 1 : 0)},
+                TeleHumanPlayerPickup = {(TeleHumanPlayerPickup ? 1 : 0)},
+                Score = {Score},
+                Comments = '{Comments}',
+                Changed = {(Changed ? 1 : 0)}
+            WHERE Id = {Id}";
         }
     }
 }
