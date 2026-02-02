@@ -61,23 +61,46 @@ public class MatchDatabase : BaseDatabase
             .OrderBy(i => i.MatchNumber)
             .ToListAsync();
     }
-
-    public async Task<Match> GetMatchAsync(int match, int team)
-    {
-        await InitMatchDB();
-        return await Database!.Table<Match>()
-            .Where(i => i.MatchNumber == match && i.TeamNumber == team)
-            .FirstOrDefaultAsync();
-    }
-
-    public async Task<Match> GetMatchItemAsync(int id)
-    {
-        await InitMatchDB();
-        return await Database!.Table<Match>()
-            .Where(i => i.Id == id)
-            .FirstOrDefaultAsync();
-    }
     */
+
+    public async Task<Match?> GetMatchAsync(int match, int team)
+    {
+        await InitMatchDB();
+        await Database!.OpenAsync();
+        var selectCmd = Database!.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFields()}
+            FROM Match 
+            WHERE TeamNumber = @team AND MatchNumber = @match";
+        selectCmd.Parameters.AddWithValue("@team", team);
+        selectCmd.Parameters.AddWithValue("@match", match);
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        if (await reader.ReadAsync())
+        {
+            return Match.FromReader(reader);
+        }
+        return null;
+    }
+
+    public async Task<Match?> GetMatchByIdAsync(int id)
+    {
+        await InitMatchDB();
+        await Database!.OpenAsync();
+        var selectCmd = Database!.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFields()}
+            FROM Match 
+            WHERE Id = @id";
+        selectCmd.Parameters.AddWithValue("@id", id);
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        if (await reader.ReadAsync())
+        {
+            return Match.FromReader(reader);
+        }
+        return null;
+    }
 
     public async Task<int> SaveMatchItemAsync(Match item)
     {
@@ -90,22 +113,25 @@ public class MatchDatabase : BaseDatabase
         }
         else
         {
-            //var oldItem = await GetMatchAsync(item.MatchNumber, item.TeamNumber);
-            //if (oldItem != null)
-            //{
-            //    item.Id = oldItem.Id;
-            //    item.Uuid = oldItem.Uuid;
-            //    // AirtableId may be updated in item, don't overwrite
-            //    if (!string.IsNullOrWhiteSpace(oldItem.AirtableId))
-            //        item.AirtableId = oldItem.AirtableId;
-            //    return await Database!.UpdateAsync(item);
-            //}
-            //item.Uuid = Guid.NewGuid().ToString();
-            cmd.CommandText = item.AddCommand();
+            var oldItem = await GetMatchAsync(item.MatchNumber, item.TeamNumber);
+            if (oldItem != null)
+            {
+                item.Id = oldItem.Id;
+                item.Uuid = oldItem.Uuid;
+                if (!string.IsNullOrWhiteSpace(oldItem.AirtableId))
+                {
+                    item.AirtableId = oldItem.AirtableId;
+                }
+                cmd.CommandText = item.UpdateCommand();
+            }
+            else
+            {
+                cmd.CommandText = item.AddCommand();
+            }
         }
-        await cmd.ExecuteNonQueryAsync();
+        var count = await cmd.ExecuteNonQueryAsync();
         Database.Close();
-        return 0;
+        return count;
     }
 
     /*

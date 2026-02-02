@@ -21,25 +21,39 @@ public class BaseModel
     public static string BaseCreateTableFields()
     {
         return
-            @"Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                Uuid TEXT NOT NULL,
-                AirtableId TEXT,
-                Changed INTEGER,";
+            @"Id INTEGER PRIMARY KEY AUTOINCREMENT
+            , Uuid TEXT NOT NULL
+            , AirtableId TEXT
+            , Changed INTEGER";
+    }
+
+    public static string BaseFieldsWithID()
+    {
+        return
+            @$"Id
+            , {BaseFields()}";
     }
 
     public static string BaseFields()
     {
         return
-                @"Uuid,
-                AirtableId,
-                Changed,";
+            @"Uuid
+            , AirtableId
+            , Changed";
     }
 
-    public string BaseFieldValues()
+    public string BaseAddValues()
     {
         return
-                @$"'{Uuid ?? Guid.NewGuid().ToString()}',
-                {"'" + AirtableId + "'" ?? "NULL"},
-                {(Changed ? 1 : 0)},";
+            @$"'{Uuid ?? Guid.NewGuid().ToString()}'
+            , {"'" + AirtableId + "'" ?? "NULL"}
+            , {(Changed ? 1 : 0)}";
+    }
+
+    public string BaseUpdateValues()
+    {
+        return
+            @$"AirtableId = {(AirtableId != null ? "'" + AirtableId + "'" : "NULL")}
+            , Changed = {(Changed ? 1 : 0)},";
     }
 }
