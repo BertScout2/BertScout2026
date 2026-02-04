@@ -6,7 +6,7 @@ namespace BertScout2026.Database;
 public class MatchDatabase : BaseDatabase
 {
     private const string MatchDBFilename = "MatchScout2026.db3";
-    private SqliteConnection? Database;
+    private SqliteConnection Database = new();
     private string? _databasePath;
     private bool _created = false;
 
@@ -37,40 +37,74 @@ public class MatchDatabase : BaseDatabase
         }
     }
 
-    /*
     public async Task<List<Match>> GetMatchItemsAsync()
     {
         await InitMatchDB();
-        return await Database!.Table<Match>()
-            .ToListAsync();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            ORDER BY Id";
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        var matches = new List<Match>();
+        while (await reader.ReadAsync())
+        {
+            matches.Add(Match.FromReader(reader));
+        }
+        return matches;
     }
 
     public async Task<List<Match>> GetChangedMatchItemsAsync()
     {
         await InitMatchDB();
-        return await Database!.Table<Match>()
-            .Where(i => i.Changed)
-            .ToListAsync();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            WHERE Changed = 1
+            ORDER BY Id";
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        var matches = new List<Match>();
+        while (await reader.ReadAsync())
+        {
+            matches.Add(Match.FromReader(reader));
+        }
+        return matches;
     }
 
     public async Task<List<Match>> GetTeamAllMatches(int team)
     {
         await InitMatchDB();
-        return await Database!.Table<Match>()
-            .Where(i => i.TeamNumber == team)
-            .OrderBy(i => i.MatchNumber)
-            .ToListAsync();
-    }
-    */
-
-    public async Task<Match?> GetMatchAsync(int match, int team)
-    {
-        await InitMatchDB();
-        await Database!.OpenAsync();
-        var selectCmd = Database!.CreateCommand();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
         selectCmd.CommandText =
             @$"SELECT
-            {Match.MatchFields()}
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            WHERE TeamNumber = @team
+            ORDER BY MatchNumber, Id";
+        selectCmd.Parameters.AddWithValue("@team", team);
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        var matches = new List<Match>();
+        while (await reader.ReadAsync())
+        {
+            matches.Add(Match.FromReader(reader));
+        }
+        return matches;
+    }
+
+    public async Task<Match?> GetMatchAsync(int team, int match)
+    {
+        await InitMatchDB();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
             FROM Match 
             WHERE TeamNumber = @team AND MatchNumber = @match";
         selectCmd.Parameters.AddWithValue("@team", team);
@@ -86,11 +120,11 @@ public class MatchDatabase : BaseDatabase
     public async Task<Match?> GetMatchByIdAsync(int id)
     {
         await InitMatchDB();
-        await Database!.OpenAsync();
-        var selectCmd = Database!.CreateCommand();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
         selectCmd.CommandText =
             @$"SELECT
-            {Match.MatchFields()}
+            {Match.MatchFieldsWithId()}
             FROM Match 
             WHERE Id = @id";
         selectCmd.Parameters.AddWithValue("@id", id);
@@ -105,15 +139,15 @@ public class MatchDatabase : BaseDatabase
     public async Task<int> SaveMatchItemAsync(Match item)
     {
         await InitMatchDB();
-        await Database!.OpenAsync();
-        var cmd = Database!.CreateCommand();
+        await Database.OpenAsync();
+        var cmd = Database.CreateCommand();
         if (item.Id != 0)
         {
             cmd.CommandText = item.UpdateCommand();
         }
         else
         {
-            var oldItem = await GetMatchAsync(item.MatchNumber, item.TeamNumber);
+            var oldItem = await GetMatchAsync(item.TeamNumber, item.MatchNumber);
             if (oldItem != null)
             {
                 item.Id = oldItem.Id;
@@ -134,17 +168,18 @@ public class MatchDatabase : BaseDatabase
         return count;
     }
 
-    /*
-    public async Task DeleteMatchItemAsync(int match, int team)
+    public async Task<int> DeleteMatchItemAsync(int team, int match)
     {
         await InitMatchDB();
-        var item = await Database!.Table<Match>()
-            .Where(i => i.TeamNumber == team && i.MatchNumber == match)
-            .FirstOrDefaultAsync();
-        if (item != null)
-        {
-            await Database.DeleteAsync(item);
-        }
+        await Database.OpenAsync();
+        var cmd = Database.CreateCommand();
+        cmd.CommandText =
+            @$"DELETE FROM Match 
+            WHERE TeamNumber = @team AND MatchNumber = @match";
+        cmd.Parameters.AddWithValue("@team", team);
+        cmd.Parameters.AddWithValue("@match", match);
+        var count = await cmd.ExecuteNonQueryAsync();
+        Database.Close();
+        return count;
     }
-    */
 }

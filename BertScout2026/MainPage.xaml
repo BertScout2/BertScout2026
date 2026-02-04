@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BertScout2026.MainPage">
+<ContentPage
+        x:DataType="ContentPage"
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="BertScout2026.MainPage">
 
-    <Grid
-        VerticalOptions="Start"
-        HorizontalOptions="Start">
+    <ScrollView>
+
+    <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <VerticalStackLayout
             x:Name="MainLayout"
             Grid.Row="0"
@@ -26,7 +28,8 @@
                 Aspect="AspectFit"
                 SemanticProperties.Description="Bert 133 Logo" />
 
-            <HorizontalStackLayout 
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
                 Padding="30,0"
                 Spacing="0">
 
@@ -340,7 +343,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
             </HorizontalStackLayout>
-            
+
             <HorizontalStackLayout
                 HorizontalOptions="Center">
 
@@ -408,7 +411,7 @@
                     HorizontalOptions="Center" />
 
             </HorizontalStackLayout>
-            
+
             <HorizontalStackLayout
                 HorizontalOptions="Center">
 
@@ -613,9 +616,11 @@
                 TextColor="Red"
                 FontSize="{OnPlatform WinUI=Small, Android=Medium}"
             />
-            
+
         </VerticalStackLayout>
-        
+
     </Grid>
+
+    </ScrollView>
 
 </ContentPage>

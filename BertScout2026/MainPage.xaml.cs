@@ -8,7 +8,7 @@ namespace BertScout2026
     {
         private readonly MatchDatabase db = new();
 
-        Match match = new();
+        Match match = new(133, 1, "Scott");
 
         public MainPage()
         {
