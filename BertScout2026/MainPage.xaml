@@ -7,14 +7,14 @@
 
     <ScrollView>
 
-    <Grid>
+        <Grid>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <VerticalStackLayout
+            <VerticalStackLayout
             x:Name="MainLayout"
             Grid.Row="0"
             Padding="30,0"
@@ -22,18 +22,19 @@
             IsVisible="True"
             >
 
-            <Image
+                <Image
                 Source="bert_logo.png"
                 HeightRequest="148"
                 Aspect="AspectFit"
                 SemanticProperties.Description="Bert 133 Logo" />
 
-            <HorizontalStackLayout
+                <HorizontalStackLayout
+                    x:Name="TeamMatchLayout"
                 HorizontalOptions="Center"
                 Padding="30,0"
                 Spacing="0">
 
-                <Label
+                    <Label
                     Text="Team#:"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level1"
@@ -41,7 +42,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Entry
+                    <Entry
                     x:Name="EntryTeamNumber"
                     WidthRequest="80"
                     Keyboard="Numeric"
@@ -52,7 +53,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Label
+                    <Label
                     Text="Match#:"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level1"
@@ -60,7 +61,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Entry
+                    <Entry
                     x:Name="EntryMatchNumber"
                     WidthRequest="55"
                     Keyboard="Numeric"
@@ -71,12 +72,39 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-            </HorizontalStackLayout>
+                    <Button
+                    x:Name="StartButton"
+                    Text="Start"
+                    SemanticProperties.Hint="Start entering Scouting Data"
+                    Clicked="StartButtonClicked"
+                    Margin="20,10,0,0"
+                    BackgroundColor="Green"
+                    WidthRequest="80"
+                        IsVisible="True"
+                    />
 
-            <HorizontalStackLayout
+                    <Button
+                    x:Name="SaveButton"
+                    Text="Save"
+                    SemanticProperties.Hint="Save Scouting Data"
+                    Clicked="SaveButtonClicked"
+                    Margin="20,10,0,0"
+                    BackgroundColor="Green"
+                    WidthRequest="80"
+                        IsVisible="False"
+                    />
+
+                </HorizontalStackLayout>
+
+                <VerticalStackLayout
+                    x:Name="ScoutingLayout"
+                    IsVisible="False"
+                >
+
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Autonomous"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -84,13 +112,13 @@
                     Margin="0,9,0,0"
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Auto Cycles:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -99,7 +127,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="AutoNumberOfCyclesPlus"
                     Text="0"
                     SemanticProperties.Hint="Auto Number of Cycles Plus"
@@ -109,7 +137,7 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoNumberOfCyclesMinus"
                     Text="-"
                     SemanticProperties.Hint="Auto Number of Cycles Minus"
@@ -119,12 +147,12 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Auto Balls Per Cycle:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -133,7 +161,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="AutoBallsPerCyclePlus"
                     Text="0"
                     SemanticProperties.Hint="Auto Number of Balls per Cycle Plus"
@@ -143,7 +171,7 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoBallsPerCycleMinus"
                     Text="-"
                     SemanticProperties.Hint="Auto Number of Balls per Cycle Minus"
@@ -153,12 +181,12 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Auto Robot Speed:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -167,7 +195,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="AutoRobotSpeedNoMovement"
                     Text="No movement"
                     SemanticProperties.Hint="No Robot Movement in Auto"
@@ -177,7 +205,7 @@
                     WidthRequest="130"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoRobotSpeedSlow"
                     Text="Slow"
                     SemanticProperties.Hint="Slow Robot Auto Speed"
@@ -187,7 +215,7 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoRobotSpeedMedium"
                     Text="Medium"
                     SemanticProperties.Hint="Medium Robot Auto Speed"
@@ -197,7 +225,7 @@
                     WidthRequest="90"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoRobotSpeedFast"
                     Text="Fast"
                     SemanticProperties.Hint="Fast Robot Auto Speed"
@@ -207,12 +235,12 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Auto Floor Pickup:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -221,7 +249,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="AutoFloorPickupFalse"
                     Text="No"
                     SemanticProperties.Hint="No Floor Pickup in Auto"
@@ -231,7 +259,7 @@
                     WidthRequest="50"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoFloorPickupTrue"
                     Text="Yes"
                     SemanticProperties.Hint="Robot could Pick up from Floor in Auto"
@@ -241,12 +269,12 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Auto Human Player Pickup:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -255,7 +283,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="AutoHumanPlayerPickupFalse"
                     Text="No"
                     SemanticProperties.Hint="No Human Player Pickup in Auto"
@@ -265,7 +293,7 @@
                     WidthRequest="50"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoHumanPlayerPickupTrue"
                     Text="Yes"
                     SemanticProperties.Hint="Robot could Pick up from Human Player in Auto"
@@ -275,12 +303,12 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Auto Climbing Level:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -289,7 +317,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="AutoClimbingNoClimb"
                     Text="No climbing"
                     SemanticProperties.Hint="Did not climb in auto"
@@ -299,7 +327,7 @@
                     WidthRequest="110"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoClimbingLevel1"
                     Text="L1"
                     SemanticProperties.Hint="Level 1 Climb in Auto"
@@ -309,7 +337,7 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoClimbingLevel2"
                     Text="L2"
                     SemanticProperties.Hint="Level 2 Climb in Auto"
@@ -319,7 +347,7 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="AutoClimbingLevel3"
                     Text="L3"
                     SemanticProperties.Hint="Level 3 Climb in Auto"
@@ -329,12 +357,12 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Teleop"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -342,12 +370,12 @@
                     Margin="0,9,0,0"
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Teleop Cycles:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -356,7 +384,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="TeleNumberOfCyclesPlus"
                     Text="0"
                     SemanticProperties.Hint="Tele Number of Cycles Plus"
@@ -366,7 +394,7 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleNumberOfCyclesMinus"
                     Text="-"
                     SemanticProperties.Hint="Tele Number of Cycles Minus"
@@ -376,12 +404,12 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Balls Per Cycle in Teleop:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -390,7 +418,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="TeleBallsPerCyclePlus"
                     Text="0"
                     SemanticProperties.Hint="Teleop Number of Balls per Cycle Plus"
@@ -400,7 +428,7 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleBallsPerCycleMinus"
                     Text="-"
                     SemanticProperties.Hint="Teleop Number of Balls per Cycle Minus"
@@ -410,12 +438,12 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Teleop Robot Speed:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -424,7 +452,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="TeleRobotSpeedNoMovement"
                     Text="No movement"
                     SemanticProperties.Hint="No Robot Movement in Teleop"
@@ -434,7 +462,7 @@
                     WidthRequest="130"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleRobotSpeedSlow"
                     Text="Slow"
                     SemanticProperties.Hint="Slow Robot Teleop Speed"
@@ -444,7 +472,7 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleRobotSpeedMedium"
                     Text="Medium"
                     SemanticProperties.Hint="Medium Robot Teleop Speed"
@@ -454,7 +482,7 @@
                     WidthRequest="90"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleRobotSpeedFast"
                     Text="Fast"
                     SemanticProperties.Hint="Fast Robot Teleop Speed"
@@ -464,12 +492,12 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Teleop Floor Pickup:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -478,7 +506,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="TeleFloorPickupFalse"
                     Text="No"
                     SemanticProperties.Hint="No Floor Pickup in Teleop"
@@ -488,7 +516,7 @@
                     WidthRequest="50"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleFloorPickupTrue"
                     Text="Yes"
                     SemanticProperties.Hint="Robot could Pick up from Floor in Teleop"
@@ -498,12 +526,12 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Teleop Human Player Pickup:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -512,7 +540,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="TeleHumanPlayerPickupFalse"
                     Text="No"
                     SemanticProperties.Hint="No Human Player Pickup in Teleop"
@@ -522,7 +550,7 @@
                     WidthRequest="50"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleHumanPlayerPickupTrue"
                     Text="Yes"
                     SemanticProperties.Hint="Robot could Pick up from Human Player in Teleop"
@@ -532,12 +560,12 @@
                     WidthRequest="60"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="Teleop Climbing Level:"
                     Style="{StaticResource SubHeadline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -546,7 +574,7 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
-                <Button
+                        <Button
                     x:Name="TeleClimbingNoClimb"
                     Text="No climbing"
                     SemanticProperties.Hint="Did not climb in teleop"
@@ -556,7 +584,7 @@
                     WidthRequest="110"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleClimbingLevel1"
                     Text="L1"
                     SemanticProperties.Hint="Level 1 Climb in Teleop"
@@ -566,7 +594,7 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleClimbingLevel2"
                     Text="L2"
                     SemanticProperties.Hint="Level 2 Climb in Teleop"
@@ -576,7 +604,7 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-                <Button
+                        <Button
                     x:Name="TeleClimbingLevel3"
                     Text="L3"
                     SemanticProperties.Hint="Level 3 Climb in Teleop"
@@ -586,12 +614,12 @@
                     WidthRequest="30"
                     HorizontalOptions="Center" />
 
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            <HorizontalStackLayout
+                    <HorizontalStackLayout
                 HorizontalOptions="Center">
 
-                <Label
+                        <Label
                     Text="End Game"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level2"
@@ -599,27 +627,28 @@
                     Margin="0,9,0,0"
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
-            </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
 
-        </VerticalStackLayout>
+            </VerticalStackLayout>
 
-        <VerticalStackLayout
-            x:Name="ErrorLayout"
-            IsVisible="False"
-            Grid.Row="1"
-            Padding="30,0"
+            <VerticalStackLayout
+                x:Name="ErrorLayout"
+                IsVisible="False"
+                Grid.Row="1"
+                Padding="30,0"
             >
 
-            <Label
-                x:Name="ErrorMsg"
-                Text="ERROR"
-                TextColor="Red"
-                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-            />
+                <Label
+                    x:Name="ErrorMsg"
+                    Text="ERROR"
+                    TextColor="Red"
+                    FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
 
-        </VerticalStackLayout>
+            </VerticalStackLayout>
 
-    </Grid>
+        </Grid>
 
     </ScrollView>
 
