@@ -28,6 +28,9 @@ public class MatchDatabase : BaseDatabase
             var createTableCmd = Database.CreateCommand();
             createTableCmd.CommandText = Match.CreateTableCommand();
             await createTableCmd.ExecuteNonQueryAsync();
+            var createIndexCmd = Database.CreateCommand();
+            createIndexCmd.CommandText = Match.CreateTableIndexCommand();
+            await createIndexCmd.ExecuteNonQueryAsync();
             Database.Close();
             _created = true;
         }

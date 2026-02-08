@@ -50,108 +50,114 @@ namespace BertScout2026.Models
         {
             return
                 @$"CREATE TABLE IF NOT EXISTS Match (
-{BaseCreateTableFields()}
-, TeamNumber INTEGER NOT NULL
-, MatchNumber INTEGER NOT NULL
-, ScoutName TEXT NOT NULL
-, AutoNumberOfCycles INTEGER NOT NULL
-, AutoBallsPerCycle INTEGER NOT NULL
-, AutoRobotSpeed INTEGER NOT NULL
-, AutoClimbingLevel INTEGER NOT NULL
-, AutoFloorPickup INTEGER NOT NULL
-, AutoHumanPlayerPickup INTEGER NOT NULL
-, TeleNumberOfCycles INTEGER NOT NULL
-, TeleBallsPerCycle INTEGER NOT NULL
-, TeleRobotSpeed INTEGER NOT NULL
-, TeleClimbingLevel INTEGER NOT NULL
-, TeleFloorPickup INTEGER NOT NULL
-, TeleHumanPlayerPickup INTEGER NOT NULL
-, Score INTEGER NOT NULL
-, Comments TEXT NOT NULL
-)";
+                {BaseCreateTableFields()}
+                , TeamNumber INTEGER NOT NULL
+                , MatchNumber INTEGER NOT NULL
+                , ScoutName TEXT NOT NULL
+                , AutoNumberOfCycles INTEGER NOT NULL
+                , AutoBallsPerCycle INTEGER NOT NULL
+                , AutoRobotSpeed INTEGER NOT NULL
+                , AutoClimbingLevel INTEGER NOT NULL
+                , AutoFloorPickup INTEGER NOT NULL
+                , AutoHumanPlayerPickup INTEGER NOT NULL
+                , TeleNumberOfCycles INTEGER NOT NULL
+                , TeleBallsPerCycle INTEGER NOT NULL
+                , TeleRobotSpeed INTEGER NOT NULL
+                , TeleClimbingLevel INTEGER NOT NULL
+                , TeleFloorPickup INTEGER NOT NULL
+                , TeleHumanPlayerPickup INTEGER NOT NULL
+                , Score INTEGER NOT NULL
+                , Comments TEXT NOT NULL
+                )";
+        }
+
+        public static string CreateTableIndexCommand()
+        {
+            return
+                @"CREATE UNIQUE INDEX IF NOT EXISTS UX_team_match ON Match (TeamNumber, MatchNumber)";
         }
 
         public static string MatchFieldsWithId()
         {
             return
                 @$"{BaseFieldsWithID()}
-, {MatchFields()}";
+                , {MatchFields()}";
         }
 
         public static string MatchFields()
         {
             return
                 @$"TeamNumber
-, MatchNumber
-, ScoutName
-, AutoNumberOfCycles
-, AutoBallsPerCycle
-, AutoRobotSpeed
-, AutoClimbingLevel
-, AutoFloorPickup
-, AutoHumanPlayerPickup
-, TeleNumberOfCycles
-, TeleBallsPerCycle
-, TeleRobotSpeed
-, TeleClimbingLevel
-, TeleFloorPickup
-, TeleHumanPlayerPickup
-, Score
-, Comments";
+                , MatchNumber
+                , ScoutName
+                , AutoNumberOfCycles
+                , AutoBallsPerCycle
+                , AutoRobotSpeed
+                , AutoClimbingLevel
+                , AutoFloorPickup
+                , AutoHumanPlayerPickup
+                , TeleNumberOfCycles
+                , TeleBallsPerCycle
+                , TeleRobotSpeed
+                , TeleClimbingLevel
+                , TeleFloorPickup
+                , TeleHumanPlayerPickup
+                , Score
+                , Comments";
         }
 
         public string AddCommand()
         {
             return
                 @$"INSERT INTO Match (
-{BaseFields()}
-, {MatchFields()}
-) VALUES (
-{BaseAddValues()}
-, {TeamNumber}
-, {MatchNumber}
-, '{ScoutName}'
-, {AutoNumberOfCycles}
-, {AutoBallsPerCycle}
-, {AutoRobotSpeed}
-, {AutoClimbingLevel}
-, {(AutoFloorPickup ? 1 : 0)}
-, {(AutoHumanPlayerPickup ? 1 : 0)}
-, {TeleNumberOfCycles}
-, {TeleBallsPerCycle}
-, {TeleRobotSpeed}
-, {TeleClimbingLevel}
-, {(TeleFloorPickup ? 1 : 0)}
-, {(TeleHumanPlayerPickup ? 1 : 0)}
-, {Score}
-, '{Comments}'
-)";
+                {BaseFields()}
+                , {MatchFields()}
+                ) VALUES (
+                {BaseAddValues()}
+                , {TeamNumber}
+                , {MatchNumber}
+                , '{ScoutName}'
+                , {AutoNumberOfCycles}
+                , {AutoBallsPerCycle}
+                , {AutoRobotSpeed}
+                , {AutoClimbingLevel}
+                , {(AutoFloorPickup ? 1 : 0)}
+                , {(AutoHumanPlayerPickup ? 1 : 0)}
+                , {TeleNumberOfCycles}
+                , {TeleBallsPerCycle}
+                , {TeleRobotSpeed}
+                , {TeleClimbingLevel}
+                , {(TeleFloorPickup ? 1 : 0)}
+                , {(TeleHumanPlayerPickup ? 1 : 0)}
+                , {Score}
+                , '{Comments}'
+                )";
         }
 
         public string UpdateCommand()
         {
             return
                 @$"UPDATE Match
-SET
-{BaseUpdateValues()}
-, TeamNumber = {TeamNumber}
-, MatchNumber = {MatchNumber}
-, ScoutName = '{ScoutName}'
-, AutoNumberOfCycles = {AutoNumberOfCycles}
-, AutoBallsPerCycle = {AutoBallsPerCycle}
-, AutoRobotSpeed = {AutoRobotSpeed}
-, AutoClimbingLevel = {AutoClimbingLevel}
-, AutoFloorPickup = {(AutoFloorPickup ? 1 : 0)}
-, AutoHumanPlayerPickup = {(AutoHumanPlayerPickup ? 1 : 0)}
-, TeleNumberOfCycles = {TeleNumberOfCycles}
-, TeleBallsPerCycle = {TeleBallsPerCycle}
-, TeleRobotSpeed = {TeleRobotSpeed}
-, TeleClimbingLevel = {TeleClimbingLevel}
-, TeleFloorPickup = {(TeleFloorPickup ? 1 : 0)}
-, TeleHumanPlayerPickup = {(TeleHumanPlayerPickup ? 1 : 0)}
-, Score = {Score}
-, Comments = '{Comments}'
-WHERE Id = {Id}";
+                SET
+                {BaseUpdateValues()}
+                , TeamNumber = {TeamNumber}
+                , MatchNumber = {MatchNumber}
+                , ScoutName = '{ScoutName}'
+                , AutoNumberOfCycles = {AutoNumberOfCycles}
+                , AutoBallsPerCycle = {AutoBallsPerCycle}
+                , AutoRobotSpeed = {AutoRobotSpeed}
+                , AutoClimbingLevel = {AutoClimbingLevel}
+                , AutoFloorPickup = {(AutoFloorPickup ? 1 : 0)}
+                , AutoHumanPlayerPickup = {(AutoHumanPlayerPickup ? 1 : 0)}
+                , TeleNumberOfCycles = {TeleNumberOfCycles}
+                , TeleBallsPerCycle = {TeleBallsPerCycle}
+                , TeleRobotSpeed = {TeleRobotSpeed}
+                , TeleClimbingLevel = {TeleClimbingLevel}
+                , TeleFloorPickup = {(TeleFloorPickup ? 1 : 0)}
+                , TeleHumanPlayerPickup = {(TeleHumanPlayerPickup ? 1 : 0)}
+                , Score = {Score}
+                , Comments = '{Comments}'
+                WHERE Id = {Id}";
         }
 
         public static Match FromReader(SqliteDataReader reader)
