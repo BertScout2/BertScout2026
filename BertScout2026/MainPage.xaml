@@ -587,6 +587,85 @@
                     />
             </HorizontalStackLayout>
 
+            <HorizontalStackLayout>
+                <Entry
+                    x:Name="Comments"
+                    Placeholder="Put in comments"
+                    PlaceholderColor="Gray"
+                    WidthRequest="170"
+                    MaxLength="15"
+                    Margin="10,5,0,0"
+                    HorizontalOptions="Center"
+                    Text=""
+                    IsEnabled="true"
+                    FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                    />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="Score:"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Auto Number of Balls per Cycle" 
+                    Margin="0,9,0,0"
+                    FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                    />
+
+                <Button
+                    x:Name="ScoreStar1"
+                    Text="1"
+                    SemanticProperties.Hint="1 star rating of robot"
+                    Clicked="ScoreStar1Clicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="30"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="ScoreStar2"
+                    Text="2"
+                    SemanticProperties.Hint="2 star rating of robot"
+                    Clicked="ScoreStar2Clicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="30"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="ScoreStar3"
+                    Text="3"
+                    SemanticProperties.Hint="3 star rating of robot"
+                    Clicked="ScoreStar3Clicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="30"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="ScoreStar4"
+                    Text="4"
+                    SemanticProperties.Hint="4 star rating of robot"
+                    Clicked="ScoreStar4Clicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="30"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="ScoreStar5"
+                    Text="5"
+                    SemanticProperties.Hint="5 star rating of robot"
+                    Clicked="ScoreStar5Clicked"
+                    Margin="10,0,0,0"
+                    BackgroundColor="Gray"
+                    WidthRequest="30"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
         </VerticalStackLayout>
 
     </ScrollView>
