@@ -1,0 +1,21 @@
+climb under and roll over
+shoot from anywhere
+shooting style
+turret, single shot, drum size 
+capacity
+driving style route plotting or freeform 
+tank or swerve 
+concerns - not working right or issues
+did they break down, mech issues
+cooperate well
+pick yes or no
+center floor pickup, wall hugging pickup 
+climbing, hogging, 
+climbing time 
+climbing but fell 
+did they feed balls to human player
+is their human player good at shooting
+auto -> next -> tele -> next -> endgame
+
+
+refresh/clear screen
