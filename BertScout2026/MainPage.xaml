@@ -586,6 +586,50 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
             </HorizontalStackLayout>
+            
+<!--            <HorizontalStackLayout
+                Margin="0,5,0,0"
+                HorizontalOptions="Center"
+                 >
+
+                 <Label
+                     Text="Select comments:"
+                     Margin="10,6,0,0"
+                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                     />
+
+                 <Picker
+                      x:Name="CommentPicker"
+                      SelectedIndexChanged="CommentPicker_SelectedIndexChanged"
+                      TextColor="Green"
+                      BackgroundColor="Green"
+                      WidthRequest="100"
+                      HorizontalAlignment="FillAndExpand"
+                      HeightRequest="32"
+                      Margin="10,0,0,0"
+                      FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                      />
+
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Editor
+                        x:Name="Comments"
+                        TextChanged="Comments_TextChanged"
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Start"
+                        HeightRequest="150"
+                        BackgroundColor="{AppThemeBinding Light=White, Dark=Green}"
+                        Text=""
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                <Label
+                        Text=""
+                        Margin="0"
+                        HeightRequest="300"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+            </HorizontalStackLayout> -->
 
         </VerticalStackLayout>
 

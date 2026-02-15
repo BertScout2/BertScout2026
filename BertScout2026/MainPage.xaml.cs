@@ -290,11 +290,36 @@ namespace BertScout2026
             TeleClimbingLevel3.BackgroundColor = Colors.Green;
             SaveData();
         }
+        //private void CommentPicker_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    if (CommentPicker.SelectedIndex < 0)
+        //        return;
+        //    if (Comments.Text == null)
+        //        Comments.Text = "";
+        //    else if (Comments.Text.Length > 0 && !Comments.Text.EndsWith(' '))
+        //        Comments.Text += " ";
+        //    Comments.Text += CommentPicker.SelectedItem.ToString() + " ";
+        //    CommentPicker.SelectedIndex = -1;
+        //    SaveFields();
+        //}
+
+        //private void Comments_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    var temp = Comments?.Text ?? "";
+        //    if (temp.Length > 250)
+        //    {
+        //        temp = temp[0..250];
+        //        Comments!.Text = temp;
+        //    }
+        //    item.Comments = temp;
+        //}
+        private void Score(object? sender, EventArgs e) { }
         private void SaveData()
         {
             match.Changed = true;
             var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
             taskSave.Wait();
+
         }
     }
 }
