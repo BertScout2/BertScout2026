@@ -290,6 +290,7 @@ namespace BertScout2026
             TeleClimbingLevel3.BackgroundColor = Colors.Green;
             SaveData();
         }
+
         //private void CommentPicker_SelectedIndexChanged(object sender, EventArgs e)
         //{
         //    if (CommentPicker.SelectedIndex < 0)
@@ -313,7 +314,58 @@ namespace BertScout2026
         //    }
         //    item.Comments = temp;
         //}
-        private void Score(object? sender, EventArgs e) { }
+         
+        private void ScoreStar1Clicked(object? sender, EventArgs e)
+        {
+            match.TeleClimbingLevel = 1;
+            ScoreStar1.BackgroundColor = Colors.Green;
+            ScoreStar2.BackgroundColor = Colors.Gray;
+            ScoreStar3.BackgroundColor = Colors.Gray;
+            ScoreStar4.BackgroundColor = Colors.Gray;
+            ScoreStar5.BackgroundColor = Colors.Gray;
+            SaveData();
+        }
+        private void ScoreStar2Clicked(object? sender, EventArgs e)
+        {
+            match.TeleClimbingLevel = 2;
+            ScoreStar1.BackgroundColor = Colors.Gray;
+            ScoreStar2.BackgroundColor = Colors.Green;
+            ScoreStar3.BackgroundColor = Colors.Gray;
+            ScoreStar4.BackgroundColor = Colors.Gray;
+            ScoreStar5.BackgroundColor = Colors.Gray;
+            SaveData();
+        }
+        private void ScoreStar3Clicked(object? sender, EventArgs e)
+        {
+            match.TeleClimbingLevel = 3;
+            ScoreStar1.BackgroundColor = Colors.Gray;
+            ScoreStar2.BackgroundColor = Colors.Gray;
+            ScoreStar3.BackgroundColor = Colors.Green;
+            ScoreStar4.BackgroundColor = Colors.Gray;
+            ScoreStar5.BackgroundColor = Colors.Gray;
+            SaveData();
+        }
+        private void ScoreStar4Clicked(object? sender, EventArgs e)
+        {
+            match.TeleClimbingLevel = 4;
+            ScoreStar1.BackgroundColor = Colors.Gray;
+            ScoreStar2.BackgroundColor = Colors.Gray;
+            ScoreStar3.BackgroundColor = Colors.Gray;
+            ScoreStar4.BackgroundColor = Colors.Green;
+            ScoreStar5.BackgroundColor = Colors.Gray;
+            SaveData();
+        }
+        private void ScoreStar5Clicked(object? sender, EventArgs e)
+        {
+            match.TeleClimbingLevel = 5;
+            ScoreStar1.BackgroundColor = Colors.Gray;
+            ScoreStar2.BackgroundColor = Colors.Gray;
+            ScoreStar3.BackgroundColor = Colors.Gray;
+            ScoreStar4.BackgroundColor = Colors.Gray;
+            ScoreStar5.BackgroundColor = Colors.Green;
+            SaveData();
+        }
+
         private void SaveData()
         {
             match.Changed = true;
