@@ -1,11 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:DataType="ContentPage"
              x:Class="BertScout2026.MainPage">
 
     <ScrollView>
 
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
         <VerticalStackLayout
+            x:Name="MainLayout"
+            Grid.Row="0"
+            IsVisible="True"
             Padding="30,0"
             Spacing="25">
 
@@ -16,6 +27,8 @@
                 SemanticProperties.Description="Bert 133 Logo" />
 
             <HorizontalStackLayout 
+                x:Name="TeamMatchLayout"
+                HorizontalOptions="Center"
                 Padding="30,0"
                 Spacing="0">
 
@@ -57,7 +70,34 @@
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
 
+                    <Button
+                    x:Name="StartButton"
+                    Text="Start"
+                    SemanticProperties.Hint="Start entering Scouting Data"
+                    Clicked="StartButtonClicked"
+                    Margin="20,10,0,0"
+                    BackgroundColor="Green"
+                    WidthRequest="80"
+                        IsVisible="True"
+                    />
+
+                    <Button
+                    x:Name="SaveButton"
+                    Text="Save"
+                    SemanticProperties.Hint="Save Scouting Data"
+                    Clicked="SaveButtonClicked"
+                    Margin="20,10,0,0"
+                    BackgroundColor="Green"
+                    WidthRequest="80"
+                        IsVisible="False"
+                    />
+
             </HorizontalStackLayout>
+
+                <VerticalStackLayout
+                    x:Name="ScoutingLayout"
+                    IsVisible="False"
+                >
 
             <HorizontalStackLayout
                 HorizontalOptions="Center">
@@ -711,6 +751,26 @@
             </HorizontalStackLayout>
 
         </VerticalStackLayout>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                x:Name="ErrorLayout"
+                IsVisible="False"
+                Grid.Row="1"
+                Padding="30,0"
+            >
+
+                <Label
+                    x:Name="ErrorMsg"
+                    Text="ERROR"
+                    TextColor="Red"
+                    FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
+
+            </VerticalStackLayout>
+
+        </Grid>
 
     </ScrollView>
 

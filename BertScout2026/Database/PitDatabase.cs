@@ -1,5 +1,5 @@
 ﻿using BertScout2026.Models;
-using SQLite;
+//using SQLite;
 
 namespace BertScout2026.Database;
 
@@ -9,52 +9,39 @@ public class PitDatabase
 
     public const string PitDBFilename = "PitScout2026.db3";
 
-    private const SQLiteOpenFlags Flags =
-        // open the database in read/write mode
-        SQLiteOpenFlags.ReadWrite |
-        // create the database if it doesn't exist
-        SQLiteOpenFlags.Create |
-        // enable multi-threaded database access
-        SQLiteOpenFlags.SharedCache;
+    //private const SQLiteOpenFlags Flags =
+    //    // open the database in read/write mode
+    //    SQLiteOpenFlags.ReadWrite |
+    //    // create the database if it doesn't exist
+    //    SQLiteOpenFlags.Create |
+    //    // enable multi-threaded database access
+    //    SQLiteOpenFlags.SharedCache;
 
-    private bool _created = false;
-    private SQLiteAsyncConnection Database = new("");
+    //private bool _created = false;
+    //private SQLiteAsyncConnection Database = new("");
 
     public PitDatabase()
     {
-#if ANDROID
-            if (Directory.Exists("/sdcard/Documents"))
-            {
-                PitDBPath = "/sdcard/Documents";
-            }
-#elif WINDOWS
-            if (!Directory.Exists("C:\\Temp"))
-            {
-                Directory.CreateDirectory("C:\\Temp");
-            }
-            PitDBPath = "C:\\Temp";
-#endif
-        PitDBPath ??= FileSystem.AppDataDirectory;
     }
 
     private async Task InitPitDB()
     {
-        if (_created)
-        {
-            return;
-        }
-        var databasePath = Path.Combine(PitDBPath, PitDBFilename);
-        try
-        {
-            Database = new(databasePath, Flags);
-            await Database.CreateTableAsync<Match>();
-            await Database.CreateTableAsync<Pit>();
-            _created = true;
-        }
-        catch (Exception ex)
-        {
-            throw new SystemException($"Error initializing Pit database: {databasePath}\r\n{ex.Message}");
-        }
+        //if (_created)
+        //{
+        //    return;
+        //}
+        //var databasePath = Path.Combine(PitDBPath, PitDBFilename);
+        //try
+        //{
+        //    Database = new(databasePath, Flags);
+        //    await Database.CreateTableAsync<Match>();
+        //    await Database.CreateTableAsync<Pit>();
+        //    _created = true;
+        //}
+        //catch (Exception ex)
+        //{
+        //    throw new SystemException($"Error initializing Pit database: {databasePath}\r\n{ex.Message}");
+        //}
     }
 
     //public async Task<List<Pit>> GetPitItemsAsync()

@@ -1,40 +1,17 @@
 ﻿using BertScout2026.Models;
-using SQLite;
+using Microsoft.Data.Sqlite;
 
 namespace BertScout2026.Database;
 
-public class MatchDatabase
+public class MatchDatabase : BaseDatabase
 {
-    public string MatchDBPath { get; set; } = "";
-
     private const string MatchDBFilename = "MatchScout2026.db3";
-
-    private const SQLiteOpenFlags Flags =
-        // open the database in read/write mode
-        SQLiteOpenFlags.ReadWrite |
-        // create the database if it doesn't exist
-        SQLiteOpenFlags.Create |
-        // enable multi-threaded database access
-        SQLiteOpenFlags.SharedCache;
-
+    private SqliteConnection Database = new();
+    private string? _databasePath;
     private bool _created = false;
-    private SQLiteAsyncConnection Database = new("");
 
     public MatchDatabase()
     {
-#if ANDROID
-        if (Directory.Exists("/sdcard/Documents"))
-        {
-            MatchDBPath = "/sdcard/Documents";
-        }
-#elif WINDOWS
-        if (!Directory.Exists("C:\\Temp"))
-        {
-            Directory.CreateDirectory("C:\\Temp");
-        }
-        MatchDBPath = "C:\\Temp";
-#endif
-        MatchDBPath ??= FileSystem.AppDataDirectory;
     }
 
     private async Task InitMatchDB()
@@ -43,90 +20,169 @@ public class MatchDatabase
         {
             return;
         }
-        var databasePath = Path.Combine(MatchDBPath, MatchDBFilename);
         try
         {
-            Database = new(databasePath, Flags);
-            await Database.CreateTableAsync<Match>();
-            await Database.CreateTableAsync<Pit>();
+            _databasePath = $"Data Source={Path.Combine(DatabasePath, MatchDBFilename)}";
+            Database = new SqliteConnection(_databasePath);
+            await Database.OpenAsync();
+            var createTableCmd = Database.CreateCommand();
+            createTableCmd.CommandText = Match.CreateTableCommand();
+            await createTableCmd.ExecuteNonQueryAsync();
+            var createIndexCmd = Database.CreateCommand();
+            createIndexCmd.CommandText = Match.CreateTableIndexCommand();
+            await createIndexCmd.ExecuteNonQueryAsync();
+            Database.Close();
             _created = true;
         }
         catch (Exception ex)
         {
-            throw new SystemException($"Error initializing Match database: {databasePath}\r\n{ex.Message}");
+            throw new SystemException($"Error initializing Match database: {_databasePath}\r\n{ex.Message}");
         }
     }
 
     public async Task<List<Match>> GetMatchItemsAsync()
     {
         await InitMatchDB();
-        return await Database.Table<Match>()
-            .ToListAsync();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            ORDER BY Id";
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        var matches = new List<Match>();
+        while (await reader.ReadAsync())
+        {
+            matches.Add(Match.FromReader(reader));
+        }
+        return matches;
     }
 
     public async Task<List<Match>> GetChangedMatchItemsAsync()
     {
         await InitMatchDB();
-        return await Database.Table<Match>()
-            .Where(i => i.Changed)
-            .ToListAsync();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            WHERE Changed = 1
+            ORDER BY Id";
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        var matches = new List<Match>();
+        while (await reader.ReadAsync())
+        {
+            matches.Add(Match.FromReader(reader));
+        }
+        return matches;
     }
 
     public async Task<List<Match>> GetTeamAllMatches(int team)
     {
         await InitMatchDB();
-        return await Database.Table<Match>()
-            .Where(i => i.TeamNumber == team)
-            .OrderBy(i => i.MatchNumber)
-            .ToListAsync();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            WHERE TeamNumber = @team
+            ORDER BY MatchNumber, Id";
+        selectCmd.Parameters.AddWithValue("@team", team);
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        var matches = new List<Match>();
+        while (await reader.ReadAsync())
+        {
+            matches.Add(Match.FromReader(reader));
+        }
+        return matches;
     }
 
-    public async Task<Match> GetMatchAsync(int match, int team)
+    public async Task<Match?> GetMatchAsync(int team, int match)
     {
         await InitMatchDB();
-        return await Database.Table<Match>()
-            .Where(i => i.MatchNumber == match && i.TeamNumber == team)
-            .FirstOrDefaultAsync();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            WHERE TeamNumber = @team AND MatchNumber = @match";
+        selectCmd.Parameters.AddWithValue("@team", team);
+        selectCmd.Parameters.AddWithValue("@match", match);
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        if (await reader.ReadAsync())
+        {
+            return Match.FromReader(reader);
+        }
+        return null;
     }
 
-    public async Task<Match> GetMatchItemAsync(int id)
+    public async Task<Match?> GetMatchByIdAsync(int id)
     {
         await InitMatchDB();
-        return await Database.Table<Match>()
-            .Where(i => i.Id == id)
-            .FirstOrDefaultAsync();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            {Match.MatchFieldsWithId()}
+            FROM Match 
+            WHERE Id = @id";
+        selectCmd.Parameters.AddWithValue("@id", id);
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        if (await reader.ReadAsync())
+        {
+            return Match.FromReader(reader);
+        }
+        return null;
     }
 
     public async Task<int> SaveMatchItemAsync(Match item)
     {
         await InitMatchDB();
+        await Database.OpenAsync();
+        var cmd = Database.CreateCommand();
         if (item.Id != 0)
         {
-            return await Database.UpdateAsync(item);
+            cmd.CommandText = item.UpdateCommand();
         }
-        var oldItem = await GetMatchAsync(item.MatchNumber, item.TeamNumber);
-        if (oldItem != null)
+        else
         {
-            item.Id = oldItem.Id;
-            item.Uuid = oldItem.Uuid;
-            // AirtableId may be updated in item, don't overwrite
-            if (!string.IsNullOrWhiteSpace(oldItem.AirtableId))
-                item.AirtableId = oldItem.AirtableId;
-            return await Database.UpdateAsync(item);
+            var oldItem = await GetMatchAsync(item.TeamNumber, item.MatchNumber);
+            if (oldItem != null)
+            {
+                item.Id = oldItem.Id;
+                item.Uuid = oldItem.Uuid;
+                if (!string.IsNullOrWhiteSpace(oldItem.AirtableId))
+                {
+                    item.AirtableId = oldItem.AirtableId;
+                }
+                cmd.CommandText = item.UpdateCommand();
+            }
+            else
+            {
+                cmd.CommandText = item.AddCommand();
+            }
         }
-        item.Uuid = Guid.NewGuid().ToString();
-        return await Database.InsertAsync(item);
+        var count = await cmd.ExecuteNonQueryAsync();
+        Database.Close();
+        return count;
     }
 
-    public async Task DeleteMatchItemAsync(int match, int team)
+    public async Task<int> DeleteMatchItemAsync(int team, int match)
     {
         await InitMatchDB();
-        var item = await Database.Table<Match>()
-            .Where(i => i.TeamNumber == team && i.MatchNumber == match)
-            .FirstOrDefaultAsync();
-        if (item != null)
-        {
-            await Database.DeleteAsync(item);
-        }
+        await Database.OpenAsync();
+        var cmd = Database.CreateCommand();
+        cmd.CommandText =
+            @$"DELETE FROM Match 
+            WHERE TeamNumber = @team AND MatchNumber = @match";
+        cmd.Parameters.AddWithValue("@team", team);
+        cmd.Parameters.AddWithValue("@match", match);
+        var count = await cmd.ExecuteNonQueryAsync();
+        Database.Close();
+        return count;
     }
 }

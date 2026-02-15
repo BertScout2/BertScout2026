@@ -1,5 +1,6 @@
 ﻿using BertScout2026.Database;
 using BertScout2026.Models;
+using static BertScout2026.Utilities.PermissionManagement;
 
 namespace BertScout2026
 {
@@ -7,11 +8,68 @@ namespace BertScout2026
     {
         private readonly MatchDatabase db = new();
 
+        //public string AppVersion => $"Bert Scout 2026 - Version {AppInfo.VersionString}";
+
+        public string ScoutName => "Scott";
+
         Match match = new();
 
         public MainPage()
         {
             InitializeComponent();
+            var taskPerm = Task.Run(() => CheckAndRequestStoragePermissionsAsync());
+            if (!taskPerm.Result)
+            {
+                ShowError("Storage Permissions have been denied\n" +
+                    "Please turn on Storage permission in App Info / Permissions");
+            }
+        }
+
+        private void StartButtonClicked(object? sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text) || string.IsNullOrWhiteSpace(EntryMatchNumber.Text) ||
+                    int.Parse(EntryTeamNumber.Text) <= 0 || int.Parse(EntryMatchNumber.Text) <= 0)
+                {
+                    ShowError("Match Number and Team Number cannot be empty");
+                    return;
+                }
+                var teamNum = int.Parse(EntryTeamNumber.Text);
+                var matchNum = int.Parse(EntryMatchNumber.Text);
+                var taskLoad = Task.Run(() => db.GetMatchAsync(teamNum, matchNum));
+                var existingMatch = taskLoad.Result;
+                if (existingMatch != null)
+                {
+                    match = existingMatch;
+                }
+                else
+                {
+                    match = new Match(teamNum, matchNum, ScoutName);
+                }
+                EntryTeamNumber.IsEnabled = false;
+                EntryMatchNumber.IsEnabled = false;
+                StartButton.IsVisible = false;
+                SaveButton.IsVisible = true;
+                ScoutingLayout.IsVisible = true;
+            }
+            catch (Exception ex)
+            {
+                ShowError("Error loading data from database\n" + ex.Message);
+            }
+        }
+
+        private void SaveButtonClicked(object? sender, EventArgs e)
+        {
+            SaveData();
+            EntryTeamNumber.IsEnabled = true;
+            EntryMatchNumber.IsEnabled = true;
+            StartButton.IsVisible = true;
+            SaveButton.IsVisible = false;
+            ScoutingLayout.IsVisible = false;
+            EntryTeamNumber.Text = string.Empty;
+            EntryMatchNumber.Text = (int.Parse(EntryMatchNumber.Text) + 1).ToString();
+            EntryTeamNumber.Focus();
         }
 
         private void AutoNumberOfCyclesPlusClicked(object? sender, EventArgs e)
@@ -368,10 +426,30 @@ namespace BertScout2026
 
         private void SaveData()
         {
+<<<<<<< HEAD
             match.Changed = true;
             var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
             taskSave.Wait();
 
+=======
+            try
+            {
+                match.Changed = true;
+                var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
+                taskSave.Wait();
+            }
+            catch (Exception ex)
+            {
+                ShowError("Error saving data to database\n" + ex.Message);
+            }
+        }
+
+        private void ShowError(string message)
+        {
+            MainLayout.IsVisible = false;
+            ErrorLayout.IsVisible = true;
+            ErrorMsg.Text = message;
+>>>>>>> scott
         }
     }
 }
