@@ -63,9 +63,21 @@ namespace BertScout2026
 
         private void ClearFields()
         {
-            AutoNumberOfCyclesPlus.Text = "0";
-            AutoBallsPerCyclePlus.Text = "0";
+            SetAutoNumberOfCycles(0);
+            SetAutoBallsPerCycle(0);
             SetAutoRobotSpeed(0);
+            SetAutoFloorPickup(false);
+            SetAutoHumanPlayerPickup(false);
+            SetAutoClimbingLevel(0);
+            SetTeleNumberOfCycles(0);
+            SetTeleBallsPerCycle(0);
+            SetTeleRobotSpeed(0);
+            SetTeleFloorPickup(false);
+            SetTeleHumanPlayerPickup(false);
+            SetTeleClimbingLevel(0);
+            SetScoreStar(0);
+            match.Comments = "";
+            Comments.Text = "";
         }
 
         private void FillFields()
@@ -162,9 +174,9 @@ namespace BertScout2026
         {
             match.AutoRobotSpeed = value;
             AutoRobotSpeedNoMovement.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
-            AutoRobotSpeedSlow.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
-            AutoRobotSpeedMedium.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
-            AutoRobotSpeedFast.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            AutoRobotSpeedSlow.BackgroundColor = value == 1 ? Colors.Green : Colors.Gray;
+            AutoRobotSpeedMedium.BackgroundColor = value == 2 ? Colors.Green : Colors.Gray;
+            AutoRobotSpeedFast.BackgroundColor = value == 3 ? Colors.Green : Colors.Gray;
         }
 
         #endregion
@@ -185,7 +197,7 @@ namespace BertScout2026
         private void SetAutoFloorPickup(bool value)
         {
             match.AutoFloorPickup = value;
-            AutoFloorPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            AutoFloorPickupFalse.BackgroundColor = !value ? Colors.Green : Colors.Gray;
             AutoFloorPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
         }
 
@@ -206,7 +218,7 @@ namespace BertScout2026
         private void SetAutoHumanPlayerPickup(bool value)
         {
             match.AutoHumanPlayerPickup = value;
-            AutoHumanPlayerPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            AutoHumanPlayerPickupFalse.BackgroundColor = !value ? Colors.Green : Colors.Gray;
             AutoHumanPlayerPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
         }
 
@@ -321,9 +333,9 @@ namespace BertScout2026
         {
             match.TeleRobotSpeed = value;
             TeleRobotSpeedNoMovement.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
-            TeleRobotSpeedSlow.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
-            TeleRobotSpeedMedium.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
-            TeleRobotSpeedFast.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            TeleRobotSpeedSlow.BackgroundColor = value == 1 ? Colors.Green : Colors.Gray;
+            TeleRobotSpeedMedium.BackgroundColor = value == 2 ? Colors.Green : Colors.Gray;
+            TeleRobotSpeedFast.BackgroundColor = value == 3 ? Colors.Green : Colors.Gray;
         }
 
         #endregion
@@ -344,7 +356,7 @@ namespace BertScout2026
         private void SetTeleFloorPickup(bool value)
         {
             match.TeleFloorPickup = value;
-            TeleFloorPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            TeleFloorPickupFalse.BackgroundColor = !value ? Colors.Green : Colors.Gray;
             TeleFloorPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
         }
 
@@ -366,7 +378,7 @@ namespace BertScout2026
         private void SetTeleHumanPlayerPickup(bool value)
         {
             match.TeleHumanPlayerPickup = value;
-            TeleHumanPlayerPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            TeleHumanPlayerPickupFalse.BackgroundColor = !value ? Colors.Green : Colors.Gray;
             TeleHumanPlayerPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
         }
 
@@ -418,67 +430,62 @@ namespace BertScout2026
         //    SaveFields();
         //}
 
-        //private void Comments_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    var temp = Comments?.Text ?? "";
-        //    if (temp.Length > 250)
-        //    {
-        //        temp = temp[0..250];
-        //        Comments!.Text = temp;
-        //    }
-        //    item.Comments = temp;
-        //}
+        private void Comments_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var temp = Comments?.Text ?? "";
+            if (temp.Length > 250)
+            {
+                temp = temp[0..250];
+                Comments!.Text = temp;
+            }
+            match.Comments = temp;
+            SaveData();
+        }
 
+        #region Score
+
+        private void ScoreStar0Clicked(object? sender, EventArgs e)
+        {
+            SetScoreStar(0);
+            SaveData();
+        }
         private void ScoreStar1Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 1;
-            ScoreStar1.BackgroundColor = Colors.Green;
-            ScoreStar2.BackgroundColor = Colors.Gray;
-            ScoreStar3.BackgroundColor = Colors.Gray;
-            ScoreStar4.BackgroundColor = Colors.Gray;
-            ScoreStar5.BackgroundColor = Colors.Gray;
+            SetScoreStar(1);
             SaveData();
         }
         private void ScoreStar2Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 2;
-            ScoreStar1.BackgroundColor = Colors.Gray;
-            ScoreStar2.BackgroundColor = Colors.Green;
-            ScoreStar3.BackgroundColor = Colors.Gray;
-            ScoreStar4.BackgroundColor = Colors.Gray;
-            ScoreStar5.BackgroundColor = Colors.Gray;
+            SetScoreStar(2);
             SaveData();
         }
         private void ScoreStar3Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 3;
-            ScoreStar1.BackgroundColor = Colors.Gray;
-            ScoreStar2.BackgroundColor = Colors.Gray;
-            ScoreStar3.BackgroundColor = Colors.Green;
-            ScoreStar4.BackgroundColor = Colors.Gray;
-            ScoreStar5.BackgroundColor = Colors.Gray;
+            SetScoreStar(3);
             SaveData();
         }
         private void ScoreStar4Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 4;
-            ScoreStar1.BackgroundColor = Colors.Gray;
-            ScoreStar2.BackgroundColor = Colors.Gray;
-            ScoreStar3.BackgroundColor = Colors.Gray;
-            ScoreStar4.BackgroundColor = Colors.Green;
-            ScoreStar5.BackgroundColor = Colors.Gray;
+            SetScoreStar(4);
             SaveData();
         }
         private void ScoreStar5Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 5;
-            ScoreStar1.BackgroundColor = Colors.Gray;
-            ScoreStar2.BackgroundColor = Colors.Gray;
-            ScoreStar3.BackgroundColor = Colors.Gray;
-            ScoreStar4.BackgroundColor = Colors.Gray;
-            ScoreStar5.BackgroundColor = Colors.Green;
+            SetScoreStar(5);
             SaveData();
         }
+        private void SetScoreStar(int value)
+        {
+            match.Score = value;
+            ScoreStar0.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            ScoreStar1.BackgroundColor = value == 1 ? Colors.Green : Colors.Gray;
+            ScoreStar2.BackgroundColor = value == 2 ? Colors.Green : Colors.Gray;
+            ScoreStar3.BackgroundColor = value == 3 ? Colors.Green : Colors.Gray;
+            ScoreStar4.BackgroundColor = value == 4 ? Colors.Green : Colors.Gray;
+            ScoreStar5.BackgroundColor = value == 5 ? Colors.Green : Colors.Gray;
+        }
+
+#endregion
 
         private void SaveData()
         {

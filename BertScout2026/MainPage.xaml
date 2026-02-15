@@ -679,10 +679,11 @@
                     WidthRequest="170"
                     MaxLength="15"
                     Margin="10,5,0,0"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"
                     Text=""
                     IsEnabled="true"
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                    TextChanged="Comments_TextChanged"
                     />
             </HorizontalStackLayout>
 
@@ -697,7 +698,16 @@
                     Margin="0,9,0,0"
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     />
-
+                 <Button
+                     x:Name="ScoreStar0"
+                     Text="0"
+                     SemanticProperties.Hint="0 star rating of robot"
+                     Clicked="ScoreStar0Clicked"
+                     Margin="10,0,0,0"
+                     BackgroundColor="Gray"
+                     WidthRequest="30"
+                     HorizontalOptions="Center" />
+                
                 <Button
                     x:Name="ScoreStar1"
                     Text="1"
