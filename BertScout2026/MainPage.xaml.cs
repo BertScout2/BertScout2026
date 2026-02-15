@@ -76,13 +76,25 @@ namespace BertScout2026
             SetTeleHumanPlayerPickup(false);
             SetTeleClimbingLevel(0);
             SetScoreStar(0);
-            match.Comments = "";
-            Comments.Text = "";
+            SetComments("");
         }
 
         private void FillFields()
         {
-            throw new NotImplementedException();
+            SetAutoNumberOfCycles(match.AutoNumberOfCycles);
+            SetAutoBallsPerCycle(match.AutoBallsPerCycle);
+            SetAutoRobotSpeed(match.AutoRobotSpeed);
+            SetAutoFloorPickup(match.AutoFloorPickup);
+            SetAutoHumanPlayerPickup(match.AutoHumanPlayerPickup);
+            SetAutoClimbingLevel(match.AutoClimbingLevel);
+            SetTeleNumberOfCycles(match.TeleNumberOfCycles);
+            SetTeleBallsPerCycle(match.TeleBallsPerCycle);
+            SetTeleRobotSpeed(match.TeleRobotSpeed);
+            SetTeleFloorPickup(match.TeleFloorPickup);
+            SetTeleHumanPlayerPickup(match.TeleHumanPlayerPickup);
+            SetTeleClimbingLevel(match.TeleClimbingLevel);
+            SetScoreStar(match.Score);
+            SetComments(match.Comments);
         }
 
         private void SaveButtonClicked(object? sender, EventArgs e)
@@ -102,46 +114,46 @@ namespace BertScout2026
 
         private void AutoNumberOfCyclesPlusClicked(object? sender, EventArgs e)
         {
-            SetAutoNumberOfCycles(1);
+            SetAutoNumberOfCycles(match.AutoNumberOfCycles + 1);
             SaveData();
         }
 
         private void AutoNumberOfCyclesMinusClicked(object? sender, EventArgs e)
         {
-            SetAutoNumberOfCycles(-1);
+            SetAutoNumberOfCycles(match.AutoNumberOfCycles - 1);
             SaveData();
         }
         private void SetAutoNumberOfCycles(int value)
         {
-            if (match.AutoNumberOfCycles + value >= 0)
+            if (value >= 0)
             {
-                match.AutoNumberOfCycles = match.AutoNumberOfCycles + value;
-                AutoNumberOfCyclesPlus.Text = (match.AutoNumberOfCycles + value).ToString();
+                match.AutoNumberOfCycles = value;
+                AutoNumberOfCyclesPlus.Text = value.ToString();
             }
         }
 
         #endregion
-        
+
         #region AutoBallsPerCycle
 
         private void AutoBallsPerCyclePlusClicked(object? sender, EventArgs e)
         {
-            SetAutoBallsPerCycle(1);
+            SetAutoBallsPerCycle(match.AutoBallsPerCycle + 1);
             SaveData();
         }
         private void AutoBallsPerCycleMinusClicked(object? sender, EventArgs e)
         {
-            SetAutoBallsPerCycle(-1);
+            SetAutoBallsPerCycle(match.AutoBallsPerCycle - 1);
             SaveData();
         }
 
 
         private void SetAutoBallsPerCycle(int value)
         {
-            if (match.AutoBallsPerCycle + value >= 0)
+            if (value >= 0)
             {
-                match.AutoBallsPerCycle = match.AutoBallsPerCycle + value;
-                AutoBallsPerCyclePlus.Text = (match.AutoBallsPerCycle + value).ToString();
+                match.AutoBallsPerCycle = value;
+                AutoBallsPerCyclePlus.Text = value.ToString();
             }
         }
 
@@ -261,21 +273,21 @@ namespace BertScout2026
 
         private void TeleNumberOfCyclesPlusClicked(object? sender, EventArgs e)
         {
-            SetTeleNumberOfCycles(1);
+            SetTeleNumberOfCycles(match.TeleNumberOfCycles + 1);
             SaveData();
         }
 
         private void TeleNumberOfCyclesMinusClicked(object? sender, EventArgs e)
         {
-            SetTeleNumberOfCycles(-1);
+            SetTeleNumberOfCycles(match.TeleNumberOfCycles - 1);
             SaveData();
         }
         private void SetTeleNumberOfCycles(int value)
         {
-            if (match.TeleNumberOfCycles + value >= 0)
+            if (value >= 0)
             {
-                match.TeleNumberOfCycles = match.TeleNumberOfCycles + value;
-                TeleNumberOfCyclesPlus.Text = (match.TeleNumberOfCycles + value).ToString();
+                match.TeleNumberOfCycles = value;
+                TeleNumberOfCyclesPlus.Text = value.ToString();
             }
         }
 
@@ -285,22 +297,22 @@ namespace BertScout2026
 
         private void TeleBallsPerCyclePlusClicked(object? sender, EventArgs e)
         {
-            SetTeleBallsPerCycle(1);
+            SetTeleBallsPerCycle(match.TeleBallsPerCycle + 1);
             SaveData();
         }
         private void TeleBallsPerCycleMinusClicked(object? sender, EventArgs e)
         {
-            SetTeleBallsPerCycle(-1);
+            SetTeleBallsPerCycle(match.TeleBallsPerCycle - 1);
             SaveData();
         }
 
 
         private void SetTeleBallsPerCycle(int value)
         {
-            if (match.TeleBallsPerCycle + value >= 0)
+            if (value >= 0)
             {
-                match.TeleBallsPerCycle = match.TeleBallsPerCycle + value;
-                TeleBallsPerCyclePlus.Text = (match.TeleBallsPerCycle + value).ToString();
+                match.TeleBallsPerCycle = value;
+                TeleBallsPerCyclePlus.Text = value.ToString();
             }
         }
 
@@ -432,14 +444,31 @@ namespace BertScout2026
 
         private void Comments_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var temp = Comments?.Text ?? "";
-            if (temp.Length > 250)
+            var value = Comments.Text;
+            if (value.Length > 250)
             {
-                temp = temp[0..250];
-                Comments!.Text = temp;
+                value = value[0..250];
             }
-            match.Comments = temp;
+            if (match.Comments == value)
+            {
+                return;
+            }
+            SetComments(value);
             SaveData();
+        }
+
+        private void SetComments(string value)
+        {
+            if (value.Length > 250)
+            {
+                value = value[0..250];
+            }
+            match.Comments = value;
+            if (Comments.Text == value)
+            {
+                return;
+            }
+            Comments.Text = value;
         }
 
         #region Score
@@ -485,7 +514,7 @@ namespace BertScout2026
             ScoreStar5.BackgroundColor = value == 5 ? Colors.Green : Colors.Gray;
         }
 
-#endregion
+        #endregion
 
         private void SaveData()
         {
