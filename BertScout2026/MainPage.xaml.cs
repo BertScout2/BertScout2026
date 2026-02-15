@@ -42,10 +42,12 @@ namespace BertScout2026
                 if (existingMatch != null)
                 {
                     match = existingMatch;
+                    FillFields();
                 }
                 else
                 {
                     match = new Match(teamNum, matchNum, ScoutName);
+                    ClearFields();
                 }
                 EntryTeamNumber.IsEnabled = false;
                 EntryMatchNumber.IsEnabled = false;
@@ -57,6 +59,18 @@ namespace BertScout2026
             {
                 ShowError("Error loading data from database\n" + ex.Message);
             }
+        }
+
+        private void ClearFields()
+        {
+            AutoNumberOfCyclesPlus.Text = "0";
+            AutoBallsPerCyclePlus.Text = "0";
+            SetAutoRobotSpeed(0);
+        }
+
+        private void FillFields()
+        {
+            throw new NotImplementedException();
         }
 
         private void SaveButtonClicked(object? sender, EventArgs e)
@@ -72,282 +86,324 @@ namespace BertScout2026
             EntryTeamNumber.Focus();
         }
 
+        #region AutoNumberOfCycles
+
         private void AutoNumberOfCyclesPlusClicked(object? sender, EventArgs e)
         {
-            match.AutoNumberOfCycles++;
-            AutoNumberOfCyclesPlus.Text = match.AutoNumberOfCycles.ToString();
-            //SemanticScreenReader.Announce("Auto Number Of Cycles" + AutoNumberOfCyclesPlus.Text);
+            SetAutoNumberOfCycles(1);
             SaveData();
         }
 
         private void AutoNumberOfCyclesMinusClicked(object? sender, EventArgs e)
         {
-            if (match.AutoNumberOfCycles > 0)
+            SetAutoNumberOfCycles(-1);
+            SaveData();
+        }
+        private void SetAutoNumberOfCycles(int value)
+        {
+            if (match.AutoNumberOfCycles + value >= 0)
             {
-                match.AutoNumberOfCycles--;
-                AutoNumberOfCyclesPlus.Text = match.AutoNumberOfCycles.ToString();
-                //SemanticScreenReader.Announce("Auto Number Of Cycles" + AutoNumberOfCyclesPlus.Text);
-                SaveData();
+                match.AutoNumberOfCycles = match.AutoNumberOfCycles + value;
+                AutoNumberOfCyclesPlus.Text = (match.AutoNumberOfCycles + value).ToString();
             }
         }
+
+        #endregion
+        
+        #region AutoBallsPerCycle
+
         private void AutoBallsPerCyclePlusClicked(object? sender, EventArgs e)
         {
-            match.AutoBallsPerCycle++;
-            AutoBallsPerCyclePlus.Text = match.AutoBallsPerCycle.ToString();
-            //SemanticScreenReader.Announce("Auto Balls Per Cycle" + AutoBallsPerCyclePlus.Text);
+            SetAutoBallsPerCycle(1);
             SaveData();
         }
         private void AutoBallsPerCycleMinusClicked(object? sender, EventArgs e)
         {
-            if (match.AutoBallsPerCycle > 0)
+            SetAutoBallsPerCycle(-1);
+            SaveData();
+        }
+
+
+        private void SetAutoBallsPerCycle(int value)
+        {
+            if (match.AutoBallsPerCycle + value >= 0)
             {
-                match.AutoBallsPerCycle--;
-                AutoBallsPerCyclePlus.Text = match.AutoBallsPerCycle.ToString();
-                //SemanticScreenReader.Announce("Auto Balls Per Cycle" + AutoBallsPerCyclePlus.Text);
-                SaveData();
+                match.AutoBallsPerCycle = match.AutoBallsPerCycle + value;
+                AutoBallsPerCyclePlus.Text = (match.AutoBallsPerCycle + value).ToString();
             }
         }
 
+        #endregion
+
+        #region AutoRobotSpeed
+
         private void AutoRobotSpeedNoMovementClicked(object? sender, EventArgs e)
         {
-            match.AutoRobotSpeed = 0;
-            AutoRobotSpeedNoMovement.BackgroundColor = Colors.Green;
-            AutoRobotSpeedSlow.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedMedium.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedFast.BackgroundColor = Colors.Gray;
+            SetAutoRobotSpeed(0);
             SaveData();
         }
         private void AutoRobotSpeedSlowClicked(object? sender, EventArgs e)
         {
-            match.AutoRobotSpeed = 1;
-            AutoRobotSpeedNoMovement.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedSlow.BackgroundColor = Colors.Green;
-            AutoRobotSpeedMedium.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedFast.BackgroundColor = Colors.Gray;
+            SetAutoRobotSpeed(1);
             SaveData();
         }
         private void AutoRobotSpeedMediumClicked(object? sender, EventArgs e)
         {
-            match.AutoRobotSpeed = 2;
-            AutoRobotSpeedNoMovement.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedSlow.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedMedium.BackgroundColor = Colors.Green;
-            AutoRobotSpeedFast.BackgroundColor = Colors.Gray;
+            SetAutoRobotSpeed(2);
             SaveData();
         }
         private void AutoRobotSpeedFastClicked(object? sender, EventArgs e)
         {
-            match.AutoRobotSpeed = 3;
-            AutoRobotSpeedNoMovement.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedSlow.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedMedium.BackgroundColor = Colors.Gray;
-            AutoRobotSpeedFast.BackgroundColor = Colors.Green;
+            SetAutoRobotSpeed(3);
             SaveData();
         }
 
+        private void SetAutoRobotSpeed(int value)
+        {
+            match.AutoRobotSpeed = value;
+            AutoRobotSpeedNoMovement.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            AutoRobotSpeedSlow.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            AutoRobotSpeedMedium.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            AutoRobotSpeedFast.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
+
+        #region AutoFloorPickup
+
         private void AutoFloorPickupFalseClicked(object? sender, EventArgs e)
         {
-            match.AutoFloorPickup = false;
-            AutoFloorPickupFalse.BackgroundColor = Colors.Green;
-            AutoFloorPickupTrue.BackgroundColor = Colors.Gray;
+            SetAutoFloorPickup(false);
             SaveData();
         }
         private void AutoFloorPickupTrueClicked(object? sender, EventArgs e)
         {
-            match.AutoFloorPickup = true;
-            AutoFloorPickupFalse.BackgroundColor = Colors.Gray;
-            AutoFloorPickupTrue.BackgroundColor = Colors.Green;
+            SetAutoFloorPickup(true);
             SaveData();
         }
 
+        private void SetAutoFloorPickup(bool value)
+        {
+            match.AutoFloorPickup = value;
+            AutoFloorPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            AutoFloorPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
+
+        #region AutoHumanPlayerPickup
+
         private void AutoHumanPlayerPickupFalseClicked(object? sender, EventArgs e)
         {
-            match.AutoHumanPlayerPickup = false;
-            AutoHumanPlayerPickupFalse.BackgroundColor = Colors.Green;
-            AutoHumanPlayerPickupTrue.BackgroundColor = Colors.Gray;
+            SetAutoHumanPlayerPickup(false);
             SaveData();
         }
         private void AutoHumanPlayerPickupTrueClicked(object? sender, EventArgs e)
         {
-            match.AutoHumanPlayerPickup = true;
-            AutoHumanPlayerPickupFalse.BackgroundColor = Colors.Gray;
-            AutoHumanPlayerPickupTrue.BackgroundColor = Colors.Green;
+            SetAutoHumanPlayerPickup(true);
             SaveData();
         }
+        private void SetAutoHumanPlayerPickup(bool value)
+        {
+            match.AutoHumanPlayerPickup = value;
+            AutoHumanPlayerPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            AutoHumanPlayerPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
+
+        #region AutoClimbingLevel
+
         private void AutoClimbingNoClimbClicked(object? sender, EventArgs e)
         {
-            match.AutoClimbingLevel = 0;
-            AutoClimbingNoClimb.BackgroundColor = Colors.Green;
-            AutoClimbingLevel1.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel2.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel3.BackgroundColor = Colors.Gray;
+            SetAutoClimbingLevel(0);
             SaveData();
         }
         private void AutoClimbingLevel1Clicked(object? sender, EventArgs e)
         {
-            match.AutoClimbingLevel = 1;
-            AutoClimbingNoClimb.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel1.BackgroundColor = Colors.Green;
-            AutoClimbingLevel2.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel3.BackgroundColor = Colors.Gray;
+            SetAutoClimbingLevel(1);
             SaveData();
         }
         private void AutoClimbingLevel2Clicked(object? sender, EventArgs e)
         {
-            match.AutoClimbingLevel = 2;
-            AutoClimbingNoClimb.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel1.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel2.BackgroundColor = Colors.Green;
-            AutoClimbingLevel3.BackgroundColor = Colors.Gray;
+            SetAutoClimbingLevel(2);
             SaveData();
         }
         private void AutoClimbingLevel3Clicked(object? sender, EventArgs e)
         {
-            match.AutoClimbingLevel = 3;
-            AutoClimbingNoClimb.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel1.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel2.BackgroundColor = Colors.Gray;
-            AutoClimbingLevel3.BackgroundColor = Colors.Green;
+            SetAutoClimbingLevel(3);
             SaveData();
         }
+        private void SetAutoClimbingLevel(int value)
+        {
+            match.AutoClimbingLevel = value;
+            AutoClimbingNoClimb.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            AutoClimbingLevel1.BackgroundColor = value == 1 ? Colors.Green : Colors.Gray;
+            AutoClimbingLevel2.BackgroundColor = value == 2 ? Colors.Green : Colors.Gray;
+            AutoClimbingLevel3.BackgroundColor = value == 3 ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
+
+        #region TeleNumberOfCycles
 
         private void TeleNumberOfCyclesPlusClicked(object? sender, EventArgs e)
         {
-            match.TeleNumberOfCycles++;
-            TeleNumberOfCyclesPlus.Text = match.TeleNumberOfCycles.ToString();
-            //SemanticScreenReader.Announce("Tele Number Of Cycles" + TeleNumberOfCyclesPlus.Text);
+            SetTeleNumberOfCycles(1);
             SaveData();
         }
 
         private void TeleNumberOfCyclesMinusClicked(object? sender, EventArgs e)
         {
-            if (match.TeleNumberOfCycles > 0)
+            SetTeleNumberOfCycles(-1);
+            SaveData();
+        }
+        private void SetTeleNumberOfCycles(int value)
+        {
+            if (match.TeleNumberOfCycles + value >= 0)
             {
-                match.TeleNumberOfCycles--;
-                TeleNumberOfCyclesPlus.Text = match.TeleNumberOfCycles.ToString();
-                //SemanticScreenReader.Announce("Tele Number Of Cycles" + TeleNumberOfCyclesPlus.Text);
-                SaveData();
+                match.TeleNumberOfCycles = match.TeleNumberOfCycles + value;
+                TeleNumberOfCyclesPlus.Text = (match.TeleNumberOfCycles + value).ToString();
             }
         }
+
+        #endregion
+
+        #region TeleBallsPerCycle
+
         private void TeleBallsPerCyclePlusClicked(object? sender, EventArgs e)
         {
-            match.TeleBallsPerCycle++;
-            TeleBallsPerCyclePlus.Text = match.TeleBallsPerCycle.ToString();
-            //SemanticScreenReader.Announce("Teleop Balls Per Cycle" + TeleBallsPerCyclePlus.Text);
+            SetTeleBallsPerCycle(1);
             SaveData();
         }
         private void TeleBallsPerCycleMinusClicked(object? sender, EventArgs e)
         {
-            if (match.TeleBallsPerCycle > 0)
+            SetTeleBallsPerCycle(-1);
+            SaveData();
+        }
+
+
+        private void SetTeleBallsPerCycle(int value)
+        {
+            if (match.TeleBallsPerCycle + value >= 0)
             {
-                match.TeleBallsPerCycle--;
-                TeleBallsPerCyclePlus.Text = match.TeleBallsPerCycle.ToString();
-                //SemanticScreenReader.Announce("Teleop Balls Per Cycle" + TeleBallsPerCyclePlus.Text);
-                SaveData();
+                match.TeleBallsPerCycle = match.TeleBallsPerCycle + value;
+                TeleBallsPerCyclePlus.Text = (match.TeleBallsPerCycle + value).ToString();
             }
         }
+
+        #endregion
+
+        #region TeleRobotSpeed
+
         private void TeleRobotSpeedNoMovementClicked(object? sender, EventArgs e)
         {
-            match.TeleRobotSpeed = 0;
-            TeleRobotSpeedNoMovement.BackgroundColor = Colors.Green;
-            TeleRobotSpeedSlow.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedMedium.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedFast.BackgroundColor = Colors.Gray;
+            SetTeleRobotSpeed(0);
             SaveData();
         }
         private void TeleRobotSpeedSlowClicked(object? sender, EventArgs e)
         {
-            match.TeleRobotSpeed = 1;
-            TeleRobotSpeedNoMovement.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedSlow.BackgroundColor = Colors.Green;
-            TeleRobotSpeedMedium.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedFast.BackgroundColor = Colors.Gray;
+            SetTeleRobotSpeed(1);
             SaveData();
         }
         private void TeleRobotSpeedMediumClicked(object? sender, EventArgs e)
         {
-            match.TeleRobotSpeed = 2;
-            TeleRobotSpeedNoMovement.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedSlow.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedMedium.BackgroundColor = Colors.Green;
-            TeleRobotSpeedFast.BackgroundColor = Colors.Gray;
+            SetTeleRobotSpeed(2);
             SaveData();
         }
         private void TeleRobotSpeedFastClicked(object? sender, EventArgs e)
         {
-            match.TeleRobotSpeed = 3;
-            TeleRobotSpeedNoMovement.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedSlow.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedMedium.BackgroundColor = Colors.Gray;
-            TeleRobotSpeedFast.BackgroundColor = Colors.Green;
+            SetTeleRobotSpeed(3);
             SaveData();
         }
+
+        private void SetTeleRobotSpeed(int value)
+        {
+            match.TeleRobotSpeed = value;
+            TeleRobotSpeedNoMovement.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            TeleRobotSpeedSlow.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            TeleRobotSpeedMedium.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            TeleRobotSpeedFast.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
+
+        #region TeleFloorPickup
+
         private void TeleFloorPickupFalseClicked(object? sender, EventArgs e)
         {
-            match.TeleFloorPickup = false;
-            TeleFloorPickupFalse.BackgroundColor = Colors.Green;
-            TeleFloorPickupTrue.BackgroundColor = Colors.Gray;
+            SetTeleFloorPickup(false);
             SaveData();
         }
         private void TeleFloorPickupTrueClicked(object? sender, EventArgs e)
         {
-            match.TeleFloorPickup = true;
-            TeleFloorPickupFalse.BackgroundColor = Colors.Gray;
-            TeleFloorPickupTrue.BackgroundColor = Colors.Green;
+            SetTeleFloorPickup(true);
             SaveData();
         }
 
+        private void SetTeleFloorPickup(bool value)
+        {
+            match.TeleFloorPickup = value;
+            TeleFloorPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            TeleFloorPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
+
+        #region TeleHumanPlayerPickup
+
         private void TeleHumanPlayerPickupFalseClicked(object? sender, EventArgs e)
         {
-            match.TeleHumanPlayerPickup = false;
-            TeleHumanPlayerPickupFalse.BackgroundColor = Colors.Green;
-            TeleHumanPlayerPickupTrue.BackgroundColor = Colors.Gray;
+            SetTeleHumanPlayerPickup(false);
             SaveData();
         }
         private void TeleHumanPlayerPickupTrueClicked(object? sender, EventArgs e)
         {
-            match.TeleHumanPlayerPickup = true;
-            TeleHumanPlayerPickupFalse.BackgroundColor = Colors.Gray;
-            TeleHumanPlayerPickupTrue.BackgroundColor = Colors.Green;
+            SetTeleHumanPlayerPickup(true);
             SaveData();
         }
 
+        private void SetTeleHumanPlayerPickup(bool value)
+        {
+            match.TeleHumanPlayerPickup = value;
+            TeleHumanPlayerPickupFalse.BackgroundColor = value ? Colors.Green : Colors.Gray;
+            TeleHumanPlayerPickupTrue.BackgroundColor = value ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
+
+        #region TeleClimbingLevel
+
         private void TeleClimbingNoClimbClicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 0;
-            TeleClimbingNoClimb.BackgroundColor = Colors.Green;
-            TeleClimbingLevel1.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel2.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel3.BackgroundColor = Colors.Gray;
+            SetTeleClimbingLevel(0);
             SaveData();
         }
         private void TeleClimbingLevel1Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 1;
-            TeleClimbingNoClimb.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel1.BackgroundColor = Colors.Green;
-            TeleClimbingLevel2.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel3.BackgroundColor = Colors.Gray;
+            SetTeleClimbingLevel(1);
             SaveData();
         }
         private void TeleClimbingLevel2Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 2;
-            TeleClimbingNoClimb.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel1.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel2.BackgroundColor = Colors.Green;
-            TeleClimbingLevel3.BackgroundColor = Colors.Gray;
+            SetTeleClimbingLevel(2);
             SaveData();
         }
         private void TeleClimbingLevel3Clicked(object? sender, EventArgs e)
         {
-            match.TeleClimbingLevel = 3;
-            TeleClimbingNoClimb.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel1.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel2.BackgroundColor = Colors.Gray;
-            TeleClimbingLevel3.BackgroundColor = Colors.Green;
+            SetTeleClimbingLevel(3);
             SaveData();
         }
+        private void SetTeleClimbingLevel(int value)
+        {
+            match.TeleClimbingLevel = value;
+            TeleClimbingNoClimb.BackgroundColor = value == 0 ? Colors.Green : Colors.Gray;
+            TeleClimbingLevel1.BackgroundColor = value == 1 ? Colors.Green : Colors.Gray;
+            TeleClimbingLevel2.BackgroundColor = value == 2 ? Colors.Green : Colors.Gray;
+            TeleClimbingLevel3.BackgroundColor = value == 3 ? Colors.Green : Colors.Gray;
+        }
+
+        #endregion
 
         //private void CommentPicker_SelectedIndexChanged(object sender, EventArgs e)
         //{
@@ -372,7 +428,7 @@ namespace BertScout2026
         //    }
         //    item.Comments = temp;
         //}
-         
+
         private void ScoreStar1Clicked(object? sender, EventArgs e)
         {
             match.TeleClimbingLevel = 1;
@@ -426,12 +482,6 @@ namespace BertScout2026
 
         private void SaveData()
         {
-<<<<<<< HEAD
-            match.Changed = true;
-            var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
-            taskSave.Wait();
-
-=======
             try
             {
                 match.Changed = true;
@@ -449,7 +499,6 @@ namespace BertScout2026
             MainLayout.IsVisible = false;
             ErrorLayout.IsVisible = true;
             ErrorMsg.Text = message;
->>>>>>> scott
         }
     }
 }
