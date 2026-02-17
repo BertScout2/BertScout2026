@@ -1,0 +1,11 @@
+in Project.*proj
+
+<MauiXamlInflator>SourceGen</MauiXamlInflator>
+
+Dependencies
+Windows
+Analyzers
+Microsoft.Maui.Controls.SourceGen
+ .XamlGenerator
+ => MainPage.xaml.xsg.cs
+ 
