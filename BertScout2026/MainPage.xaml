@@ -671,21 +671,20 @@
                         />
             </HorizontalStackLayout> -->
 
-            <HorizontalStackLayout>
+            <Grid>
                 <Entry
                     x:Name="Comments"
                     Placeholder="Put in comments"
                     PlaceholderColor="Gray"
                     WidthRequest="170"
-                    MaxLength="15"
+                    MaxLength="250"
                     Margin="10,5,0,0"
-                    HorizontalOptions="CenterAndExpand"
                     Text=""
                     IsEnabled="true"
                     FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                     TextChanged="Comments_TextChanged"
                     />
-            </HorizontalStackLayout>
+            </Grid>
 
             <HorizontalStackLayout
                 HorizontalOptions="Center">
