@@ -29,14 +29,20 @@ namespace BertScout2026
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text) || string.IsNullOrWhiteSpace(EntryMatchNumber.Text) ||
-                    int.Parse(EntryTeamNumber.Text) <= 0 || int.Parse(EntryMatchNumber.Text) <= 0)
+                if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text) || 
+                    int.Parse(EntryTeamNumber.Text) <= 0)
                 {
-                    ShowError("Match Number and Team Number cannot be empty");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(EntryMatchNumber.Text) ||
+                    int.Parse(EntryMatchNumber.Text) <= 0)
+                {
                     return;
                 }
                 var teamNum = int.Parse(EntryTeamNumber.Text);
                 var matchNum = int.Parse(EntryMatchNumber.Text);
+                EntryTeamNumber.Text = teamNum.ToString();
+                EntryMatchNumber.Text = matchNum.ToString();
                 var taskLoad = Task.Run(() => db.GetMatchAsync(teamNum, matchNum));
                 var existingMatch = taskLoad.Result;
                 if (existingMatch != null)
