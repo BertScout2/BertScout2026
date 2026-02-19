@@ -42,7 +42,7 @@
 
                     <Entry
                         x:Name="EntryTeamNumber"
-                        WidthRequest="90"
+                        WidthRequest="70"
                         Keyboard="Numeric"
                         MaxLength="5"
                         IsEnabled="True"
@@ -115,12 +115,14 @@
                 </Grid>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Auto Cycles:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -129,9 +131,9 @@
                         x:Name="AutoNumberOfCyclesPlus"
                         Text="0"
                         Clicked="AutoNumberOfCyclesPlusClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Green"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -140,18 +142,20 @@
                         Clicked="AutoNumberOfCyclesMinusClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Auto Balls Per Cycle:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -160,9 +164,9 @@
                         x:Name="AutoBallsPerCyclePlus"
                         Text="0"
                         Clicked="AutoBallsPerCyclePlusClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Green"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -171,29 +175,31 @@
                         Clicked="AutoBallsPerCycleMinusClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Auto Robot Speed:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
 
                     <Button
                         x:Name="AutoRobotSpeedNoMovement"
-                        Text="No movement"
+                        Text="None"
                         Clicked="AutoRobotSpeedNoMovementClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="130"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -202,7 +208,7 @@
                         Clicked="AutoRobotSpeedSlowClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -211,7 +217,7 @@
                         Clicked="AutoRobotSpeedMediumClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="90"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -220,18 +226,20 @@
                         Clicked="AutoRobotSpeedFastClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Auto Floor Pickup:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -240,9 +248,9 @@
                         x:Name="AutoFloorPickupFalse"
                         Text="No"
                         Clicked="AutoFloorPickupFalseClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="50"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -251,18 +259,20 @@
                         Clicked="AutoFloorPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Auto Human Player Pickup:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -271,9 +281,9 @@
                         x:Name="AutoHumanPlayerPickupFalse"
                         Text="No"
                         Clicked="AutoHumanPlayerPickupFalseClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="50"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -282,29 +292,31 @@
                         Clicked="AutoHumanPlayerPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Auto Climbing Level:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
 
                     <Button
                         x:Name="AutoClimbingNoClimb"
-                        Text="No climbing"
+                        Text="None"
                         Clicked="AutoClimbingNoClimbClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="110"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -313,7 +325,7 @@
                         Clicked="AutoClimbingLevel1Clicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -322,7 +334,7 @@
                         Clicked="AutoClimbingLevel2Clicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -331,7 +343,7 @@
                         Clicked="AutoClimbingLevel3Clicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
@@ -353,12 +365,14 @@
                 </Grid>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Teleop Cycles:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -367,9 +381,9 @@
                         x:Name="TeleNumberOfCyclesPlus"
                         Text="0"
                         Clicked="TeleNumberOfCyclesPlusClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Green"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -378,18 +392,20 @@
                         Clicked="TeleNumberOfCyclesMinusClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Balls Per Cycle in Teleop:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -398,9 +414,9 @@
                         x:Name="TeleBallsPerCyclePlus"
                         Text="0"
                         Clicked="TeleBallsPerCyclePlusClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Green"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -409,29 +425,31 @@
                         Clicked="TeleBallsPerCycleMinusClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Teleop Robot Speed:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
 
                     <Button
                         x:Name="TeleRobotSpeedNoMovement"
-                        Text="No movement"
+                        Text="None"
                         Clicked="TeleRobotSpeedNoMovementClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="130"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -440,7 +458,7 @@
                         Clicked="TeleRobotSpeedSlowClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -449,7 +467,7 @@
                         Clicked="TeleRobotSpeedMediumClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="90"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -458,18 +476,20 @@
                         Clicked="TeleRobotSpeedFastClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Teleop Floor Pickup:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -478,9 +498,9 @@
                         x:Name="TeleFloorPickupFalse"
                         Text="No"
                         Clicked="TeleFloorPickupFalseClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="50"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -489,18 +509,20 @@
                         Clicked="TeleFloorPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Teleop Human Player Pickup:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -509,9 +531,9 @@
                         x:Name="TeleHumanPlayerPickupFalse"
                         Text="No"
                         Clicked="TeleHumanPlayerPickupFalseClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="50"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -520,29 +542,31 @@
                         Clicked="TeleHumanPlayerPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="60"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Teleop Climbing Level:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
 
                     <Button
                         x:Name="TeleClimbingNoClimb"
-                        Text="No climbing"
+                        Text="None"
                         Clicked="TeleClimbingNoClimbClicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="110"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -551,7 +575,7 @@
                         Clicked="TeleClimbingLevel1Clicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -560,7 +584,7 @@
                         Clicked="TeleClimbingLevel2Clicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
@@ -569,7 +593,7 @@
                         Clicked="TeleClimbingLevel3Clicked"
                         Margin="10,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="70"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
@@ -635,12 +659,14 @@
                 </HorizontalStackLayout> -->
 
                 <HorizontalStackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="0,10,0,0"
                     >
 
                     <Label
                         Text="Score:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
                         />
@@ -649,54 +675,54 @@
                         x:Name="ScoreStar0"
                         Text="0"
                         Clicked="ScoreStar0Clicked"
-                        Margin="10,0,0,0"
+                        Margin="0,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="50"
                         HorizontalOptions="Center" />
 
                     <Button
                         x:Name="ScoreStar1"
                         Text="1"
                         Clicked="ScoreStar1Clicked"
-                        Margin="10,0,0,0"
+                        Margin="5,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="50"
                         HorizontalOptions="Center" />
 
                     <Button
                         x:Name="ScoreStar2"
                         Text="2"
                         Clicked="ScoreStar2Clicked"
-                        Margin="10,0,0,0"
+                        Margin="5,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="50"
                         HorizontalOptions="Center" />
 
                     <Button
                         x:Name="ScoreStar3"
                         Text="3"
                         Clicked="ScoreStar3Clicked"
-                        Margin="10,0,0,0"
+                        Margin="5,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="50"
                         HorizontalOptions="Center" />
 
                     <Button
                         x:Name="ScoreStar4"
                         Text="4"
                         Clicked="ScoreStar4Clicked"
-                        Margin="10,0,0,0"
+                        Margin="5,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="50"
                         HorizontalOptions="Center" />
 
                     <Button
                         x:Name="ScoreStar5"
                         Text="5"
                         Clicked="ScoreStar5Clicked"
-                        Margin="10,0,0,0"
+                        Margin="5,0,0,0"
                         BackgroundColor="Gray"
-                        WidthRequest="30"
+                        WidthRequest="50"
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
