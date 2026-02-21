@@ -17,4 +17,22 @@
         </Tab>
     </FlyoutItem>
 
+    <FlyoutItem Title="Match Schedule">
+        <Tab>
+            <ShellContent
+                Title="Match Schedule"
+                ContentTemplate="{DataTemplate local:MatchSchedulePage}"
+                />
+        </Tab>    
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Airtable">
+        <Tab>
+            <ShellContent
+                Title="Airtable"
+                ContentTemplate="{DataTemplate local:AirtablePage}"
+                />
+        </Tab>
+    </FlyoutItem>
+    
 </Shell>
