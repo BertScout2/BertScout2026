@@ -542,5 +542,45 @@ namespace BertScout2026
             ErrorLayout.IsVisible = true;
             ErrorMsg.Text = message;
         }
+
+        private void AutoRouteNone_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AutoRouteOver_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AutoRouteUnder_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AutoRouteBoth_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TeleRouteNone_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TeleRouteOver_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TeleRouteUnder_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TeleRouteBoth_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

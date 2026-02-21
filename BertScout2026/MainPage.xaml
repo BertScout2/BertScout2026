@@ -303,6 +303,61 @@
                     >
 
                     <Label
+                        Text="Auto Travel Route:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
+                        Style="{StaticResource SubHeadline}"
+                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        />
+
+                    <Button
+                        x:Name="AutoRouteNone"
+                        Text="None"
+                        Clicked="AutoRouteNone_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
+
+                    <Button
+                        x:Name="AutoRouteOver"
+                        Text="Over"
+                        Clicked="AutoRouteOver_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
+
+                    <Button
+                        x:Name="AutoRouteUnder"
+                        Text="Under"
+                        Clicked="AutoRouteUnder_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
+
+                    <Button
+                        x:Name="AutoRouteBoth"
+                        Text="Both"
+                        Clicked="AutoRouteBoth_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Start"
+                    Margin="0,10,0,0"
+                    >
+
+                    <Label
                         Text="Auto Climbing Level:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
@@ -544,6 +599,60 @@
                         BackgroundColor="Gray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Start"
+                    Margin="0,10,0,0"
+                    >
+
+                    <Label
+                        Text="Tele Travel Route:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
+                        Style="{StaticResource SubHeadline}"
+                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        />
+
+                    <Button
+                        x:Name="TeleRouteNone"
+                        Text="None"
+                        Clicked="TeleRouteNone_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
+
+                    <Button
+                        x:Name="TeleRouteOver"
+                        Text="Over"
+                        Clicked="TeleRouteOver_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
+
+                    <Button
+                        x:Name="TeleRouteUnder"
+                        Text="Under"
+                        Clicked="TeleRouteUnder_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
+
+                    <Button
+                        x:Name="TeleRouteBoth"
+                        Text="Both"
+                        Clicked="TeleRouteBoth_Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="Gray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        />
 
                 </HorizontalStackLayout>
 

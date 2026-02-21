@@ -25,7 +25,17 @@
                 />
         </Tab>    
     </FlyoutItem>
-    
+
+
+    <FlyoutItem Title="List Matches">
+        <Tab>
+            <ShellContent
+                Title="List Matches"
+                ContentTemplate="{DataTemplate local:ListMatchesPage}"
+                />
+        </Tab>
+    </FlyoutItem>
+
     <FlyoutItem Title="Airtable">
         <Tab>
             <ShellContent
@@ -34,5 +44,14 @@
                 />
         </Tab>
     </FlyoutItem>
-    
+
+    <FlyoutItem Title="About">
+        <Tab>
+            <ShellContent
+                Title="About"
+                ContentTemplate="{DataTemplate local:AboutPage}"
+                />
+        </Tab>
+    </FlyoutItem>
+
 </Shell>

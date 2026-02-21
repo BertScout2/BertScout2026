@@ -17,6 +17,7 @@ namespace BertScout2026.Models
         public bool AutoFloorPickup { get; set; }
         public bool AutoHumanPlayerPickup { get; set; }
         public int AutoClimbingLevel { get; set; }
+        public int AutoRoute { get; set; }
 
         // Teleop properties
         public int TeleNumberOfCycles { get; set; }
@@ -25,6 +26,7 @@ namespace BertScout2026.Models
         public bool TeleFloorPickup { get; set; }
         public bool TeleHumanPlayerPickup { get; set; }
         public int TeleClimbingLevel { get; set; }
+        public int TeleRoute { get; set; }
 
         // End game
         public int Score { get; set; }
