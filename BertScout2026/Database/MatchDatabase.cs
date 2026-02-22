@@ -49,7 +49,7 @@ public class MatchDatabase : BaseDatabase
             @$"SELECT
             {Match.MatchFieldsWithId()}
             FROM Match 
-            ORDER BY Id";
+            ORDER BY MatchNumber";
         await using var reader = await selectCmd.ExecuteReaderAsync();
         var matches = new List<Match>();
         while (await reader.ReadAsync())
@@ -69,7 +69,7 @@ public class MatchDatabase : BaseDatabase
             {Match.MatchFieldsWithId()}
             FROM Match 
             WHERE Changed = 1
-            ORDER BY Id";
+            ORDER BY MatchNumber";
         await using var reader = await selectCmd.ExecuteReaderAsync();
         var matches = new List<Match>();
         while (await reader.ReadAsync())
@@ -89,7 +89,7 @@ public class MatchDatabase : BaseDatabase
             {Match.MatchFieldsWithId()}
             FROM Match 
             WHERE TeamNumber = @team
-            ORDER BY MatchNumber, Id";
+            ORDER BY MatchNumber";
         selectCmd.Parameters.AddWithValue("@team", team);
         await using var reader = await selectCmd.ExecuteReaderAsync();
         var matches = new List<Match>();
@@ -100,7 +100,7 @@ public class MatchDatabase : BaseDatabase
         return matches;
     }
 
-    public async Task<Match?> GetMatchAsync(int team, int match)
+    public async Task<Match?> GetMatchAsync(int match)
     {
         await InitMatchDB();
         await Database.OpenAsync();
@@ -109,8 +109,7 @@ public class MatchDatabase : BaseDatabase
             @$"SELECT
             {Match.MatchFieldsWithId()}
             FROM Match 
-            WHERE TeamNumber = @team AND MatchNumber = @match";
-        selectCmd.Parameters.AddWithValue("@team", team);
+            WHERE MatchNumber = @match";
         selectCmd.Parameters.AddWithValue("@match", match);
         await using var reader = await selectCmd.ExecuteReaderAsync();
         if (await reader.ReadAsync())
@@ -120,24 +119,24 @@ public class MatchDatabase : BaseDatabase
         return null;
     }
 
-    public async Task<Match?> GetMatchByIdAsync(int id)
-    {
-        await InitMatchDB();
-        await Database.OpenAsync();
-        var selectCmd = Database.CreateCommand();
-        selectCmd.CommandText =
-            @$"SELECT
-            {Match.MatchFieldsWithId()}
-            FROM Match 
-            WHERE Id = @id";
-        selectCmd.Parameters.AddWithValue("@id", id);
-        await using var reader = await selectCmd.ExecuteReaderAsync();
-        if (await reader.ReadAsync())
-        {
-            return Match.FromReader(reader);
-        }
-        return null;
-    }
+    //public async Task<Match?> GetMatchByIdAsync(int id)
+    //{
+    //    await InitMatchDB();
+    //    await Database.OpenAsync();
+    //    var selectCmd = Database.CreateCommand();
+    //    selectCmd.CommandText =
+    //        @$"SELECT
+    //        {Match.MatchFieldsWithId()}
+    //        FROM Match 
+    //        WHERE Id = @id";
+    //    selectCmd.Parameters.AddWithValue("@id", id);
+    //    await using var reader = await selectCmd.ExecuteReaderAsync();
+    //    if (await reader.ReadAsync())
+    //    {
+    //        return Match.FromReader(reader);
+    //    }
+    //    return null;
+    //}
 
     public async Task<int> SaveMatchItemAsync(Match item)
     {
@@ -150,7 +149,7 @@ public class MatchDatabase : BaseDatabase
         }
         else
         {
-            var oldItem = await GetMatchAsync(item.TeamNumber, item.MatchNumber);
+            var oldItem = await GetMatchAsync(item.MatchNumber);
             if (oldItem != null)
             {
                 item.Id = oldItem.Id;
@@ -171,18 +170,17 @@ public class MatchDatabase : BaseDatabase
         return count;
     }
 
-    public async Task<int> DeleteMatchItemAsync(int team, int match)
-    {
-        await InitMatchDB();
-        await Database.OpenAsync();
-        var cmd = Database.CreateCommand();
-        cmd.CommandText =
-            @$"DELETE FROM Match 
-            WHERE TeamNumber = @team AND MatchNumber = @match";
-        cmd.Parameters.AddWithValue("@team", team);
-        cmd.Parameters.AddWithValue("@match", match);
-        var count = await cmd.ExecuteNonQueryAsync();
-        Database.Close();
-        return count;
-    }
+    //public async Task<int> DeleteMatchItemAsync(int match)
+    //{
+    //    await InitMatchDB();
+    //    await Database.OpenAsync();
+    //    var cmd = Database.CreateCommand();
+    //    cmd.CommandText =
+    //        @$"DELETE FROM Match 
+    //        WHERE MatchNumber = @match";
+    //    cmd.Parameters.AddWithValue("@match", match);
+    //    var count = await cmd.ExecuteNonQueryAsync();
+    //    Database.Close();
+    //    return count;
+    //}
 }

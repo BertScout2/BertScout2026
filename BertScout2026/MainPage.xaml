@@ -34,27 +34,10 @@
                     Spacing="0">
 
                     <Label
-                        Text="Team#:"
-                        Margin="10,12,10,0"
-                        Style="{StaticResource Headline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
-                        />
-
-                    <Entry
-                        x:Name="EntryTeamNumber"
-                        WidthRequest="70"
-                        Keyboard="Numeric"
-                        MaxLength="5"
-                        IsEnabled="True"
-                        Text=""
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
-                        />
-
-                    <Label
                         Text="Match#:"
                         Margin="10,12,10,0"
                         Style="{StaticResource Headline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Entry
@@ -64,7 +47,24 @@
                         MaxLength="3"
                         IsEnabled="True"
                         Text=""
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                    <Label
+                        Text="Team#:"
+                        Margin="10,12,10,0"
+                        Style="{StaticResource Headline}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                    <Entry
+                        x:Name="EntryTeamNumber"
+                        WidthRequest="70"
+                        Keyboard="Numeric"
+                        MaxLength="5"
+                        IsEnabled="True"
+                        Text=""
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -109,7 +109,7 @@
                         TextColor="White"
                         Padding="0,0,0,10"
                         Style="{StaticResource Headline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                 </Grid>
@@ -124,7 +124,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -157,7 +157,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -190,7 +190,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -241,7 +241,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -274,7 +274,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -307,7 +307,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -362,7 +362,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -415,7 +415,7 @@
                         TextColor="White"
                         Padding="0,0,0,10"
                         Style="{StaticResource Headline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
                 </Grid>
 
@@ -429,7 +429,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -462,7 +462,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -495,7 +495,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -546,7 +546,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -579,7 +579,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -611,7 +611,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -666,7 +666,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -719,7 +719,7 @@
                         TextColor="White"
                         Padding="0,0,0,10"
                         Style="{StaticResource Headline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                 </Grid>
@@ -731,7 +731,7 @@
 
                         <Label
                             Text="Select comments:"
-                            FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                             />
 
                         <Picker
@@ -743,7 +743,7 @@
                             HorizontalAlignment="FillAndExpand"
                             HeightRequest="32"
                             Margin="10,0,0,0"
-                            FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                             />
 
                 </HorizontalStackLayout>
@@ -756,14 +756,14 @@
                             HeightRequest="150"
                             BackgroundColor="{AppThemeBinding Light=White, Dark=Green}"
                             Text=""
-                            FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                             />
 
                     <Label
                             Text=""
                             Margin="0"
                             HeightRequest="300"
-                            FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                             />
                 </HorizontalStackLayout> -->
 
@@ -777,7 +777,7 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
@@ -845,7 +845,7 @@
                         Grid.Row="0"
                         SelectedIndexChanged="CommentPicker_SelectedIndexChanged"
                         Margin="10,0,0,0"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />-->
 
                     <Editor
@@ -858,7 +858,7 @@
                         Margin="10,5,10,10"
                         Text=""
                         IsEnabled="true"
-                        FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         TextChanged="Comments_TextChanged"
                         />
 
@@ -877,7 +877,7 @@
                     x:Name="ErrorMsg"
                     Text="ERROR"
                     TextColor="Red"
-                    FontSize="{OnPlatform WinUI=Medium, Android=Medium}"
+                    FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                 />
 
             </VerticalStackLayout>

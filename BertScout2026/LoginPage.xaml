@@ -3,17 +3,14 @@
     x:DataType="ContentPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="BertScout2026.ListMatchesPage"
-    Title="ListMatchesPage">
+    x:Class="BertScout2026.LoginPage"
+    Title="LoginPage">
     
     <VerticalStackLayout>
-        
         <Label 
-            Text="List Matches!"
+            Text="Login Page"
             VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            />
-        
+            HorizontalOptions="Center" />
     </VerticalStackLayout>
     
 </ContentPage>

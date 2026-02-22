@@ -25,40 +25,40 @@ public class BaseModel
     {
         return
             @"Id INTEGER PRIMARY KEY AUTOINCREMENT
-, Uuid TEXT NOT NULL
-, AirtableId TEXT NOT NULL
-, Changed INTEGER NOT NULL";
+            , Uuid TEXT NOT NULL
+            , AirtableId TEXT NOT NULL
+            , Changed INTEGER NOT NULL";
     }
 
     public static string BaseFieldsWithID()
     {
         return
             @$"Id
-, {BaseFields()}";
+            , {BaseFields()}";
     }
 
     public static string BaseFields()
     {
         return
             @"Uuid
-, AirtableId
-, Changed";
+            , AirtableId
+            , Changed";
     }
 
     public string BaseAddValues()
     {
         return
             @$"'{(Uuid != "" ? Uuid : Guid.NewGuid().ToString())}'
-, '{AirtableId}'
-, {(Changed ? 1 : 0)}";
+            , '{AirtableId}'
+            , {(Changed ? 1 : 0)}";
     }
 
     public string BaseUpdateValues()
     {
         return
             @$"Uuid = '{(Uuid != "" ? Uuid : Guid.NewGuid().ToString())}'
-, AirtableId = '{AirtableId}'
-, Changed = {(Changed ? 1 : 0)}";
+            , AirtableId = '{AirtableId}'
+            , Changed = {(Changed ? 1 : 0)}";
     }
 
     public void BaseFromReader(SqliteDataReader reader)
