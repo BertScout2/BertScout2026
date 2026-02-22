@@ -107,12 +107,14 @@ namespace BertScout2026
             SetAutoRobotSpeed(match.AutoRobotSpeed);
             SetAutoFloorPickup(match.AutoFloorPickup);
             SetAutoHumanPlayerPickup(match.AutoHumanPlayerPickup);
+            SetAutoRoute(match.AutoRoute);
             SetAutoClimbingLevel(match.AutoClimbingLevel);
             SetTeleNumberOfCycles(match.TeleNumberOfCycles);
             SetTeleBallsPerCycle(match.TeleBallsPerCycle);
             SetTeleRobotSpeed(match.TeleRobotSpeed);
             SetTeleFloorPickup(match.TeleFloorPickup);
             SetTeleHumanPlayerPickup(match.TeleHumanPlayerPickup);
+            SetTeleRoute(match.TeleRoute);
             SetTeleClimbingLevel(match.TeleClimbingLevel);
             SetScoreStar(match.Score);
             SetComments(match.Comments);

@@ -141,7 +141,7 @@
                         Text="-"
                         Clicked="AutoNumberOfCyclesMinusClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -174,7 +174,7 @@
                         Text="-"
                         Clicked="AutoBallsPerCycleMinusClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -198,7 +198,7 @@
                         Text="None"
                         Clicked="AutoRobotSpeedNoMovementClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -207,7 +207,7 @@
                         Text="Slow"
                         Clicked="AutoRobotSpeedSlowClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -216,7 +216,7 @@
                         Text="Medium"
                         Clicked="AutoRobotSpeedMediumClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -225,7 +225,7 @@
                         Text="Fast"
                         Clicked="AutoRobotSpeedFastClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -249,7 +249,7 @@
                         Text="No"
                         Clicked="AutoFloorPickupFalseClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -258,7 +258,7 @@
                         Text="Yes"
                         Clicked="AutoFloorPickupTrueClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -282,7 +282,7 @@
                         Text="No"
                         Clicked="AutoHumanPlayerPickupFalseClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -291,7 +291,7 @@
                         Text="Yes"
                         Clicked="AutoHumanPlayerPickupTrueClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -315,7 +315,7 @@
                         Text="None"
                         Clicked="AutoRouteNone_Clicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -324,8 +324,8 @@
                         x:Name="AutoRouteOver"
                         Text="Over"
                         Clicked="AutoRouteOver_Clicked"
-                        Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -334,8 +334,8 @@
                         x:Name="AutoRouteUnder"
                         Text="Under"
                         Clicked="AutoRouteUnder_Clicked"
-                        Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -344,8 +344,8 @@
                         x:Name="AutoRouteBoth"
                         Text="Both"
                         Clicked="AutoRouteBoth_Clicked"
-                        Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -370,7 +370,7 @@
                         Text="None"
                         Clicked="AutoClimbingNoClimbClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -379,7 +379,7 @@
                         Text="L1"
                         Clicked="AutoClimbingLevel1Clicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -388,7 +388,7 @@
                         Text="L2"
                         Clicked="AutoClimbingLevel2Clicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -397,7 +397,7 @@
                         Text="L3"
                         Clicked="AutoClimbingLevel3Clicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -446,7 +446,7 @@
                         Text="-"
                         Clicked="TeleNumberOfCyclesMinusClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -479,7 +479,7 @@
                         Text="-"
                         Clicked="TeleBallsPerCycleMinusClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -503,7 +503,7 @@
                         Text="None"
                         Clicked="TeleRobotSpeedNoMovementClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -512,7 +512,7 @@
                         Text="Slow"
                         Clicked="TeleRobotSpeedSlowClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -521,7 +521,7 @@
                         Text="Medium"
                         Clicked="TeleRobotSpeedMediumClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -530,7 +530,7 @@
                         Text="Fast"
                         Clicked="TeleRobotSpeedFastClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -554,7 +554,7 @@
                         Text="No"
                         Clicked="TeleFloorPickupFalseClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -563,7 +563,7 @@
                         Text="Yes"
                         Clicked="TeleFloorPickupTrueClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -587,7 +587,7 @@
                         Text="No"
                         Clicked="TeleHumanPlayerPickupFalseClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -596,7 +596,7 @@
                         Text="Yes"
                         Clicked="TeleHumanPlayerPickupTrueClicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -619,7 +619,7 @@
                         Text="None"
                         Clicked="TeleRouteNone_Clicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -628,8 +628,8 @@
                         x:Name="TeleRouteOver"
                         Text="Over"
                         Clicked="TeleRouteOver_Clicked"
-                        Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -638,8 +638,8 @@
                         x:Name="TeleRouteUnder"
                         Text="Under"
                         Clicked="TeleRouteUnder_Clicked"
-                        Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -648,8 +648,8 @@
                         x:Name="TeleRouteBoth"
                         Text="Both"
                         Clicked="TeleRouteBoth_Clicked"
-                        Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center"
                         />
@@ -674,7 +674,7 @@
                         Text="None"
                         Clicked="TeleClimbingNoClimbClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -683,7 +683,7 @@
                         Text="L1"
                         Clicked="TeleClimbingLevel1Clicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -692,7 +692,7 @@
                         Text="L2"
                         Clicked="TeleClimbingLevel2Clicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -701,7 +701,7 @@
                         Text="L3"
                         Clicked="TeleClimbingLevel3Clicked"
                         Margin="10,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
@@ -785,7 +785,7 @@
                         Text="0"
                         Clicked="ScoreStar0Clicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="50"
                         HorizontalOptions="Center" />
 
@@ -794,7 +794,7 @@
                         Text="1"
                         Clicked="ScoreStar1Clicked"
                         Margin="5,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="50"
                         HorizontalOptions="Center" />
 
@@ -803,7 +803,7 @@
                         Text="2"
                         Clicked="ScoreStar2Clicked"
                         Margin="5,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="50"
                         HorizontalOptions="Center" />
 
@@ -812,7 +812,7 @@
                         Text="3"
                         Clicked="ScoreStar3Clicked"
                         Margin="5,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="50"
                         HorizontalOptions="Center" />
 
@@ -821,7 +821,7 @@
                         Text="4"
                         Clicked="ScoreStar4Clicked"
                         Margin="5,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="50"
                         HorizontalOptions="Center" />
 
@@ -830,7 +830,7 @@
                         Text="5"
                         Clicked="ScoreStar5Clicked"
                         Margin="5,0,0,0"
-                        BackgroundColor="Gray"
+                        BackgroundColor="LightGray"
                         WidthRequest="50"
                         HorizontalOptions="Center" />
 
@@ -852,7 +852,7 @@
                         x:Name="Comments"
                         Grid.Row="0"
                         Placeholder="Put in comments"
-                        PlaceholderColor="Gray"
+                        PlaceholderColor="LightGray"
                         HorizontalOptions="Fill"
                         MaxLength="250"
                         Margin="10,5,10,10"
