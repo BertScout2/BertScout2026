@@ -5,12 +5,43 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="BertScout2026.LoginPage"
     Title="LoginPage">
-    
-    <VerticalStackLayout>
-        <Label 
-            Text="Login Page"
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        >
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+
+            <Label 
+            Text="Scouter Name:"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            />
+
+            <Entry
+                x:Name="ScouterName" 
+                Text=""
+                WidthRequest="100"
+                MaxLength="20"
+                />
+
+            <Button
+                x:Name="SaveButton"
+                Text="Save"
+                Margin="10,0,0,0"
+                Clicked="SaveButton_Clicked"
+                />
+
+            <Button
+                x:Name="ClearButton"
+                Text="Clear"
+                Margin="10,0,0,0"
+                Clicked="ClearButton_Clicked"
+                />
+
+        </HorizontalStackLayout>
+
     </VerticalStackLayout>
-    
+
 </ContentPage>

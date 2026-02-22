@@ -6,4 +6,15 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void SaveButton_Clicked(object sender, EventArgs e)
+    {
+        Global.ScouterName = ScouterName.Text;
+    }
+
+    private void ClearButton_Clicked(object sender, EventArgs e)
+    {
+        ScouterName.Text = "";
+        Global.ScouterName = "";
+    }
 }

@@ -10,8 +10,6 @@ namespace BertScout2026
 
         //public string AppVersion => $"Bert Scout 2026 - Version {AppInfo.VersionString}";
 
-        public string ScoutName => "Scott";
-
         private readonly Color ColorButtonOn = Colors.Green;
         private readonly Color ColorButtonOff = Colors.LightGray;
 
@@ -30,6 +28,11 @@ namespace BertScout2026
 
         private void StartButtonClicked(object? sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(Global.ScouterName))
+            {
+                ShowError("Please login before stand scouting");
+            }
+            ScoutNameDisplay.Text = Global.ScouterName;
             try
             {
                 if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text) ||
@@ -64,7 +67,7 @@ namespace BertScout2026
                     match = new Match(matchNum)
                     {
                         TeamNumber = teamNum,
-                        ScoutName = ScoutName
+                        ScoutName = Global.ScouterName
                     };
                     ClearFields();
                 }
