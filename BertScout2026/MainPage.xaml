@@ -68,17 +68,9 @@
                         />
 
                     <Label
-                        Text="Scouter Name:"
-                        Margin="10,12,10,0"
-                        Style="{StaticResource Headline}"
-                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-                        />
-
-                    <Label
                         x:Name="ScoutNameDisplay"
                         Text=""
                         Margin="10,12,10,0"
-                        Style="{StaticResource Headline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 

@@ -4,6 +4,7 @@ using static BertScout2026.Utilities.PermissionManagement;
 
 namespace BertScout2026
 {
+
     public partial class MainPage : ContentPage
     {
         private readonly MatchDatabase db = new();
@@ -12,49 +13,60 @@ namespace BertScout2026
 
         private readonly Color ColorButtonOn = Colors.Green;
         private readonly Color ColorButtonOff = Colors.LightGray;
+        private readonly Color ColorButtonError = Colors.Red;
 
         private Match match = new();
 
-        public MainPage()
+        private IGlobalModel _global;
+
+        public MainPage(IGlobalModel global)
         {
             InitializeComponent();
+            _global = global;
             var taskPerm = Task.Run(() => CheckAndRequestStoragePermissionsAsync());
             if (!taskPerm.Result)
             {
                 ShowError("Storage Permissions have been denied\n" +
                     "Please turn on Storage permission in App Info / Permissions");
             }
+            ScoutNameDisplay.Text = _global.ScouterName;
         }
 
         private void StartButtonClicked(object? sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Global.ScouterName))
-            {
-                ShowError("Please login before stand scouting");
-            }
-            ScoutNameDisplay.Text = Global.ScouterName;
             try
             {
+                StartButton.BackgroundColor = ColorButtonOn;
+                if (string.IsNullOrEmpty(_global.ScouterName))
+                {
+                    StartButton.BackgroundColor = ColorButtonError;
+                    return;
+                }
                 if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text) ||
                     int.Parse(EntryTeamNumber.Text) <= 0)
                 {
+                    StartButton.BackgroundColor = ColorButtonError;
                     return;
                 }
                 if (string.IsNullOrWhiteSpace(EntryMatchNumber.Text) ||
                     int.Parse(EntryMatchNumber.Text) <= 0)
                 {
+                    StartButton.BackgroundColor = ColorButtonError;
                     return;
                 }
                 if (!int.TryParse(EntryMatchNumber.Text, out int matchNum) || matchNum <= 0)
                 {
+                    StartButton.BackgroundColor = ColorButtonError;
                     return;
                 }
                 if (!int.TryParse(EntryTeamNumber.Text, out int teamNum) || teamNum <= 0)
                 {
+                    StartButton.BackgroundColor = ColorButtonError;
                     return;
                 }
                 EntryMatchNumber.Text = matchNum.ToString();
                 EntryTeamNumber.Text = teamNum.ToString();
+                ScoutNameDisplay.Text = _global.ScouterName;
                 var existingMatch = Task.Run(() => db.GetMatchAsync(matchNum)).Result;
                 if (existingMatch != null)
                 {
@@ -67,7 +79,7 @@ namespace BertScout2026
                     match = new Match(matchNum)
                     {
                         TeamNumber = teamNum,
-                        ScoutName = Global.ScouterName
+                        //ScoutName = _global.ScouterName!
                     };
                     ClearFields();
                 }

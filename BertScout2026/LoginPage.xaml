@@ -20,7 +20,7 @@
             />
 
             <Entry
-                x:Name="ScouterName" 
+                x:Name="ScouterName"
                 Text=""
                 WidthRequest="100"
                 MaxLength="20"

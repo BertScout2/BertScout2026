@@ -1,20 +1,27 @@
+using BertScout2026.Models;
+
 namespace BertScout2026;
 
 public partial class LoginPage : ContentPage
 {
-	public LoginPage()
-	{
-		InitializeComponent();
-	}
+    private IGlobalModel _global;
 
-    private void SaveButton_Clicked(object sender, EventArgs e)
+    public LoginPage(IGlobalModel global)
     {
-        Global.ScouterName = ScouterName.Text;
+        InitializeComponent();
+        _global = global;
+        ScouterName.Text = _global.ScouterName;
     }
 
-    private void ClearButton_Clicked(object sender, EventArgs e)
+    private void SaveButton_Clicked(object? sender, EventArgs e)
+    {
+        _global.ScouterName = ScouterName.Text;
+        //Task.Run(() => Shell.Current.GoToAsync(nameof(MainPage)));
+    }
+
+    private void ClearButton_Clicked(object? sender, EventArgs e)
     {
         ScouterName.Text = "";
-        Global.ScouterName = "";
+        _global.ScouterName = "";
     }
 }
