@@ -4,22 +4,19 @@ using static BertScout2026.Utilities.PermissionManagement;
 
 namespace BertScout2026
 {
-
     public partial class MainPage : ContentPage
     {
         private readonly MatchDatabase db = new();
-
-        //public string AppVersion => $"Bert Scout 2026 - Version {AppInfo.VersionString}";
 
         private readonly Color ColorButtonOn = Colors.Green;
         private readonly Color ColorButtonOff = Colors.LightGray;
         private readonly Color ColorButtonError = Colors.Red;
 
+        private GlobalViewModel _global;
+
         private Match match = new();
 
-        private IGlobalModel _global;
-
-        public MainPage(IGlobalModel global)
+        public MainPage(GlobalViewModel global)
         {
             InitializeComponent();
             _global = global;
@@ -29,7 +26,6 @@ namespace BertScout2026
                 ShowError("Storage Permissions have been denied\n" +
                     "Please turn on Storage permission in App Info / Permissions");
             }
-            ScoutNameDisplay.Text = _global.ScouterName;
         }
 
         private void StartButtonClicked(object? sender, EventArgs e)
@@ -72,6 +68,10 @@ namespace BertScout2026
                 {
                     match = existingMatch;
                     EntryTeamNumber.Text = match.TeamNumber.ToString();
+                    if (string.IsNullOrEmpty(match.ScoutName))
+                    {
+                        match.ScoutName = _global.ScouterName;
+                    }
                     FillFields();
                 }
                 else
@@ -79,7 +79,7 @@ namespace BertScout2026
                     match = new Match(matchNum)
                     {
                         TeamNumber = teamNum,
-                        //ScoutName = _global.ScouterName!
+                        ScoutName = _global.ScouterName
                     };
                     ClearFields();
                 }

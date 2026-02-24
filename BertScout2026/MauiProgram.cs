@@ -1,5 +1,4 @@
-﻿using BertScout2026.Models;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 namespace BertScout2026
 {
@@ -20,7 +19,7 @@ namespace BertScout2026
     		builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddSingleton<IGlobalModel>(new GlobalModel());
+            builder.Services.AddSingleton<GlobalViewModel>(new GlobalViewModel());
 
             return builder.Build();
         }

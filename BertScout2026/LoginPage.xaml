@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:DataType="ContentPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BertScout2026"
     x:Class="BertScout2026.LoginPage"
+    x:DataType="local:GlobalViewModel"
     Title="LoginPage">
 
     <VerticalStackLayout
@@ -21,7 +22,7 @@
 
             <Entry
                 x:Name="ScouterName"
-                Text=""
+                Text="{Binding ScouterName}"
                 WidthRequest="100"
                 MaxLength="20"
                 />
@@ -40,6 +41,16 @@
                 Clicked="ClearButton_Clicked"
                 />
 
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+
+            <Label
+                x:Name="Message"
+                Text=""
+                />
+            
         </HorizontalStackLayout>
 
     </VerticalStackLayout>
