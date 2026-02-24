@@ -12,7 +12,7 @@ namespace BertScout2026
         private readonly Color ColorButtonOff = Colors.LightGray;
         private readonly Color ColorButtonError = Colors.Red;
 
-        private GlobalViewModel _global;
+        private readonly GlobalViewModel _global;
 
         private Match match = new();
 
@@ -20,6 +20,7 @@ namespace BertScout2026
         {
             InitializeComponent();
             _global = global;
+            BindingContext = _global;
             var taskPerm = Task.Run(() => CheckAndRequestStoragePermissionsAsync());
             if (!taskPerm.Result)
             {
@@ -62,7 +63,7 @@ namespace BertScout2026
                 }
                 EntryMatchNumber.Text = matchNum.ToString();
                 EntryTeamNumber.Text = teamNum.ToString();
-                ScoutNameDisplay.Text = _global.ScouterName;
+                //ScoutNameDisplay.Text = _global.ScouterName;
                 var existingMatch = Task.Run(() => db.GetMatchAsync(matchNum)).Result;
                 if (existingMatch != null)
                 {

@@ -2,8 +2,10 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:DataType="ContentPage"
-    x:Class="BertScout2026.MainPage">
+    xmlns:local="clr-namespace:BertScout2026"
+    x:Class="BertScout2026.MainPage"
+    x:DataType="local:GlobalViewModel"
+    >
 
     <ScrollView>
 
@@ -69,7 +71,7 @@
 
                     <Label
                         x:Name="ScoutNameDisplay"
-                        Text=""
+                        Text="{Binding ScouterName}"
                         Margin="10,12,10,0"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />

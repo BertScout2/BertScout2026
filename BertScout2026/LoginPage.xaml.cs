@@ -8,6 +8,7 @@ public partial class LoginPage : ContentPage
     {
         InitializeComponent();
         _global = global;
+        BindingContext = _global;
     }
 
     private void SaveButton_Clicked(object? sender, EventArgs e)

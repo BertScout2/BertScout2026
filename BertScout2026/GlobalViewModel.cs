@@ -10,13 +10,13 @@ public partial class GlobalViewModel : INotifyPropertyChanged
     {
         get
         {
-            return field ?? "";
+            return Global.ScouterName;
         }
         set
         {
-            if (field != value)
+            if (Global.ScouterName != value)
             {
-                field = value;
+                Global.ScouterName = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ScouterName)));
             }
         }
