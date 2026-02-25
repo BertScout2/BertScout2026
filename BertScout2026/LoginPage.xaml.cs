@@ -14,13 +14,13 @@ public partial class LoginPage : ContentPage
     private void SaveButton_Clicked(object? sender, EventArgs e)
     {
         _global.ScouterName = ScouterName.Text;
-        Message.Text = "Saved!";
+        Message.Text = "Logged In!";
     }
 
     private void ClearButton_Clicked(object? sender, EventArgs e)
     {
         ScouterName.Text = "";
         _global.ScouterName = "";
-        Message.Text = "Cleared";
+        Message.Text = "Logged Out";
     }
 }

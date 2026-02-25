@@ -29,6 +29,24 @@
                     Aspect="AspectFit"
                     />
 
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+
+                    <Label
+                        Text="Scout:"
+                        Margin="10,0,0,0"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+                    
+                    <Label
+                        x:Name="ScoutNameDisplay"
+                        Text="{Binding ScouterName}"
+                        Margin="10,0,0,0"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                </HorizontalStackLayout>
+                
                 <HorizontalStackLayout 
                     x:Name="TeamMatchLayout"
                     HorizontalOptions="Center"
@@ -69,13 +87,6 @@
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
-                    <Label
-                        x:Name="ScoutNameDisplay"
-                        Text="{Binding ScouterName}"
-                        Margin="10,12,10,0"
-                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-                        />
-
                     <Button
                         x:Name="StartButton"
                         Text="Start"
@@ -97,6 +108,18 @@
                         />
 
                 </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+
+                    <Label
+                        x:Name="ErrorLabelTop"
+                        TextColor="Red"
+                        Text=""
+                        IsVisible="False"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+                    
+                </HorizontalStackLayout>
 
             </VerticalStackLayout>
 
@@ -117,7 +140,6 @@
                         VerticalTextAlignment="Center"
                         TextColor="White"
                         Padding="0,0,0,10"
-                        Style="{StaticResource Headline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -132,7 +154,6 @@
                         Text="Auto Cycles:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -165,7 +186,6 @@
                         Text="Auto Balls Per Cycle:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -198,7 +218,6 @@
                         Text="Auto Robot Speed:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -249,7 +268,6 @@
                         Text="Auto Floor Pickup:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -282,7 +300,6 @@
                         Text="Auto Human Player Pickup:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -315,7 +332,6 @@
                         Text="Auto Travel Route:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -370,7 +386,6 @@
                         Text="Auto Climbing Level:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -423,7 +438,6 @@
                         VerticalTextAlignment="Center"
                         TextColor="White"
                         Padding="0,0,0,10"
-                        Style="{StaticResource Headline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
                 </Grid>
@@ -437,7 +451,6 @@
                         Text="Teleop Cycles:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -470,7 +483,6 @@
                         Text="Balls Per Cycle in Teleop:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -503,7 +515,6 @@
                         Text="Teleop Robot Speed:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -554,7 +565,6 @@
                         Text="Teleop Floor Pickup:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -587,7 +597,6 @@
                         Text="Teleop Human Player Pickup:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -619,7 +628,6 @@
                         Text="Tele Travel Route:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -674,7 +682,6 @@
                         Text="Teleop Climbing Level:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
-                        Style="{StaticResource SubHeadline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
@@ -727,7 +734,6 @@
                         VerticalTextAlignment="Center"
                         TextColor="White"
                         Padding="0,0,0,10"
-                        Style="{StaticResource Headline}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 

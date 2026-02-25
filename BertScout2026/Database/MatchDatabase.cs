@@ -22,8 +22,8 @@ public class MatchDatabase : BaseDatabase
         }
         try
         {
-            _databasePath = $"Data Source={Path.Combine(DatabasePath, MatchDBFilename)}";
-            Database = new SqliteConnection(_databasePath);
+            _databasePath = Path.Combine(DatabasePath, MatchDBFilename);
+            Database = new SqliteConnection("Data Source=" + _databasePath);
             await Database.OpenAsync();
             var createTableCmd = Database.CreateCommand();
             createTableCmd.CommandText = Match.CreateTableCommand();

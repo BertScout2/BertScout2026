@@ -33,37 +33,34 @@ namespace BertScout2026
         {
             try
             {
-                StartButton.BackgroundColor = ColorButtonOn;
+                ErrorLabelTop.IsVisible = false;
                 if (string.IsNullOrEmpty(_global.ScouterName))
                 {
-                    StartButton.BackgroundColor = ColorButtonError;
+                    SetErrorLabelTop("Missing Scouter Name - Please Login");
                     return;
                 }
-                if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text) ||
-                    int.Parse(EntryTeamNumber.Text) <= 0)
+                if (string.IsNullOrWhiteSpace(EntryMatchNumber.Text))
                 {
-                    StartButton.BackgroundColor = ColorButtonError;
+                    SetErrorLabelTop("Invalid Match Number");
                     return;
                 }
-                if (string.IsNullOrWhiteSpace(EntryMatchNumber.Text) ||
-                    int.Parse(EntryMatchNumber.Text) <= 0)
+                if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text))
                 {
-                    StartButton.BackgroundColor = ColorButtonError;
+                    SetErrorLabelTop("Invalid Team Number");
                     return;
                 }
                 if (!int.TryParse(EntryMatchNumber.Text, out int matchNum) || matchNum <= 0)
                 {
-                    StartButton.BackgroundColor = ColorButtonError;
+                    SetErrorLabelTop("Invalid Match Number");
                     return;
                 }
                 if (!int.TryParse(EntryTeamNumber.Text, out int teamNum) || teamNum <= 0)
                 {
-                    StartButton.BackgroundColor = ColorButtonError;
+                    SetErrorLabelTop("Invalid Team Number");
                     return;
                 }
                 EntryMatchNumber.Text = matchNum.ToString();
                 EntryTeamNumber.Text = teamNum.ToString();
-                //ScoutNameDisplay.Text = _global.ScouterName;
                 var existingMatch = Task.Run(() => db.GetMatchAsync(matchNum)).Result;
                 if (existingMatch != null)
                 {
@@ -90,10 +87,16 @@ namespace BertScout2026
                 SaveButton.IsVisible = true;
                 ScoutingLayout.IsVisible = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                ShowError("Error loading data from database\n" + ex.Message);
+                SetErrorLabelTop("Error loading data from database");
             }
+        }
+
+        private void SetErrorLabelTop(string message)
+        {
+            ErrorLabelTop.Text = message;
+            ErrorLabelTop.IsVisible = true;
         }
 
         private void ClearFields()
@@ -627,9 +630,9 @@ namespace BertScout2026
                 var taskSave = Task.Run(() => db.SaveMatchItemAsync(match));
                 taskSave.Wait();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                ShowError("Error saving data to database\n" + ex.Message);
+                SetErrorLabelTop("Error saving data to database");
             }
         }
 
