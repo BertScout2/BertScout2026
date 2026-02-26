@@ -782,6 +782,7 @@
                             />
                 </HorizontalStackLayout> -->
 
+
                 <HorizontalStackLayout
                     HorizontalOptions="Start"
                     Margin="0,10,0,0"
@@ -850,18 +851,30 @@
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
-
+                <Grid>
+                    <HorizontalStackLayout
+                        HorizontalOptions="Center">
+                        <Label
+                            Text="Select some comments:"
+                        />
+                        <Picker
+                        x:Name="CommentPicker"
+                        SelectedIndexChanged="CommentPicker_SelectedIndexChanged"
+                        HeightRequest="32"
+                        WidthRequest="200"
+                        Margin="10,0,0,0"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+                    </HorizontalStackLayout>
+                </Grid>
                 <Grid
                     HorizontalOptions="Fill"
                     >
 
-                    <!--<Picker
-                        x:Name="CommentPicker"
-                        Grid.Row="0"
-                        SelectedIndexChanged="CommentPicker_SelectedIndexChanged"
-                        Margin="10,0,0,0"
-                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-                        />-->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
 
                     <Editor
                         x:Name="Comments"
@@ -870,7 +883,7 @@
                         PlaceholderColor="LightGray"
                         HorizontalOptions="Fill"
                         MaxLength="250"
-                        Margin="10,5,10,10"
+                        Margin="10,5,10,100"
                         Text=""
                         IsEnabled="true"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
