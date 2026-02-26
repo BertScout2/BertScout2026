@@ -83,8 +83,7 @@ namespace BertScout2026
                 }
                 EntryTeamNumber.IsEnabled = false;
                 EntryMatchNumber.IsEnabled = false;
-                StartButton.IsVisible = false;
-                SaveButton.IsVisible = true;
+                StartButton.IsEnabled = false;
                 ScoutingLayout.IsVisible = true;
             }
             catch (Exception)

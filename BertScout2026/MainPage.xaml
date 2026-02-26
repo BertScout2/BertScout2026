@@ -13,7 +13,6 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <VerticalStackLayout
@@ -95,16 +94,6 @@
                         BackgroundColor="Green"
                         WidthRequest="80"
                         IsVisible="True"
-                        />
-
-                    <Button
-                        x:Name="SaveButton"
-                        Text="Save"
-                        Clicked="SaveButtonClicked"
-                        Margin="20,10,0,0"
-                        BackgroundColor="Green"
-                        WidthRequest="80"
-                        IsVisible="False"
                         />
 
                 </HorizontalStackLayout>
@@ -876,9 +865,26 @@
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         TextChanged="Comments_TextChanged"
                         />
+                    
+
 
                 </Grid>
 
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    >
+                    
+                <Button
+                        x:Name="SaveButton"
+                        Text="Save"
+                        Clicked="SaveButtonClicked"
+                        Margin="20,10,0,0"
+                        BackgroundColor="Green"
+                        WidthRequest="80"
+                        />
+
+                </HorizontalStackLayout>
+          
             </VerticalStackLayout>
 
             <VerticalStackLayout
