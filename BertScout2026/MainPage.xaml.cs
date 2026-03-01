@@ -89,6 +89,7 @@ namespace BertScout2026
                 EntryTeamNumber.IsEnabled = false;
                 EntryMatchNumber.IsEnabled = false;
                 StartButton.IsEnabled = false;
+                StartButton.BackgroundColor = ColorButtonOff;
                 ScoutingLayout.IsVisible = true;
             }
             catch (Exception)
@@ -148,8 +149,8 @@ namespace BertScout2026
             SaveData();
             EntryTeamNumber.IsEnabled = true;
             EntryMatchNumber.IsEnabled = true;
-            StartButton.IsVisible = true;
-            SaveButton.IsVisible = false;
+            StartButton.IsEnabled = true;
+            StartButton.BackgroundColor = ColorButtonOn;
             ScoutingLayout.IsVisible = false;
             EntryTeamNumber.Text = string.Empty;
             EntryMatchNumber.Text = (int.Parse(EntryMatchNumber.Text) + 1).ToString();

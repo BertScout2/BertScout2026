@@ -12,7 +12,9 @@ namespace BertScout2026.Models
 
         // Autonomous properties
         public int AutoNumberOfCycles { get; set; }
+        public int AutoShootingSpeed { get; set; }
         public int AutoBallsPerCycle { get; set; }
+        public int AutoAccuracy { get; set; }
         public int AutoRobotSpeed { get; set; }
         public bool AutoFloorPickup { get; set; }
         public bool AutoHumanPlayerPickup { get; set; }
@@ -21,7 +23,9 @@ namespace BertScout2026.Models
 
         // Teleop properties
         public int TeleNumberOfCycles { get; set; }
+        public int TeleShootingSpeed { get; set; }
         public int TeleBallsPerCycle { get; set; }
+        public int TeleAccuracy { get; set; }
         public int TeleRobotSpeed { get; set; }
         public bool TeleFloorPickup { get; set; }
         public bool TeleHumanPlayerPickup { get; set; }

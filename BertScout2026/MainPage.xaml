@@ -95,6 +95,7 @@
                         BackgroundColor="Green"
                         WidthRequest="80"
                         IsVisible="True"
+                        IsEnabled="True"
                         />
 
                 </HorizontalStackLayout>
@@ -729,50 +730,6 @@
 
                 </Grid>
 
-                <!--            <HorizontalStackLayout
-                    Margin="0,5,0,0"
-                    HorizontalOptions="Center"
-                        >
-
-                        <Label
-                            Text="Select comments:"
-                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-                            />
-
-                        <Picker
-                            x:Name="CommentPicker"
-                            SelectedIndexChanged="CommentPicker_SelectedIndexChanged"
-                            TextColor="Green"
-                            BackgroundColor="Green"
-                            WidthRequest="100"
-                            HorizontalAlignment="FillAndExpand"
-                            HeightRequest="32"
-                            Margin="10,0,0,0"
-                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-                            />
-
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Editor
-                            x:Name="Comments"
-                            TextChanged="Comments_TextChanged"
-                            HorizontalOptions="FillAndExpand"
-                            HorizontalTextAlignment="Start"
-                            HeightRequest="150"
-                            BackgroundColor="{AppThemeBinding Light=White, Dark=Green}"
-                            Text=""
-                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-                            />
-
-                    <Label
-                            Text=""
-                            Margin="0"
-                            HeightRequest="300"
-                            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
-                            />
-                </HorizontalStackLayout> -->
-
-
                 <HorizontalStackLayout
                     HorizontalOptions="Start"
                     Margin="0,10,0,0"
@@ -857,8 +814,10 @@
                         />
                     </HorizontalStackLayout>
                 </Grid>
+                
                 <Grid
                     HorizontalOptions="Fill"
+                    Margin="0,0,0,100"
                     >
 
                     <Grid.RowDefinitions>
@@ -866,39 +825,34 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
+                        
                     <Editor
                         x:Name="Comments"
                         Grid.Row="0"
                         Placeholder="Put in comments"
                         PlaceholderColor="LightGray"
-                        HorizontalOptions="Fill"
                         MaxLength="250"
-                        Margin="10,5,10,100"
+                        HeightRequest="150"
+                        Margin="10,5,10,0"
                         Text=""
                         IsEnabled="true"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         TextChanged="Comments_TextChanged"
                         />
-                    
 
-
-                </Grid>
-
-                <HorizontalStackLayout
-                    HorizontalOptions="Center"
-                    >
-                    
                 <Button
                         x:Name="SaveButton"
                         Text="Save"
                         Clicked="SaveButtonClicked"
-                        Margin="20,10,0,0"
+                        Margin="0,10,0,0"
                         BackgroundColor="Green"
                         WidthRequest="80"
+                    VerticalOptions="Start"
+                    Grid.Row="1"
                         />
 
-                </HorizontalStackLayout>
-          
+                </Grid>
+
             </VerticalStackLayout>
 
             <VerticalStackLayout
