@@ -59,14 +59,18 @@ namespace BertScout2026.Models
                 , TeamNumber INTEGER NOT NULL
                 , ScoutName TEXT NOT NULL
                 , AutoNumberOfCycles INTEGER NOT NULL
+                , AutoShootingSpeed INTEGER NOT NULL
                 , AutoBallsPerCycle INTEGER NOT NULL
+                , AutoAccuracy INTEGER NOT NULL
                 , AutoRobotSpeed INTEGER NOT NULL
                 , AutoFloorPickup INTEGER NOT NULL
                 , AutoHumanPlayerPickup INTEGER NOT NULL
                 , AutoRoute INTEGER NOT NULL
                 , AutoClimbingLevel INTEGER NOT NULL
                 , TeleNumberOfCycles INTEGER NOT NULL
+                , TeleShootingSpeed INTEGER NOT NULL
                 , TeleBallsPerCycle INTEGER NOT NULL
+                , TeleAccuracy INTEGER NOT NULL
                 , TeleRobotSpeed INTEGER NOT NULL
                 , TeleFloorPickup INTEGER NOT NULL
                 , TeleHumanPlayerPickup INTEGER NOT NULL
@@ -97,14 +101,18 @@ namespace BertScout2026.Models
                 , TeamNumber
                 , ScoutName
                 , AutoNumberOfCycles
+                , AutoShootingSpeed
                 , AutoBallsPerCycle
+                , AutoAccuracy
                 , AutoRobotSpeed
                 , AutoFloorPickup
                 , AutoHumanPlayerPickup
                 , AutoRoute
                 , AutoClimbingLevel
                 , TeleNumberOfCycles
+                , TeleShootingSpeed
                 , TeleBallsPerCycle
+                , TeleAccuracy
                 , TeleRobotSpeed
                 , TeleFloorPickup
                 , TeleHumanPlayerPickup
@@ -124,23 +132,27 @@ namespace BertScout2026.Models
                 {BaseAddValues()}
                 , {MatchNumber}
                 , {TeamNumber}
-                , '{ScoutName}'
+                , '{SQLInjectionFix(ScoutName)}'
                 , {AutoNumberOfCycles}
+                , {AutoShootingSpeed}
                 , {AutoBallsPerCycle}
+                , {AutoAccuracy}
                 , {AutoRobotSpeed}
                 , {(AutoFloorPickup ? 1 : 0)}
                 , {(AutoHumanPlayerPickup ? 1 : 0)}
                 , {AutoRoute}
                 , {AutoClimbingLevel}
                 , {TeleNumberOfCycles}
+                , {TeleShootingSpeed}
                 , {TeleBallsPerCycle}
+                , {TeleAccuracy}
                 , {TeleRobotSpeed}
                 , {(TeleFloorPickup ? 1 : 0)}
                 , {(TeleHumanPlayerPickup ? 1 : 0)}
                 , {TeleRoute}
                 , {TeleClimbingLevel}
                 , {Score}
-                , '{Comments}'
+                , '{SQLInjectionFix(Comments)}'
                 )";
         }
 
@@ -152,23 +164,27 @@ namespace BertScout2026.Models
                 {BaseUpdateValues()}
                 , MatchNumber = {MatchNumber}
                 , TeamNumber = {TeamNumber}
-                , ScoutName = '{ScoutName}'
+                , ScoutName = '{SQLInjectionFix(ScoutName)}'
                 , AutoNumberOfCycles = {AutoNumberOfCycles}
+                , AutoShootingSpeed = {AutoShootingSpeed}
                 , AutoBallsPerCycle = {AutoBallsPerCycle}
+                , AutoAccuracy = {AutoAccuracy}
                 , AutoRobotSpeed = {AutoRobotSpeed}
                 , AutoFloorPickup = {(AutoFloorPickup ? 1 : 0)}
                 , AutoHumanPlayerPickup = {(AutoHumanPlayerPickup ? 1 : 0)}
                 , AutoRoute = {AutoRoute}
                 , AutoClimbingLevel = {AutoClimbingLevel}
                 , TeleNumberOfCycles = {TeleNumberOfCycles}
+                , TeleShootingSpeed = {TeleShootingSpeed}
                 , TeleBallsPerCycle = {TeleBallsPerCycle}
+                , TeleAccuracy = {TeleAccuracy}
                 , TeleRobotSpeed = {TeleRobotSpeed}
                 , TeleFloorPickup = {(TeleFloorPickup ? 1 : 0)}
                 , TeleHumanPlayerPickup = {(TeleHumanPlayerPickup ? 1 : 0)}
                 , TeleRoute = {TeleRoute}
                 , TeleClimbingLevel = {TeleClimbingLevel}
                 , Score = {Score}
-                , Comments = '{Comments}'
+                , Comments = '{SQLInjectionFix(Comments)}'
                 WHERE Id = {Id}";
         }
 
@@ -180,21 +196,25 @@ namespace BertScout2026.Models
             match.TeamNumber = reader.GetInt32(BaseFieldCount + 1);
             match.ScoutName = reader.GetString(BaseFieldCount + 2);
             match.AutoNumberOfCycles = reader.GetInt32(BaseFieldCount + 3);
-            match.AutoBallsPerCycle = reader.GetInt32(BaseFieldCount + 4);
-            match.AutoRobotSpeed = reader.GetInt32(BaseFieldCount + 5);
-            match.AutoFloorPickup = reader.GetInt32(BaseFieldCount + 6) == 1;
-            match.AutoHumanPlayerPickup = reader.GetInt32(BaseFieldCount + 7) == 1;
-            match.AutoRoute = reader.GetInt32(BaseFieldCount + 8);
-            match.AutoClimbingLevel = reader.GetInt32(BaseFieldCount + 9);
-            match.TeleNumberOfCycles = reader.GetInt32(BaseFieldCount + 10);
-            match.TeleBallsPerCycle = reader.GetInt32(BaseFieldCount + 11);
-            match.TeleRobotSpeed = reader.GetInt32(BaseFieldCount + 12);
-            match.TeleFloorPickup = reader.GetInt32(BaseFieldCount + 13) == 1;
-            match.TeleHumanPlayerPickup = reader.GetInt32(BaseFieldCount + 14) == 1;
-            match.TeleRoute = reader.GetInt32(BaseFieldCount + 15);
-            match.TeleClimbingLevel = reader.GetInt32(BaseFieldCount + 16);
-            match.Score = reader.GetInt32(BaseFieldCount + 17);
-            match.Comments = reader.GetString(BaseFieldCount + 18);
+            match.AutoShootingSpeed = reader.GetInt32(BaseFieldCount + 4);
+            match.AutoBallsPerCycle = reader.GetInt32(BaseFieldCount + 5);
+            match.AutoAccuracy = reader.GetInt32(BaseFieldCount + 6);
+            match.AutoRobotSpeed = reader.GetInt32(BaseFieldCount + 7);
+            match.AutoFloorPickup = reader.GetInt32(BaseFieldCount + 8) == 1;
+            match.AutoHumanPlayerPickup = reader.GetInt32(BaseFieldCount + 9) == 1;
+            match.AutoRoute = reader.GetInt32(BaseFieldCount + 10);
+            match.AutoClimbingLevel = reader.GetInt32(BaseFieldCount + 11);
+            match.TeleNumberOfCycles = reader.GetInt32(BaseFieldCount + 12);
+            match.TeleShootingSpeed = reader.GetInt32(BaseFieldCount + 13);
+            match.TeleBallsPerCycle = reader.GetInt32(BaseFieldCount + 14);
+            match.TeleAccuracy = reader.GetInt32(BaseFieldCount + 15);
+            match.TeleRobotSpeed = reader.GetInt32(BaseFieldCount + 16);
+            match.TeleFloorPickup = reader.GetInt32(BaseFieldCount + 17) == 1;
+            match.TeleHumanPlayerPickup = reader.GetInt32(BaseFieldCount + 18) == 1;
+            match.TeleRoute = reader.GetInt32(BaseFieldCount + 19);
+            match.TeleClimbingLevel = reader.GetInt32(BaseFieldCount + 20);
+            match.Score = reader.GetInt32(BaseFieldCount + 21);
+            match.Comments = reader.GetString(BaseFieldCount + 22);
             return match;
         }
     }

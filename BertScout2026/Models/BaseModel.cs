@@ -68,4 +68,9 @@ public class BaseModel
         AirtableId = reader.GetString(2);
         Changed = reader.GetInt32(3) == 1;
     }
+
+    public string SQLInjectionFix(string value)
+    {
+        return value.Replace("'", "''");
+    }
 }

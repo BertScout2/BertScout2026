@@ -10,7 +10,6 @@ namespace BertScout2026
 
         private readonly Color ColorButtonOn = Colors.Green;
         private readonly Color ColorButtonOff = Colors.LightGray;
-        private readonly Color ColorButtonError = Colors.Red;
 
         private readonly GlobalViewModel _global;
 
@@ -536,19 +535,6 @@ namespace BertScout2026
 
         #endregion
 
-        //private void CommentPicker_SelectedIndexChanged(object? sender, EventArgs e)
-        //{
-        //    if (CommentPicker.SelectedIndex < 0)
-        //        return;
-        //    if (Comments.Text == null)
-        //        Comments.Text = "";
-        //    else if (Comments.Text.Length > 0 && !Comments.Text.EndsWith(' '))
-        //        Comments.Text += " ";
-        //    Comments.Text += CommentPicker.SelectedItem.ToString() + " ";
-        //    CommentPicker.SelectedIndex = -1;
-        //    SaveFields();
-        //}
-
         #region Comments
 
         private void Comments_TextChanged(object? sender, TextChangedEventArgs e)
@@ -583,34 +569,21 @@ namespace BertScout2026
         #endregion
         private readonly List<string> CommentList =
         [
-	        "Can pick from the floor.",
+            "Can pick from the floor.",
             "Can pick from the outpost.",
-	        "Got a fuel stuck inside.",
-	        "Missed shooting fuel into hub a lot.",
-	        "Dropped fuel a lot.",
-	        "Tried to climb but failed.",
+            "Got a fuel stuck inside.",
+            "Missed shooting fuel into hub a lot.",
+            "Dropped fuel a lot.",
+            "Tried to climb but failed.",
             "Can go underneath trench.",
-	        "Played defense.",
-	        "Caused a penalty.",
-	        "Had technical issues.",
-	        "Broke down.",
-	        "Never moved.",
-	        "DON'T PICK!",
-            //"Can dislodge algae.",
-            //"Can pick from the floor.",
-            //"Can only handle algae.",
-            //"Got a coral stuck inside.",
-            //"Missed shooting algae into barge.",
-            //"Dropped coral a lot.",
-            //"Dropped algae a lot.",
-            //"Tried to hang but failed.",
-            //"Played defense.",
-            //"Caused a penalty.",
-            //"Had technical issues.",
-            //"Broke down.",
-            //"Never moved.",
-            //"DON'T PICK!",
-    ];
+            "Played defense.",
+            "Caused a penalty.",
+            "Had technical issues.",
+            "Broke down.",
+            "Never moved.",
+            "DON'T PICK!",
+        ];
+
         #region Score
 
         private void ScoreStar0Clicked(object? sender, EventArgs e)
