@@ -10,7 +10,13 @@
         <Label 
             Text="About!"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}" />
+        <Label 
+            Text="This is a program for scouting in the stands during robotics events."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}" />
     </VerticalStackLayout>
     
 </ContentPage>
