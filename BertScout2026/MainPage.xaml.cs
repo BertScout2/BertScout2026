@@ -191,25 +191,25 @@ namespace BertScout2026
 
         #region AutoShootingSpeed
 
-        private void AutoShootingSpeedNone_Clicked(object sender, EventArgs e)
+        private void AutoShootingSpeedNone_Clicked(object? sender, EventArgs e)
         {
             SetAutoShootingSpeed(0);
             SaveData();
         }
 
-        private void AutoShootingSpeedLow_Clicked(object sender, EventArgs e)
+        private void AutoShootingSpeedLow_Clicked(object? sender, EventArgs e)
         {
             SetAutoShootingSpeed(1);
             SaveData();
         }
 
-        private void AutoShootingSpeedMedium_Clicked(object sender, EventArgs e)
+        private void AutoShootingSpeedMedium_Clicked(object? sender, EventArgs e)
         {
             SetAutoShootingSpeed(2);
             SaveData();
         }
 
-        private void AutoShootingSpeedHigh_Clicked(object sender, EventArgs e)
+        private void AutoShootingSpeedHigh_Clicked(object? sender, EventArgs e)
         {
             SetAutoShootingSpeed(3);
             SaveData();
@@ -229,25 +229,25 @@ namespace BertScout2026
         #region AutoBallsPerCycle
 
 
-        private void AutoBallsPerCycleNone_Clicked(object sender, EventArgs e)
+        private void AutoBallsPerCycleNone_Clicked(object? sender, EventArgs e)
         {
             SetAutoBallsPerCycle(0);
             SaveData();
         }
 
-        private void AutoBallsPerCycleLow_Clicked(object sender, EventArgs e)
+        private void AutoBallsPerCycleLow_Clicked(object? sender, EventArgs e)
         {
             SetAutoBallsPerCycle(1);
             SaveData();
         }
 
-        private void AutoBallsPerCycleMedium_Clicked(object sender, EventArgs e)
+        private void AutoBallsPerCycleMedium_Clicked(object? sender, EventArgs e)
         {
             SetAutoBallsPerCycle(2);
             SaveData();
         }
 
-        private void AutoBallsPerCycleHigh_Clicked(object sender, EventArgs e)
+        private void AutoBallsPerCycleHigh_Clicked(object? sender, EventArgs e)
         {
             SetAutoBallsPerCycle(3);
             SaveData();
@@ -266,25 +266,25 @@ namespace BertScout2026
 
         #region AutoAccuracy
 
-        private void AutoAccuracyNone_Clicked(object sender, EventArgs e)
+        private void AutoAccuracyNone_Clicked(object? sender, EventArgs e)
         {
             SetAutoAccuracy(0);
             SaveData();
         }
 
-        private void AutoAccuracyLow_Clicked(object sender, EventArgs e)
+        private void AutoAccuracyLow_Clicked(object? sender, EventArgs e)
         {
             SetAutoAccuracy(1);
             SaveData();
         }
 
-        private void AutoAccuracyMedium_Clicked(object sender, EventArgs e)
+        private void AutoAccuracyMedium_Clicked(object? sender, EventArgs e)
         {
             SetAutoAccuracy(2);
             SaveData();
         }
 
-        private void AutoAccuracyHigh_Clicked(object sender, EventArgs e)
+        private void AutoAccuracyHigh_Clicked(object? sender, EventArgs e)
         {
             SetAutoAccuracy(3);
             SaveData();
@@ -467,25 +467,25 @@ namespace BertScout2026
 
         #region TeleShootingSpeed
 
-        private void TeleShootingSpeedNone_Clicked(object sender, EventArgs e)
+        private void TeleShootingSpeedNone_Clicked(object? sender, EventArgs e)
         {
             SetTeleShootingSpeed(0);
             SaveData();
         }
 
-        private void TeleShootingSpeedLow_Clicked(object sender, EventArgs e)
+        private void TeleShootingSpeedLow_Clicked(object? sender, EventArgs e)
         {
             SetTeleShootingSpeed(1);
             SaveData();
         }
 
-        private void TeleShootingSpeedMedium_Clicked(object sender, EventArgs e)
+        private void TeleShootingSpeedMedium_Clicked(object? sender, EventArgs e)
         {
             SetTeleShootingSpeed(2);
             SaveData();
         }
 
-        private void TeleShootingSpeedHigh_Clicked(object sender, EventArgs e)
+        private void TeleShootingSpeedHigh_Clicked(object? sender, EventArgs e)
         {
             SetTeleShootingSpeed(3);
             SaveData();
@@ -504,25 +504,25 @@ namespace BertScout2026
 
         #region TeleBallsPerCycle
 
-        private void TeleBallsPerCycleNone_Clicked(object sender, EventArgs e)
+        private void TeleBallsPerCycleNone_Clicked(object? sender, EventArgs e)
         {
             SetTeleBallsPerCycle(0);
             SaveData();
         }
 
-        private void TeleBallsPerCycleLow_Clicked(object sender, EventArgs e)
+        private void TeleBallsPerCycleLow_Clicked(object? sender, EventArgs e)
         {
             SetTeleBallsPerCycle(1);
             SaveData();
         }
 
-        private void TeleBallsPerCycleMedium_Clicked(object sender, EventArgs e)
+        private void TeleBallsPerCycleMedium_Clicked(object? sender, EventArgs e)
         {
             SetTeleBallsPerCycle(2);
             SaveData();
         }
 
-        private void TeleBallsPerCycleHigh_Clicked(object sender, EventArgs e)
+        private void TeleBallsPerCycleHigh_Clicked(object? sender, EventArgs e)
         {
             SetTeleBallsPerCycle(3);
             SaveData();
@@ -541,25 +541,25 @@ namespace BertScout2026
 
         #region TeleAccuracy
 
-        private void TeleAccuracyNone_Clicked(object sender, EventArgs e)
+        private void TeleAccuracyNone_Clicked(object? sender, EventArgs e)
         {
             SetTeleAccuracy(0);
             SaveData();
         }
 
-        private void TeleAccuracyLow_Clicked(object sender, EventArgs e)
+        private void TeleAccuracyLow_Clicked(object? sender, EventArgs e)
         {
             SetTeleAccuracy(1);
             SaveData();
         }
 
-        private void TeleAccuracyMedium_Clicked(object sender, EventArgs e)
+        private void TeleAccuracyMedium_Clicked(object? sender, EventArgs e)
         {
             SetTeleAccuracy(2);
             SaveData();
         }
 
-        private void TeleAccuracyHigh_Clicked(object sender, EventArgs e)
+        private void TeleAccuracyHigh_Clicked(object? sender, EventArgs e)
         {
             SetTeleAccuracy(3);
             SaveData();
@@ -833,7 +833,7 @@ namespace BertScout2026
             ErrorMsg.Text = message;
         }
 
-        private void CommentPicker_SelectedIndexChanged(object sender, EventArgs e)
+        private void CommentPicker_SelectedIndexChanged(object? sender, EventArgs e)
         {
             if (CommentPicker.SelectedIndex < 0)
                 return;

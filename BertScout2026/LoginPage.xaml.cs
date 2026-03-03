@@ -2,7 +2,7 @@ namespace BertScout2026;
 
 public partial class LoginPage : ContentPage
 {
-    private GlobalViewModel _global;
+    private readonly GlobalViewModel _global;
 
     public LoginPage(GlobalViewModel global)
     {
@@ -11,12 +11,12 @@ public partial class LoginPage : ContentPage
         BindingContext = _global;
     }
 
-    private void SaveButton_Clicked(object? sender, EventArgs e)
+    private async void SaveButton_Clicked(object? sender, EventArgs e)
     {
         _global.ScouterName = ScouterName.Text;
         Message.Text = "Logged In!";
         Routing.RegisterRoute("MainPage", typeof(MainPage));
-        Shell.Current.GoToAsync("MainPage");
+        await Shell.Current.GoToAsync("MainPage");
     }
 
     private void ClearButton_Clicked(object? sender, EventArgs e)
