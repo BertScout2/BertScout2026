@@ -183,13 +183,19 @@ namespace BertScout2026
             if (value >= 0)
             {
                 match.AutoNumberOfCycles = value;
-                AutoNumberOfCyclesPlus.Text = value.ToString();
+                AutoNumberOfCycles.Text = value.ToString();
             }
         }
 
         #endregion
 
         #region AutoShootingSpeed
+
+        private void AutoShootingSpeedNone_Clicked(object sender, EventArgs e)
+        {
+            SetAutoShootingSpeed(0);
+            SaveData();
+        }
 
         private void AutoShootingSpeedLow_Clicked(object sender, EventArgs e)
         {
@@ -212,6 +218,7 @@ namespace BertScout2026
         private void SetAutoShootingSpeed(int value)
         {
             match.AutoShootingSpeed = value;
+            AutoShootingSpeedNone.BackgroundColor = value == 0 ? ColorButtonOn : ColorButtonOff;
             AutoShootingSpeedLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
             AutoShootingSpeedMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
             AutoShootingSpeedHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
@@ -220,6 +227,13 @@ namespace BertScout2026
         #endregion
 
         #region AutoBallsPerCycle
+
+
+        private void AutoBallsPerCycleNone_Clicked(object sender, EventArgs e)
+        {
+            SetAutoBallsPerCycle(0);
+            SaveData();
+        }
 
         private void AutoBallsPerCycleLow_Clicked(object sender, EventArgs e)
         {
@@ -242,6 +256,7 @@ namespace BertScout2026
         private void SetAutoBallsPerCycle(int value)
         {
             match.AutoBallsPerCycle = value;
+            AutoBallsPerCycleNone.BackgroundColor = value == 0 ? ColorButtonOn : ColorButtonOff;
             AutoBallsPerCycleLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
             AutoBallsPerCycleMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
             AutoBallsPerCycleHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
@@ -250,6 +265,12 @@ namespace BertScout2026
         #endregion
 
         #region AutoAccuracy
+
+        private void AutoAccuracyNone_Clicked(object sender, EventArgs e)
+        {
+            SetAutoAccuracy(0);
+            SaveData();
+        }
 
         private void AutoAccuracyLow_Clicked(object sender, EventArgs e)
         {
@@ -272,9 +293,10 @@ namespace BertScout2026
         private void SetAutoAccuracy(int value)
         {
             match.AutoAccuracy = value;
+            AutoAccuracyNone.BackgroundColor = value == 0 ? ColorButtonOn : ColorButtonOff;
             AutoAccuracyLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
-            AutoAccuracyLow.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
-            AutoAccuracyLow.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
+            AutoAccuracyMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            AutoAccuracyHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
         }
 
         #endregion
@@ -437,13 +459,19 @@ namespace BertScout2026
             if (value >= 0)
             {
                 match.TeleNumberOfCycles = value;
-                TeleNumberOfCyclesPlus.Text = value.ToString();
+                TeleNumberOfCycles.Text = value.ToString();
             }
         }
 
         #endregion
 
         #region TeleShootingSpeed
+
+        private void TeleShootingSpeedNone_Clicked(object sender, EventArgs e)
+        {
+            SetTeleShootingSpeed(0);
+            SaveData();
+        }
 
         private void TeleShootingSpeedLow_Clicked(object sender, EventArgs e)
         {
@@ -466,6 +494,7 @@ namespace BertScout2026
         private void SetTeleShootingSpeed(int value)
         {
             match.TeleShootingSpeed = value;
+            TeleShootingSpeedNone.BackgroundColor = value == 0 ? ColorButtonOn : ColorButtonOff;
             TeleShootingSpeedLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
             TeleShootingSpeedMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
             TeleShootingSpeedHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
@@ -474,6 +503,12 @@ namespace BertScout2026
         #endregion
 
         #region TeleBallsPerCycle
+
+        private void TeleBallsPerCycleNone_Clicked(object sender, EventArgs e)
+        {
+            SetTeleBallsPerCycle(0);
+            SaveData();
+        }
 
         private void TeleBallsPerCycleLow_Clicked(object sender, EventArgs e)
         {
@@ -496,6 +531,7 @@ namespace BertScout2026
         private void SetTeleBallsPerCycle(int value)
         {
             match.TeleBallsPerCycle = value;
+            TeleBallsPerCycleNone.BackgroundColor = value == 0 ? ColorButtonOn : ColorButtonOff;
             TeleBallsPerCycleLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
             TeleBallsPerCycleMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
             TeleBallsPerCycleHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
@@ -504,6 +540,12 @@ namespace BertScout2026
         #endregion
 
         #region TeleAccuracy
+
+        private void TeleAccuracyNone_Clicked(object sender, EventArgs e)
+        {
+            SetTeleAccuracy(0);
+            SaveData();
+        }
 
         private void TeleAccuracyLow_Clicked(object sender, EventArgs e)
         {
@@ -526,6 +568,7 @@ namespace BertScout2026
         private void SetTeleAccuracy(int value)
         {
             match.TeleAccuracy = value;
+            TeleAccuracyNone.BackgroundColor = value == 0 ? ColorButtonOn : ColorButtonOff;
             TeleAccuracyLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
             TeleAccuracyMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
             TeleAccuracyHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
