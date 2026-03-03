@@ -43,33 +43,22 @@ namespace BertScout2026
                     SetErrorLabelTop("Missing Scouter Name - Please Login");
                     return;
                 }
-                if (string.IsNullOrWhiteSpace(EntryMatchNumber.Text))
+                if (string.IsNullOrWhiteSpace(EntryMatchNumber.Text) ||
+                    !int.TryParse(EntryMatchNumber.Text, out int matchNum) ||
+                    matchNum <= 0)
                 {
                     SetErrorLabelTop("Invalid Match Number");
-                    return;
-                }
-                if (string.IsNullOrWhiteSpace(EntryTeamNumber.Text))
-                {
-                    SetErrorLabelTop("Invalid Team Number");
-                    return;
-                }
-                if (!int.TryParse(EntryMatchNumber.Text, out int matchNum) || matchNum <= 0)
-                {
-                    SetErrorLabelTop("Invalid Match Number");
-                    return;
-                }
-                if (!int.TryParse(EntryTeamNumber.Text, out int teamNum) || teamNum <= 0)
-                {
-                    SetErrorLabelTop("Invalid Team Number");
                     return;
                 }
                 EntryMatchNumber.Text = matchNum.ToString();
-                EntryTeamNumber.Text = teamNum.ToString();
                 var existingMatch = Task.Run(() => db.GetMatchAsync(matchNum)).Result;
                 if (existingMatch != null)
                 {
                     match = existingMatch;
-                    EntryTeamNumber.Text = match.TeamNumber.ToString();
+                    if (string.IsNullOrEmpty(EntryTeamNumber.Text))
+                    {
+                        EntryTeamNumber.Text = match.TeamNumber.ToString();
+                    }
                     if (string.IsNullOrEmpty(match.ScoutName))
                     {
                         match.ScoutName = _global.ScouterName;
@@ -78,17 +67,23 @@ namespace BertScout2026
                 }
                 else
                 {
+                    if (string.IsNullOrEmpty(EntryTeamNumber.Text) ||
+                        !int.TryParse(EntryTeamNumber.Text, out int teamNumber) ||
+                        teamNumber <= 0)
+                    {
+                        SetErrorLabelTop("Invalid Team Number");
+                        return;
+                    }
                     match = new Match(matchNum)
                     {
-                        TeamNumber = teamNum,
-                        ScoutName = _global.ScouterName
+                        TeamNumber = teamNumber
                     };
                     ClearFields();
                 }
-                EntryTeamNumber.IsEnabled = false;
                 EntryMatchNumber.IsEnabled = false;
+                EntryTeamNumber.IsEnabled = false;
                 StartButton.IsEnabled = false;
-                StartButton.BackgroundColor = ColorButtonOff;
+                match.ScoutName = _global.ScouterName;
                 ScoutingLayout.IsVisible = true;
             }
             catch (Exception)
@@ -105,6 +100,7 @@ namespace BertScout2026
 
         private void ClearFields()
         {
+            EntryMatchNumber.Text = "";
             SetAutoNumberOfCycles(0);
             SetAutoBallsPerCycle(0);
             SetAutoRobotSpeed(0);
@@ -145,14 +141,18 @@ namespace BertScout2026
 
         private void SaveButtonClicked(object? sender, EventArgs e)
         {
+            if (match.TeamNumber <= 0)
+            {
+                return;
+            }
             SaveData();
             EntryTeamNumber.IsEnabled = true;
             EntryMatchNumber.IsEnabled = true;
             StartButton.IsEnabled = true;
             StartButton.BackgroundColor = ColorButtonOn;
             ScoutingLayout.IsVisible = false;
-            EntryTeamNumber.Text = string.Empty;
-            EntryMatchNumber.Text = (int.Parse(EntryMatchNumber.Text) + 1).ToString();
+            EntryTeamNumber.Text = "";
+            EntryMatchNumber.Text = (match.MatchNumber + 1).ToString();
             EntryTeamNumber.Focus();
         }
 

@@ -15,6 +15,8 @@ public partial class LoginPage : ContentPage
     {
         _global.ScouterName = ScouterName.Text;
         Message.Text = "Logged In!";
+        Routing.RegisterRoute("MainPage", typeof(MainPage));
+        Shell.Current.GoToAsync("MainPage");
     }
 
     private void ClearButton_Clicked(object? sender, EventArgs e)
