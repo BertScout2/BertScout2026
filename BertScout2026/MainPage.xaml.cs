@@ -102,14 +102,18 @@ namespace BertScout2026
         {
             EntryMatchNumber.Text = "";
             SetAutoNumberOfCycles(0);
+            SetAutoShootingSpeed(0);
             SetAutoBallsPerCycle(0);
+            SetAutoAccuracy(0);
             SetAutoRobotSpeed(0);
             SetAutoFloorPickup(false);
             SetAutoHumanPlayerPickup(false);
             SetAutoRoute(0);
             SetAutoClimbingLevel(0);
             SetTeleNumberOfCycles(0);
+            SetTeleShootingSpeed(0);
             SetTeleBallsPerCycle(0);
+            SetTeleAccuracy(0);
             SetTeleRobotSpeed(0);
             SetTeleFloorPickup(false);
             SetTeleHumanPlayerPickup(false);
@@ -122,14 +126,18 @@ namespace BertScout2026
         private void FillFields()
         {
             SetAutoNumberOfCycles(match.AutoNumberOfCycles);
+            SetAutoShootingSpeed(match.AutoShootingSpeed);
             SetAutoBallsPerCycle(match.AutoBallsPerCycle);
+            SetAutoAccuracy(match.AutoAccuracy);
             SetAutoRobotSpeed(match.AutoRobotSpeed);
             SetAutoFloorPickup(match.AutoFloorPickup);
             SetAutoHumanPlayerPickup(match.AutoHumanPlayerPickup);
             SetAutoRoute(match.AutoRoute);
             SetAutoClimbingLevel(match.AutoClimbingLevel);
             SetTeleNumberOfCycles(match.TeleNumberOfCycles);
+            SetTeleShootingSpeed(match.TeleShootingSpeed);
             SetTeleBallsPerCycle(match.TeleBallsPerCycle);
+            SetTeleAccuracy(match.TeleAccuracy);
             SetTeleRobotSpeed(match.TeleRobotSpeed);
             SetTeleFloorPickup(match.TeleFloorPickup);
             SetTeleHumanPlayerPickup(match.TeleHumanPlayerPickup);
@@ -169,6 +177,7 @@ namespace BertScout2026
             SetAutoNumberOfCycles(match.AutoNumberOfCycles - 1);
             SaveData();
         }
+
         private void SetAutoNumberOfCycles(int value)
         {
             if (value >= 0)
@@ -180,26 +189,92 @@ namespace BertScout2026
 
         #endregion
 
-        #region AutoBallsPerCycle
+        #region AutoShootingSpeed
 
-        private void AutoBallsPerCyclePlusClicked(object? sender, EventArgs e)
+        private void AutoShootingSpeedLow_Clicked(object sender, EventArgs e)
         {
-            SetAutoBallsPerCycle(match.AutoBallsPerCycle + 1);
+            SetAutoShootingSpeed(1);
             SaveData();
         }
-        private void AutoBallsPerCycleMinusClicked(object? sender, EventArgs e)
+
+        private void AutoShootingSpeedMedium_Clicked(object sender, EventArgs e)
         {
-            SetAutoBallsPerCycle(match.AutoBallsPerCycle - 1);
+            SetAutoShootingSpeed(2);
+            SaveData();
+        }
+
+        private void AutoShootingSpeedHigh_Clicked(object sender, EventArgs e)
+        {
+            SetAutoShootingSpeed(3);
+            SaveData();
+        }
+
+        private void SetAutoShootingSpeed(int value)
+        {
+            match.AutoShootingSpeed = value;
+            AutoShootingSpeedLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
+            AutoShootingSpeedMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            AutoShootingSpeedHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
+        }
+
+        #endregion
+
+        #region AutoBallsPerCycle
+
+        private void AutoBallsPerCycleLow_Clicked(object sender, EventArgs e)
+        {
+            SetAutoBallsPerCycle(1);
+            SaveData();
+        }
+
+        private void AutoBallsPerCycleMedium_Clicked(object sender, EventArgs e)
+        {
+            SetAutoBallsPerCycle(2);
+            SaveData();
+        }
+
+        private void AutoBallsPerCycleHigh_Clicked(object sender, EventArgs e)
+        {
+            SetAutoBallsPerCycle(3);
             SaveData();
         }
 
         private void SetAutoBallsPerCycle(int value)
         {
-            if (value >= 0)
-            {
-                match.AutoBallsPerCycle = value;
-                AutoBallsPerCyclePlus.Text = value.ToString();
-            }
+            match.AutoBallsPerCycle = value;
+            AutoBallsPerCycleLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
+            AutoBallsPerCycleMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            AutoBallsPerCycleHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
+        }
+
+        #endregion
+
+        #region AutoAccuracy
+
+        private void AutoAccuracyLow_Clicked(object sender, EventArgs e)
+        {
+            SetAutoAccuracy(1);
+            SaveData();
+        }
+
+        private void AutoAccuracyMedium_Clicked(object sender, EventArgs e)
+        {
+            SetAutoAccuracy(2);
+            SaveData();
+        }
+
+        private void AutoAccuracyHigh_Clicked(object sender, EventArgs e)
+        {
+            SetAutoAccuracy(3);
+            SaveData();
+        }
+
+        private void SetAutoAccuracy(int value)
+        {
+            match.AutoAccuracy = value;
+            AutoAccuracyLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
+            AutoAccuracyLow.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            AutoAccuracyLow.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
         }
 
         #endregion
@@ -368,27 +443,92 @@ namespace BertScout2026
 
         #endregion
 
+        #region TeleShootingSpeed
+
+        private void TeleShootingSpeedLow_Clicked(object sender, EventArgs e)
+        {
+            SetTeleShootingSpeed(1);
+            SaveData();
+        }
+
+        private void TeleShootingSpeedMedium_Clicked(object sender, EventArgs e)
+        {
+            SetTeleShootingSpeed(2);
+            SaveData();
+        }
+
+        private void TeleShootingSpeedHigh_Clicked(object sender, EventArgs e)
+        {
+            SetTeleShootingSpeed(3);
+            SaveData();
+        }
+
+        private void SetTeleShootingSpeed(int value)
+        {
+            match.TeleShootingSpeed = value;
+            TeleShootingSpeedLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
+            TeleShootingSpeedMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            TeleShootingSpeedHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
+        }
+
+        #endregion
+
         #region TeleBallsPerCycle
 
-        private void TeleBallsPerCyclePlusClicked(object? sender, EventArgs e)
+        private void TeleBallsPerCycleLow_Clicked(object sender, EventArgs e)
         {
-            SetTeleBallsPerCycle(match.TeleBallsPerCycle + 1);
-            SaveData();
-        }
-        private void TeleBallsPerCycleMinusClicked(object? sender, EventArgs e)
-        {
-            SetTeleBallsPerCycle(match.TeleBallsPerCycle - 1);
+            SetTeleBallsPerCycle(1);
             SaveData();
         }
 
+        private void TeleBallsPerCycleMedium_Clicked(object sender, EventArgs e)
+        {
+            SetTeleBallsPerCycle(2);
+            SaveData();
+        }
+
+        private void TeleBallsPerCycleHigh_Clicked(object sender, EventArgs e)
+        {
+            SetTeleBallsPerCycle(3);
+            SaveData();
+        }
 
         private void SetTeleBallsPerCycle(int value)
         {
-            if (value >= 0)
-            {
-                match.TeleBallsPerCycle = value;
-                TeleBallsPerCyclePlus.Text = value.ToString();
-            }
+            match.TeleBallsPerCycle = value;
+            TeleBallsPerCycleLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
+            TeleBallsPerCycleMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            TeleBallsPerCycleHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
+        }
+
+        #endregion
+
+        #region TeleAccuracy
+
+        private void TeleAccuracyLow_Clicked(object sender, EventArgs e)
+        {
+            SetTeleAccuracy(1);
+            SaveData();
+        }
+
+        private void TeleAccuracyMedium_Clicked(object sender, EventArgs e)
+        {
+            SetTeleAccuracy(2);
+            SaveData();
+        }
+
+        private void TeleAccuracyHigh_Clicked(object sender, EventArgs e)
+        {
+            SetTeleAccuracy(3);
+            SaveData();
+        }
+
+        private void SetTeleAccuracy(int value)
+        {
+            match.TeleAccuracy = value;
+            TeleAccuracyLow.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
+            TeleAccuracyMedium.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            TeleAccuracyHigh.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
         }
 
         #endregion

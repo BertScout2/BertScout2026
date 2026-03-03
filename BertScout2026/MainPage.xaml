@@ -150,22 +150,66 @@
                         />
 
                     <Button
-                        x:Name="AutoNumberOfCyclesPlus"
-                        Text="0"
-                        Clicked="AutoNumberOfCyclesPlusClicked"
+                        x:Name="AutoNumberOfCyclesMinus"
+                        Text="--"
+                        Clicked="AutoNumberOfCyclesMinusClicked"
                         Margin="0,0,0,0"
-                        BackgroundColor="Green"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
-                        x:Name="AutoNumberOfCyclesMinus"
-                        Text="-"
-                        Clicked="AutoNumberOfCyclesMinusClicked"
+                        x:Name="AutoNumberOfCyclesPlus"
+                        Text="0"
+                        Clicked="AutoNumberOfCyclesPlusClicked"
+                        Margin="10,0,0,0"
+                        BackgroundColor="Green"
+                        WidthRequest="70"
+                        HorizontalOptions="Center" />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Start"
+                    Margin="0,10,0,0"
+                    >
+
+                    <Label
+                        Text="Auto Shooting Speed:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                    <Button
+                        x:Name="AutoShootingSpeedLow"
+                        Text="Few"
+                        Margin="0,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="AutoShootingSpeedLow_Clicked"
+                        />
+
+                    <Button
+                        x:Name="AutoShootingSpeedMedium"
+                        Text="Medium"
                         Margin="10,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center"
+                        Clicked="AutoShootingSpeedMedium_Clicked"
+                        />
+
+                    <Button
+                        x:Name="AutoShootingSpeedHigh"
+                        Text="Many"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="AutoShootingSpeedHigh_Clicked"
+                        />
 
                 </HorizontalStackLayout>
 
@@ -182,22 +226,78 @@
                         />
 
                     <Button
-                        x:Name="AutoBallsPerCyclePlus"
-                        Text="0"
-                        Clicked="AutoBallsPerCyclePlusClicked"
+                        x:Name="AutoBallsPerCycleLow"
+                        Text="Few"
                         Margin="0,0,0,0"
-                        BackgroundColor="Green"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center"
+                        Clicked="AutoBallsPerCycleLow_Clicked"
+                        />
 
                     <Button
-                        x:Name="AutoBallsPerCycleMinus"
-                        Text="-"
-                        Clicked="AutoBallsPerCycleMinusClicked"
+                        x:Name="AutoBallsPerCycleMedium"
+                        Text="Medium"
                         Margin="10,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center"
+                        Clicked="AutoBallsPerCycleMedium_Clicked"
+                        />
+
+                    <Button
+                        x:Name="AutoBallsPerCycleHigh"
+                        Text="Many"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="AutoBallsPerCycleHigh_Clicked"
+                        />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Start"
+                    Margin="0,10,0,0"
+                    >
+
+                    <Label
+                        Text="Auto Accuracy:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                    <Button
+                        x:Name="AutoAccuracyLow"
+                        Text="Low"
+                        Margin="0,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="AutoAccuracyLow_Clicked"
+                        />
+
+                    <Button
+                        x:Name="AutoAccuracyMedium"
+                        Text="Medium"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="AutoAccuracyMedium_Clicked"
+                        />
+
+                    <Button
+                        x:Name="AutoAccuracyHigh"
+                        Text="High"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="AutoAccuracyHigh_Clicked"
+                        />
 
                 </HorizontalStackLayout>
 
@@ -472,29 +572,129 @@
                     >
 
                     <Label
-                        Text="Balls Per Cycle in Teleop:"
+                        Text="Tele Shooting Speed:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
-                        x:Name="TeleBallsPerCyclePlus"
-                        Text="0"
-                        Clicked="TeleBallsPerCyclePlusClicked"
+                        x:Name="TeleShootingSpeedLow"
+                        Text="Few"
                         Margin="0,0,0,0"
-                        BackgroundColor="Green"
+                        BackgroundColor="LightGray"
                         WidthRequest="70"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center"
+                        Clicked="TeleShootingSpeedLow_Clicked"
+                        />
 
                     <Button
-                        x:Name="TeleBallsPerCycleMinus"
-                        Text="-"
-                        Clicked="TeleBallsPerCycleMinusClicked"
+                        x:Name="TeleShootingSpeedMedium"
+                        Text="Medium"
                         Margin="10,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center"
+                        Clicked="TeleShootingSpeedMedium_Clicked"
+                        />
+
+                    <Button
+                        x:Name="TeleShootingSpeedHigh"
+                        Text="Many"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="TeleShootingSpeedHigh_Clicked"
+                        />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Start"
+                    Margin="0,10,0,0"
+                    >
+
+                    <Label
+                        Text="Tele Balls Per Cycle:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                    <Button
+                        x:Name="TeleBallsPerCycleLow"
+                        Text="Few"
+                        Margin="0,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="TeleBallsPerCycleLow_Clicked"
+                        />
+
+                    <Button
+                        x:Name="TeleBallsPerCycleMedium"
+                        Text="Medium"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="TeleBallsPerCycleMedium_Clicked"
+                        />
+
+                    <Button
+                        x:Name="TeleBallsPerCycleHigh"
+                        Text="Many"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="TeleBallsPerCycleHigh_Clicked"
+                        />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Start"
+                    Margin="0,10,0,0"
+                    >
+
+                    <Label
+                        Text="Tele Accuracy:"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                    <Button
+                        x:Name="TeleAccuracyLow"
+                        Text="Low"
+                        Margin="0,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="TeleAccuracyLow_Clicked"
+                        />
+
+                    <Button
+                        x:Name="TeleAccuracyMedium"
+                        Text="Medium"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="TeleAccuracyMedium_Clicked"
+                        />
+
+                    <Button
+                        x:Name="TeleAccuracyHigh"
+                        Text="High"
+                        Margin="10,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="70"
+                        HorizontalOptions="Center"
+                        Clicked="TeleAccuracyHigh_Clicked"
+                        />
 
                 </HorizontalStackLayout>
 
