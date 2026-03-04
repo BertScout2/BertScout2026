@@ -437,18 +437,18 @@
                         />
 
                     <Button
-                        x:Name="AutoHumanPlayerPickupFalse"
+                        x:Name="AutoStationPickupFalse"
                         Text="No"
-                        Clicked="AutoHumanPlayerPickupFalseClicked"
+                        Clicked="AutoStationPickupFalseClicked"
                         Margin="0,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
-                        x:Name="AutoHumanPlayerPickupTrue"
+                        x:Name="AutoStationPickupTrue"
                         Text="Yes"
-                        Clicked="AutoHumanPlayerPickupTrueClicked"
+                        Clicked="AutoStationPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
@@ -874,18 +874,18 @@
                         />
 
                     <Button
-                        x:Name="TeleHumanPlayerPickupFalse"
+                        x:Name="TeleStationPickupFalse"
                         Text="No"
-                        Clicked="TeleHumanPlayerPickupFalseClicked"
+                        Clicked="TeleStationPickupFalseClicked"
                         Margin="0,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
-                        x:Name="TeleHumanPlayerPickupTrue"
+                        x:Name="TeleStationPickupTrue"
                         Text="Yes"
-                        Clicked="TeleHumanPlayerPickupTrueClicked"
+                        Clicked="TeleStationPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"

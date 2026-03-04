@@ -6,6 +6,7 @@ namespace BertScout2026.Database;
 public class MatchDatabase : BaseDatabase
 {
     private const string MatchDBFilename = "MatchScout2026.db3";
+    private const string TableName = "Matches";
     private SqliteConnection Database = new();
     private string? _databasePath;
     private bool _created = false;
@@ -36,7 +37,7 @@ public class MatchDatabase : BaseDatabase
         }
         catch (Exception ex)
         {
-            throw new SystemException($"Error initializing Match database: {_databasePath}\r\n{ex.Message}");
+            throw new SystemException($"Error initializing Matches database: {_databasePath}\r\n{ex.Message}");
         }
     }
 
@@ -48,7 +49,7 @@ public class MatchDatabase : BaseDatabase
         selectCmd.CommandText =
             @$"SELECT
             {Match.MatchFieldsWithId()}
-            FROM Match 
+            FROM {TableName}
             ORDER BY MatchNumber";
         await using var reader = await selectCmd.ExecuteReaderAsync();
         var matches = new List<Match>();
@@ -67,7 +68,7 @@ public class MatchDatabase : BaseDatabase
         selectCmd.CommandText =
             @$"SELECT
             {Match.MatchFieldsWithId()}
-            FROM Match 
+            FROM {TableName}
             WHERE Changed = 1
             ORDER BY MatchNumber";
         await using var reader = await selectCmd.ExecuteReaderAsync();
@@ -87,7 +88,7 @@ public class MatchDatabase : BaseDatabase
         selectCmd.CommandText =
             @$"SELECT
             {Match.MatchFieldsWithId()}
-            FROM Match 
+            FROM {TableName}
             WHERE TeamNumber = @team
             ORDER BY MatchNumber";
         selectCmd.Parameters.AddWithValue("@team", team);
@@ -108,7 +109,7 @@ public class MatchDatabase : BaseDatabase
         selectCmd.CommandText =
             @$"SELECT
             {Match.MatchFieldsWithId()}
-            FROM Match 
+            FROM {TableName}
             WHERE MatchNumber = @match";
         selectCmd.Parameters.AddWithValue("@match", match);
         await using var reader = await selectCmd.ExecuteReaderAsync();
@@ -127,7 +128,7 @@ public class MatchDatabase : BaseDatabase
     //    selectCmd.CommandText =
     //        @$"SELECT
     //        {Match.MatchFieldsWithId()}
-    //        FROM Match 
+    //        FROM {TableName}
     //        WHERE Id = @id";
     //    selectCmd.Parameters.AddWithValue("@id", id);
     //    await using var reader = await selectCmd.ExecuteReaderAsync();
@@ -176,7 +177,7 @@ public class MatchDatabase : BaseDatabase
     //    await Database.OpenAsync();
     //    var cmd = Database.CreateCommand();
     //    cmd.CommandText =
-    //        @$"DELETE FROM Match 
+    //        @$"DELETE FROM {TableName}
     //        WHERE MatchNumber = @match";
     //    cmd.Parameters.AddWithValue("@match", match);
     //    var count = await cmd.ExecuteNonQueryAsync();

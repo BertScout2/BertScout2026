@@ -13,11 +13,11 @@ public class AirtableDatabase
     // data to/from Airtable. It also has a link to get a personal access token
     // which should have a scope of "data.records:write". Copy it immediately
     // and save it somewhere, then encrypt with Base64 and paste it here.
-    // Don't put the unencrypted personal access token into GitHub anywhere.
+    // Don't put the unencrypted personal access token into GitHub anywhere!
 
     // identifier for Airtable BertScout2026 database ("base")
     private const string AIRTABLE_BASE = "appZplIjMnsIy50Ku";
-    // identifier for Airtable BertScout2026 "Match" table
+    // identifier for Airtable BertScout2026 "Matches" table
     private const string AIRTABLE_TABLE = "tbloentIMHSxGJRjX";
 
     // Token is encrypted base64 to avoid GitHub searches for plain text Airtable
@@ -72,6 +72,7 @@ public class AirtableDatabase
             }
             else if (match.Changed)
             {
+                // use the AirtableId to identify changed records
                 IdFields idFields = new(match.AirtableId);
                 foreach (FieldInfo fi in myFieldInfo)
                 {
@@ -128,11 +129,10 @@ public class AirtableDatabase
 
     private static bool ExcludeName(string name)
     {
-        // these fields are not in airtable
-        if (name.Equals("id", StringComparison.OrdinalIgnoreCase)) return true;
-        if (name.Equals("airtableid", StringComparison.OrdinalIgnoreCase)) return true;
-        if (name.Equals("changed", StringComparison.OrdinalIgnoreCase)) return true;
-        if (name.Equals("deleted", StringComparison.OrdinalIgnoreCase)) return true;
+        // these fields are not sent to Airtable
+        if (name.Equals(nameof(Match.Id), StringComparison.OrdinalIgnoreCase)) return true;
+        if (name.Equals(nameof(Match.AirtableId), StringComparison.OrdinalIgnoreCase)) return true;
+        if (name.Equals(nameof(Match.Changed), StringComparison.OrdinalIgnoreCase)) return true;
         return false;
     }
 
@@ -159,17 +159,24 @@ public class AirtableDatabase
             }
             foreach (AirtableRecord rec in result.Records ?? [])
             {
-                foreach (Match match in matches
-                    .Where(x => x.Uuid == (rec.GetField("Uuid")?.ToString() ?? "")))
+                var uuid = rec.GetField("Uuid")?.ToString() ?? "";
+                foreach (Match match in matches)
                 {
-                    match.AirtableId = rec.Id ?? "";
-                    match.Changed = true;
-                    finalCount++;
+                    if (match.Uuid == uuid)
+                    {
+                        // Airtable sends back its own "Id" field which we save in AirtableId
+                        match.AirtableId = rec.Id ?? "";
+                        match.Changed = true;
+                        finalCount++;
+                        break;
+                    }
                 }
             }
             if (newRecordList.Count > 0)
             {
-                // can only send 5 batches per second - make sure that doesn't happen
+                // Can only send 5 batches of 1 record per second.
+                // Make sure that doesn't happen by sleeping 1/4 of a second
+                // between each batch.
                 Thread.Sleep(250);
             }
         }

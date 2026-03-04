@@ -107,7 +107,7 @@ namespace BertScout2026
             SetAutoAccuracy(0);
             SetAutoRobotSpeed(0);
             SetAutoFloorPickup(false);
-            SetAutoHumanPlayerPickup(false);
+            SetAutoStationPickup(false);
             SetAutoRoute(0);
             SetAutoClimbingLevel(0);
             SetTeleNumberOfCycles(0);
@@ -116,7 +116,7 @@ namespace BertScout2026
             SetTeleAccuracy(0);
             SetTeleRobotSpeed(0);
             SetTeleFloorPickup(false);
-            SetTeleHumanPlayerPickup(false);
+            SetTeleStationPickup(false);
             SetTeleRoute(0);
             SetTeleClimbingLevel(0);
             SetScoreStar(0);
@@ -131,7 +131,7 @@ namespace BertScout2026
             SetAutoAccuracy(match.AutoAccuracy);
             SetAutoRobotSpeed(match.AutoRobotSpeed);
             SetAutoFloorPickup(match.AutoFloorPickup);
-            SetAutoHumanPlayerPickup(match.AutoHumanPlayerPickup);
+            SetAutoStationPickup(match.AutoStationPickup);
             SetAutoRoute(match.AutoRoute);
             SetAutoClimbingLevel(match.AutoClimbingLevel);
             SetTeleNumberOfCycles(match.TeleNumberOfCycles);
@@ -140,7 +140,7 @@ namespace BertScout2026
             SetTeleAccuracy(match.TeleAccuracy);
             SetTeleRobotSpeed(match.TeleRobotSpeed);
             SetTeleFloorPickup(match.TeleFloorPickup);
-            SetTeleHumanPlayerPickup(match.TeleHumanPlayerPickup);
+            SetTeleStationPickup(match.TeleStationPickup);
             SetTeleRoute(match.TeleRoute);
             SetTeleClimbingLevel(match.TeleClimbingLevel);
             SetScoreStar(match.Score);
@@ -357,23 +357,23 @@ namespace BertScout2026
 
         #endregion
 
-        #region AutoHumanPlayerPickup
+        #region AutoStationPickup
 
-        private void AutoHumanPlayerPickupFalseClicked(object? sender, EventArgs e)
+        private void AutoStationPickupFalseClicked(object? sender, EventArgs e)
         {
-            SetAutoHumanPlayerPickup(false);
+            SetAutoStationPickup(false);
             SaveData();
         }
-        private void AutoHumanPlayerPickupTrueClicked(object? sender, EventArgs e)
+        private void AutoStationPickupTrueClicked(object? sender, EventArgs e)
         {
-            SetAutoHumanPlayerPickup(true);
+            SetAutoStationPickup(true);
             SaveData();
         }
-        private void SetAutoHumanPlayerPickup(bool value)
+        private void SetAutoStationPickup(bool value)
         {
-            match.AutoHumanPlayerPickup = value;
-            AutoHumanPlayerPickupFalse.BackgroundColor = !value ? ColorButtonOn : ColorButtonOff;
-            AutoHumanPlayerPickupTrue.BackgroundColor = value ? ColorButtonOn : ColorButtonOff;
+            match.AutoStationPickup = value;
+            AutoStationPickupFalse.BackgroundColor = !value ? ColorButtonOn : ColorButtonOff;
+            AutoStationPickupTrue.BackgroundColor = value ? ColorButtonOn : ColorButtonOff;
         }
 
         #endregion
@@ -632,24 +632,24 @@ namespace BertScout2026
 
         #endregion
 
-        #region TeleHumanPlayerPickup
+        #region TeleStationPickup
 
-        private void TeleHumanPlayerPickupFalseClicked(object? sender, EventArgs e)
+        private void TeleStationPickupFalseClicked(object? sender, EventArgs e)
         {
-            SetTeleHumanPlayerPickup(false);
+            SetTeleStationPickup(false);
             SaveData();
         }
-        private void TeleHumanPlayerPickupTrueClicked(object? sender, EventArgs e)
+        private void TeleStationPickupTrueClicked(object? sender, EventArgs e)
         {
-            SetTeleHumanPlayerPickup(true);
+            SetTeleStationPickup(true);
             SaveData();
         }
 
-        private void SetTeleHumanPlayerPickup(bool value)
+        private void SetTeleStationPickup(bool value)
         {
-            match.TeleHumanPlayerPickup = value;
-            TeleHumanPlayerPickupFalse.BackgroundColor = !value ? ColorButtonOn : ColorButtonOff;
-            TeleHumanPlayerPickupTrue.BackgroundColor = value ? ColorButtonOn : ColorButtonOff;
+            match.TeleStationPickup = value;
+            TeleStationPickupFalse.BackgroundColor = !value ? ColorButtonOn : ColorButtonOff;
+            TeleStationPickupTrue.BackgroundColor = value ? ColorButtonOn : ColorButtonOff;
         }
 
         #endregion
