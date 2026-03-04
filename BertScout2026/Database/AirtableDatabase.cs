@@ -44,8 +44,14 @@ public class AirtableDatabase
         List<Fields> newRecordList = [];
         List<IdFields> updatedRecordList = [];
         FieldInfo[] myFieldInfo;
-        Type myType = typeof(Match);
-        myFieldInfo = myType.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
+
+        // apparently matchType.GetFields() does not include BaseFields, so get separately and combine
+        Type matchType = typeof(Match);
+        Type baseType = typeof(Models.BaseModel);
+        var matchList = matchType.GetFields(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance).ToList();
+        var baseList = baseType.GetFields(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance).ToList();
+        matchList.AddRange(baseList);
+        myFieldInfo = [.. matchList];
 
         using AirtableBase airtableBase = new(AirtableToken(), AIRTABLE_BASE);
 
@@ -160,16 +166,13 @@ public class AirtableDatabase
             foreach (AirtableRecord rec in result.Records ?? [])
             {
                 var uuid = rec.GetField("Uuid")?.ToString() ?? "";
-                foreach (Match match in matches)
+                foreach (Match match in matches
+                    .Where(x => x.Uuid.Equals(uuid, StringComparison.OrdinalIgnoreCase)))
                 {
-                    if (match.Uuid == uuid)
-                    {
-                        // Airtable sends back its own "Id" field which we save in AirtableId
-                        match.AirtableId = rec.Id ?? "";
-                        match.Changed = true;
-                        finalCount++;
-                        break;
-                    }
+                    // Airtable sends back its own "Id" field which we save in AirtableId
+                    match.AirtableId = rec.Id ?? "";
+                    match.Changed = true;
+                    finalCount++;
                 }
             }
             if (newRecordList.Count > 0)

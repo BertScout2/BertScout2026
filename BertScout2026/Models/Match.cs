@@ -19,7 +19,7 @@ public class Match : BaseModel
     public int AutoAccuracy { get; set; }
     public int AutoRobotSpeed { get; set; }
     public bool AutoFloorPickup { get; set; }
-    public bool AutoStationPickup { get; set; }
+    public bool AutoOutpostPickup { get; set; }
     public int AutoRoute { get; set; }
     public int AutoClimbingLevel { get; set; }
 
@@ -30,7 +30,7 @@ public class Match : BaseModel
     public int TeleAccuracy { get; set; }
     public int TeleRobotSpeed { get; set; }
     public bool TeleFloorPickup { get; set; }
-    public bool TeleStationPickup { get; set; }
+    public bool TeleOutpostPickup { get; set; }
     public int TeleRoute { get; set; }
     public int TeleClimbingLevel { get; set; }
 
@@ -66,7 +66,7 @@ public class Match : BaseModel
             , AutoAccuracy INTEGER NOT NULL
             , AutoRobotSpeed INTEGER NOT NULL
             , AutoFloorPickup INTEGER NOT NULL
-            , AutoStationPickup INTEGER NOT NULL
+            , AutoOutpostPickup INTEGER NOT NULL
             , AutoRoute INTEGER NOT NULL
             , AutoClimbingLevel INTEGER NOT NULL
             , TeleNumberOfCycles INTEGER NOT NULL
@@ -75,7 +75,7 @@ public class Match : BaseModel
             , TeleAccuracy INTEGER NOT NULL
             , TeleRobotSpeed INTEGER NOT NULL
             , TeleFloorPickup INTEGER NOT NULL
-            , TeleStationPickup INTEGER NOT NULL
+            , TeleOutpostPickup INTEGER NOT NULL
             , TeleRoute INTEGER NOT NULL
             , TeleClimbingLevel INTEGER NOT NULL
             , Score INTEGER NOT NULL
@@ -110,7 +110,7 @@ public class Match : BaseModel
             , AutoAccuracy
             , AutoRobotSpeed
             , AutoFloorPickup
-            , AutoStationPickup
+            , AutoOutpostPickup
             , AutoRoute
             , AutoClimbingLevel
             , TeleNumberOfCycles
@@ -119,7 +119,7 @@ public class Match : BaseModel
             , TeleAccuracy
             , TeleRobotSpeed
             , TeleFloorPickup
-            , TeleStationPickup
+            , TeleOutpostPickup
             , TeleRoute
             , TeleClimbingLevel
             , Score
@@ -143,7 +143,7 @@ public class Match : BaseModel
             , {AutoAccuracy}
             , {AutoRobotSpeed}
             , {(AutoFloorPickup ? 1 : 0)}
-            , {(AutoStationPickup ? 1 : 0)}
+            , {(AutoOutpostPickup ? 1 : 0)}
             , {AutoRoute}
             , {AutoClimbingLevel}
             , {TeleNumberOfCycles}
@@ -152,7 +152,7 @@ public class Match : BaseModel
             , {TeleAccuracy}
             , {TeleRobotSpeed}
             , {(TeleFloorPickup ? 1 : 0)}
-            , {(TeleStationPickup ? 1 : 0)}
+            , {(TeleOutpostPickup ? 1 : 0)}
             , {TeleRoute}
             , {TeleClimbingLevel}
             , {Score}
@@ -175,7 +175,7 @@ public class Match : BaseModel
             , AutoAccuracy = {AutoAccuracy}
             , AutoRobotSpeed = {AutoRobotSpeed}
             , AutoFloorPickup = {(AutoFloorPickup ? 1 : 0)}
-            , AutoStationPickup = {(AutoStationPickup ? 1 : 0)}
+            , AutoOutpostPickup = {(AutoOutpostPickup ? 1 : 0)}
             , AutoRoute = {AutoRoute}
             , AutoClimbingLevel = {AutoClimbingLevel}
             , TeleNumberOfCycles = {TeleNumberOfCycles}
@@ -184,7 +184,7 @@ public class Match : BaseModel
             , TeleAccuracy = {TeleAccuracy}
             , TeleRobotSpeed = {TeleRobotSpeed}
             , TeleFloorPickup = {(TeleFloorPickup ? 1 : 0)}
-            , TeleStationPickup = {(TeleStationPickup ? 1 : 0)}
+            , TeleOutpostPickup = {(TeleOutpostPickup ? 1 : 0)}
             , TeleRoute = {TeleRoute}
             , TeleClimbingLevel = {TeleClimbingLevel}
             , Score = {Score}
@@ -205,7 +205,7 @@ public class Match : BaseModel
         match.AutoAccuracy = reader.GetInt32(BaseFieldCount + 6);
         match.AutoRobotSpeed = reader.GetInt32(BaseFieldCount + 7);
         match.AutoFloorPickup = reader.GetInt32(BaseFieldCount + 8) == 1;
-        match.AutoStationPickup = reader.GetInt32(BaseFieldCount + 9) == 1;
+        match.AutoOutpostPickup = reader.GetInt32(BaseFieldCount + 9) == 1;
         match.AutoRoute = reader.GetInt32(BaseFieldCount + 10);
         match.AutoClimbingLevel = reader.GetInt32(BaseFieldCount + 11);
         match.TeleNumberOfCycles = reader.GetInt32(BaseFieldCount + 12);
@@ -214,7 +214,7 @@ public class Match : BaseModel
         match.TeleAccuracy = reader.GetInt32(BaseFieldCount + 15);
         match.TeleRobotSpeed = reader.GetInt32(BaseFieldCount + 16);
         match.TeleFloorPickup = reader.GetInt32(BaseFieldCount + 17) == 1;
-        match.TeleStationPickup = reader.GetInt32(BaseFieldCount + 18) == 1;
+        match.TeleOutpostPickup = reader.GetInt32(BaseFieldCount + 18) == 1;
         match.TeleRoute = reader.GetInt32(BaseFieldCount + 19);
         match.TeleClimbingLevel = reader.GetInt32(BaseFieldCount + 20);
         match.Score = reader.GetInt32(BaseFieldCount + 21);

@@ -430,25 +430,25 @@
                     >
 
                     <Label
-                        Text="Auto Human Player Pickup:"
+                        Text="Auto Outpost Pickup:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
-                        x:Name="AutoStationPickupFalse"
+                        x:Name="AutoOutpostPickupFalse"
                         Text="No"
-                        Clicked="AutoStationPickupFalseClicked"
+                        Clicked="AutoOutpostPickupFalseClicked"
                         Margin="0,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
-                        x:Name="AutoStationPickupTrue"
+                        x:Name="AutoOutpostPickupTrue"
                         Text="Yes"
-                        Clicked="AutoStationPickupTrueClicked"
+                        Clicked="AutoOutpostPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
@@ -867,25 +867,25 @@
                     >
 
                     <Label
-                        Text="Tele Human Player Pickup:"
+                        Text="Tele Outpost Pickup:"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 
                     <Button
-                        x:Name="TeleStationPickupFalse"
+                        x:Name="TeleOutpostPickupFalse"
                         Text="No"
-                        Clicked="TeleStationPickupFalseClicked"
+                        Clicked="TeleOutpostPickupFalseClicked"
                         Margin="0,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
                         HorizontalOptions="Center" />
 
                     <Button
-                        x:Name="TeleStationPickupTrue"
+                        x:Name="TeleOutpostPickupTrue"
                         Text="Yes"
-                        Clicked="TeleStationPickupTrueClicked"
+                        Clicked="TeleOutpostPickupTrueClicked"
                         Margin="10,0,0,0"
                         BackgroundColor="LightGray"
                         WidthRequest="70"
