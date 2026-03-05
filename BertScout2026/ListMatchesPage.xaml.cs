@@ -1,13 +1,27 @@
+using BertScout2026.Database;
 using BertScout2026.Models;
 
 namespace BertScout2026;
 
 public partial class ListMatchesPage : ContentPage
 {
-	public List<MatchTeam> Matches = [];
+    private readonly GlobalViewModel _global;
 
-	public ListMatchesPage()
-	{
-		InitializeComponent();
-	}
+    private readonly MatchDatabase db = new();
+
+    public List<MatchSummary> Matches = [];
+
+    public ListMatchesPage(GlobalViewModel global)
+    {
+        InitializeComponent();
+        _global = global;
+        BindingContext = _global;
+        RefreshMatchSummaryList();
+    }
+
+    private async void RefreshMatchSummaryList()
+    {
+        var result = await db.GetMatchSummaryListAsync();
+        _global.MatchSummaries = result;
+    }
 }

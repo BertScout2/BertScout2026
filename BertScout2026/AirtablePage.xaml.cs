@@ -32,6 +32,7 @@ public partial class AirtablePage : ContentPage
                     await db.SaveMatchItemAsync(match);
                 }
             }
+            RefreshMatchSummaryList();
             AirtableDoneLabel.Text = "Done!";
             AirtableSend.IsEnabled = true;
         }
@@ -40,5 +41,11 @@ public partial class AirtablePage : ContentPage
             ErrorLabel.Text = ex.Message;
             ErrorLabel.IsVisible = true;
         }
+    }
+
+    private async void RefreshMatchSummaryList()
+    {
+        var result = await db.GetMatchSummaryListAsync();
+        _global.MatchSummaries = result;
     }
 }

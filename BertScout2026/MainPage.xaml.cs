@@ -111,7 +111,7 @@ namespace BertScout2026
             SetAutoRobotSpeed(0);
             //SetAutoFloorPickup(false);
             //SetAutoOutpostPickup(false);
-            SetAutoRoute(0);
+            //SetAutoRoute(0);
             SetAutoClimbingLevel(0);
             SetTeleNumberOfCycles(0);
             SetTeleShootingSpeed(0);
@@ -120,7 +120,7 @@ namespace BertScout2026
             SetTeleRobotSpeed(0);
             //SetTeleFloorPickup(false);
             //SetTeleOutpostPickup(false);
-            SetTeleRoute(0);
+            //SetTeleRoute(0);
             SetTeleClimbingLevel(0);
             SetScoreStar(0);
             SetComments("");
@@ -135,7 +135,7 @@ namespace BertScout2026
             SetAutoRobotSpeed(match.AutoRobotSpeed);
             //SetAutoFloorPickup(match.AutoFloorPickup);
             //SetAutoOutpostPickup(match.AutoOutpostPickup);
-            SetAutoRoute(match.AutoRoute);
+            //SetAutoRoute(match.AutoRoute);
             SetAutoClimbingLevel(match.AutoClimbingLevel);
             SetTeleNumberOfCycles(match.TeleNumberOfCycles);
             SetTeleShootingSpeed(match.TeleShootingSpeed);
@@ -144,7 +144,7 @@ namespace BertScout2026
             SetTeleRobotSpeed(match.TeleRobotSpeed);
             //SetTeleFloorPickup(match.TeleFloorPickup);
             //SetTeleOutpostPickup(match.TeleOutpostPickup);
-            SetTeleRoute(match.TeleRoute);
+            //SetTeleRoute(match.TeleRoute);
             SetTeleClimbingLevel(match.TeleClimbingLevel);
             SetScoreStar(match.Score);
             SetComments(match.Comments);
@@ -157,6 +157,7 @@ namespace BertScout2026
                 return;
             }
             SaveData();
+            RefreshMatchSummaryList();
             var newMatchNum = match.MatchNumber + 1;
             StartButton.BackgroundColor = ColorButtonOn;
             ScoutingLayout.IsVisible = false;
@@ -405,6 +406,7 @@ namespace BertScout2026
         #endregion
         */
 
+        /*
         #region AutoRoute
 
         private void AutoRouteNone_Clicked(object? sender, EventArgs e)
@@ -434,6 +436,7 @@ namespace BertScout2026
         }
 
         #endregion
+        */
 
         #region AutoClimbingLevel
 
@@ -685,6 +688,7 @@ namespace BertScout2026
         #endregion
         */
 
+        /*
         #region TeleRoute
 
         private void TeleRouteNone_Clicked(object? sender, EventArgs e)
@@ -714,6 +718,7 @@ namespace BertScout2026
         }
 
         #endregion
+        */
 
         #region TeleClimbingLevel
 
@@ -875,6 +880,12 @@ namespace BertScout2026
             Comments.Text += CommentPicker.SelectedItem.ToString() + " ";
             CommentPicker.SelectedIndex = -1;
             SaveData();
+        }
+
+        private async void RefreshMatchSummaryList()
+        {
+            var result = await db.GetMatchSummaryListAsync();
+            _global.MatchSummaries = result;
         }
     }
 }

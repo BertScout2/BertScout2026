@@ -1,42 +1,66 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:DataType="ContentPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="BertScout2026.ListMatchesPage"
-    Title="ListMatchesPage">
+    xmlns:local="clr-namespace:BertScout2026"
+    xmlns:models="clr-namespace:BertScout2026.Models"
+    x:DataType="local:GlobalViewModel"
+    Title="List Matches">
 
-    <!--<CollectionView ItemsSource="{Binding Matches}">
-        --><!-- Define the appearance of each item in the list --><!--
+    <CollectionView
+        ItemsSource="{Binding MatchSummaries}"
+        ItemsLayout="VerticalGrid"
+        >
         <CollectionView.ItemTemplate>
-            <DataTemplate>
-                --><!-- Use a Grid for a structured, multi-column layout --><!--
-                <Grid ColumnDefinitions="*, Auto, Auto" Padding="10">
-
-                    --><!-- Product Name (Label) --><!--
-                    <Label 
-                        Grid.Column="0" 
-                        Text="{Binding ProductName}" 
-                        VerticalOptions="Center" />
-
-                    --><!-- Quantity Entry --><!--
-                    <Entry 
-                        Grid.Column="1" 
-                        Text="{Binding Quantity}" 
-                        Placeholder="Qty" 
-                        Keyboard="Numeric"
-                        HorizontalOptions="FillAndExpand" />
-
-                    --><!-- Unit Label --><!--
-                    <Label 
-                        Grid.Column="2" 
-                        Text="g" 
-                        VerticalOptions="Center" 
-                        Margin="5,0,0,0" />
-
+            <DataTemplate x:DataType="models:MatchSummary">
+                <Grid
+                    >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Column="0"
+                        Text="Match:"
+                        />
+                    <Label
+                        Grid.Column="1"
+                        Text="{Binding MatchNumber}"
+                        />
+                    <Label
+                        Grid.Column="2"
+                        Text="Team:"
+                        />
+                    <Label
+                        Grid.Column="3"
+                        Text="{Binding TeamNumber}"
+                        />
+                    <Label
+                        Grid.Column="4"
+                        Text="Scout:"
+                        />
+                    <Label
+                        Grid.Column="5"
+                        Text="{Binding ScoutName}"
+                        />
+                    <Label
+                        Grid.Column="6"
+                        Text="{Binding Uploaded}"
+                        />
                 </Grid>
             </DataTemplate>
+
         </CollectionView.ItemTemplate>
-    </CollectionView>-->
+
+    </CollectionView>
 
 </ContentPage>

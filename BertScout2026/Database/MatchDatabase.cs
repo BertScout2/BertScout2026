@@ -60,6 +60,33 @@ public class MatchDatabase : BaseDatabase
         return matches;
     }
 
+    // get short info for listing
+    public async Task<List<MatchSummary>> GetMatchSummaryListAsync()
+    {
+        await InitMatchDB();
+        await Database.OpenAsync();
+        var selectCmd = Database.CreateCommand();
+        selectCmd.CommandText =
+            @$"SELECT
+            MatchNumber
+            , TeamNumber
+            , ScoutName
+            , CASE
+                WHEN AirtableID IS NOT NULL AND AirtableID != '' THEN
+                    CASE WHEN Changed = 0 THEN 'Uploaded' ELSE 'Changed' END
+                ELSE ''
+            END as Uploaded
+            FROM {TableName}
+            ORDER BY MatchNumber";
+        await using var reader = await selectCmd.ExecuteReaderAsync();
+        var matches = new List<MatchSummary>();
+        while (await reader.ReadAsync())
+        {
+            matches.Add(MatchSummary.FromReader(reader));
+        }
+        return matches;
+    }
+
     public async Task<List<Match>> GetChangedMatchItemsAsync()
     {
         await InitMatchDB();
@@ -120,26 +147,7 @@ public class MatchDatabase : BaseDatabase
         return null;
     }
 
-    //public async Task<Match?> GetMatchByIdAsync(int id)
-    //{
-    //    await InitMatchDB();
-    //    await Database.OpenAsync();
-    //    var selectCmd = Database.CreateCommand();
-    //    selectCmd.CommandText =
-    //        @$"SELECT
-    //        {Match.MatchFieldsWithId()}
-    //        FROM {TableName}
-    //        WHERE Id = @id";
-    //    selectCmd.Parameters.AddWithValue("@id", id);
-    //    await using var reader = await selectCmd.ExecuteReaderAsync();
-    //    if (await reader.ReadAsync())
-    //    {
-    //        return Match.FromReader(reader);
-    //    }
-    //    return null;
-    //}
-
-    public async Task<int> SaveMatchItemAsync(Match item)
+     public async Task<int> SaveMatchItemAsync(Match item)
     {
         await InitMatchDB();
         await Database.OpenAsync();

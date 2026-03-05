@@ -35,14 +35,14 @@
         </Tab>    
     </FlyoutItem>-->
 
-    <!--<FlyoutItem Title="List Matches">
+    <FlyoutItem Title="List Matches">
         <Tab>
             <ShellContent
                 Title="List Matches"
                 ContentTemplate="{DataTemplate local:ListMatchesPage}"
                 />
         </Tab>
-    </FlyoutItem>-->
+    </FlyoutItem>
 
     <FlyoutItem Title="Airtable">
         <Tab>

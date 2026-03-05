@@ -24,7 +24,7 @@
             />
 
         <Label
-            Text="Version 2026.03.04"
+            Text="Version 2026.03.05"
             HorizontalOptions="Center"
             FontSize="{OnPlatform WinUI=Small, Android=Medium}"
             />

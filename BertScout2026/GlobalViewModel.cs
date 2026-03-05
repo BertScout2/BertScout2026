@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using BertScout2026.Models;
+using System.ComponentModel;
 
 namespace BertScout2026;
 
@@ -35,6 +36,19 @@ public partial class GlobalViewModel : INotifyPropertyChanged
                 Global.AirtableUploadCount = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AirtableUploadCount)));
             }
+        }
+    }
+
+    public List<MatchSummary> MatchSummaries
+    {
+        get
+        {
+            return Global.MatchSummaries;
+        }
+        set
+        {
+            Global.MatchSummaries = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MatchSummaries)));
         }
     }
 }
