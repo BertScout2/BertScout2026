@@ -21,4 +21,20 @@ public partial class GlobalViewModel : INotifyPropertyChanged
             }
         }
     }
+
+    public int AirtableUploadCount
+    {
+        get
+        {
+            return Global.AirtableUploadCount;
+        }
+        set
+        {
+            if ((Global.AirtableUploadCount != value) && (value >= 0))
+            {
+                Global.AirtableUploadCount = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AirtableUploadCount)));
+            }
+        }
+    }
 }

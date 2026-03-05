@@ -59,6 +59,10 @@ namespace BertScout2026
                     {
                         EntryTeamNumber.Text = match.TeamNumber.ToString();
                     }
+                    else if (int.TryParse(EntryTeamNumber.Text, out int newTeam) && newTeam > 0)
+                    {
+                        match.TeamNumber = newTeam;
+                    }
                     if (string.IsNullOrEmpty(match.ScoutName))
                     {
                         match.ScoutName = _global.ScouterName;
@@ -100,14 +104,13 @@ namespace BertScout2026
 
         private void ClearFields()
         {
-            EntryMatchNumber.Text = "";
             SetAutoNumberOfCycles(0);
             SetAutoShootingSpeed(0);
             SetAutoBallsPerCycle(0);
             SetAutoAccuracy(0);
             SetAutoRobotSpeed(0);
-            SetAutoFloorPickup(false);
-            SetAutoOutpostPickup(false);
+            //SetAutoFloorPickup(false);
+            //SetAutoOutpostPickup(false);
             SetAutoRoute(0);
             SetAutoClimbingLevel(0);
             SetTeleNumberOfCycles(0);
@@ -115,8 +118,8 @@ namespace BertScout2026
             SetTeleBallsPerCycle(0);
             SetTeleAccuracy(0);
             SetTeleRobotSpeed(0);
-            SetTeleFloorPickup(false);
-            SetTeleOutpostPickup(false);
+            //SetTeleFloorPickup(false);
+            //SetTeleOutpostPickup(false);
             SetTeleRoute(0);
             SetTeleClimbingLevel(0);
             SetScoreStar(0);
@@ -130,8 +133,8 @@ namespace BertScout2026
             SetAutoBallsPerCycle(match.AutoBallsPerCycle);
             SetAutoAccuracy(match.AutoAccuracy);
             SetAutoRobotSpeed(match.AutoRobotSpeed);
-            SetAutoFloorPickup(match.AutoFloorPickup);
-            SetAutoOutpostPickup(match.AutoOutpostPickup);
+            //SetAutoFloorPickup(match.AutoFloorPickup);
+            //SetAutoOutpostPickup(match.AutoOutpostPickup);
             SetAutoRoute(match.AutoRoute);
             SetAutoClimbingLevel(match.AutoClimbingLevel);
             SetTeleNumberOfCycles(match.TeleNumberOfCycles);
@@ -139,8 +142,8 @@ namespace BertScout2026
             SetTeleBallsPerCycle(match.TeleBallsPerCycle);
             SetTeleAccuracy(match.TeleAccuracy);
             SetTeleRobotSpeed(match.TeleRobotSpeed);
-            SetTeleFloorPickup(match.TeleFloorPickup);
-            SetTeleOutpostPickup(match.TeleOutpostPickup);
+            //SetTeleFloorPickup(match.TeleFloorPickup);
+            //SetTeleOutpostPickup(match.TeleOutpostPickup);
             SetTeleRoute(match.TeleRoute);
             SetTeleClimbingLevel(match.TeleClimbingLevel);
             SetScoreStar(match.Score);
@@ -154,13 +157,33 @@ namespace BertScout2026
                 return;
             }
             SaveData();
-            EntryTeamNumber.IsEnabled = true;
-            EntryMatchNumber.IsEnabled = true;
-            StartButton.IsEnabled = true;
+            var newMatchNum = match.MatchNumber + 1;
             StartButton.BackgroundColor = ColorButtonOn;
             ScoutingLayout.IsVisible = false;
             EntryTeamNumber.Text = "";
-            EntryMatchNumber.Text = (match.MatchNumber + 1).ToString();
+            var existingMatch = Task.Run(() => db.GetMatchAsync(newMatchNum)).Result;
+            if (existingMatch != null)
+            {
+                match = existingMatch;
+                if (string.IsNullOrEmpty(EntryTeamNumber.Text))
+                {
+                    EntryTeamNumber.Text = match.TeamNumber.ToString();
+                }
+                if (string.IsNullOrEmpty(match.ScoutName))
+                {
+                    match.ScoutName = _global.ScouterName;
+                }
+                FillFields();
+            }
+            else
+            {
+                match = new Match(newMatchNum);
+                ClearFields();
+            }
+            EntryMatchNumber.Text = newMatchNum.ToString();
+            EntryTeamNumber.IsEnabled = true;
+            EntryMatchNumber.IsEnabled = true;
+            StartButton.IsEnabled = true;
             EntryTeamNumber.Focus();
         }
 
@@ -335,6 +358,7 @@ namespace BertScout2026
 
         #endregion
 
+        /*
         #region AutoFloorPickup
 
         private void AutoFloorPickupFalseClicked(object? sender, EventArgs e)
@@ -356,7 +380,9 @@ namespace BertScout2026
         }
 
         #endregion
+        */
 
+        /*
         #region AutoOutpostPickup
 
         private void AutoOutpostPickupFalseClicked(object? sender, EventArgs e)
@@ -377,6 +403,7 @@ namespace BertScout2026
         }
 
         #endregion
+        */
 
         #region AutoRoute
 
@@ -610,6 +637,7 @@ namespace BertScout2026
 
         #endregion
 
+        /*
         #region TeleFloorPickup
 
         private void TeleFloorPickupFalseClicked(object? sender, EventArgs e)
@@ -631,7 +659,9 @@ namespace BertScout2026
         }
 
         #endregion
+        */
 
+        /*
         #region TeleOutpostPickup
 
         private void TeleOutpostPickupFalseClicked(object? sender, EventArgs e)
@@ -653,6 +683,7 @@ namespace BertScout2026
         }
 
         #endregion
+        */
 
         #region TeleRoute
 

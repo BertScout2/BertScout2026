@@ -5,23 +5,40 @@ namespace BertScout2026;
 public partial class AirtablePage : ContentPage
 {
     private readonly MatchDatabase db = new();
+    private readonly GlobalViewModel _global;
 
-    public AirtablePage()
+    public AirtablePage(GlobalViewModel global)
     {
         InitializeComponent();
+        _global = global;
+        BindingContext = _global;
     }
 
     private async void AirtableSend_Clicked(object? sender, EventArgs e)
     {
-        var matches = await db.GetMatchItemsAsync();
-        var count = await AirtableDatabase.AirtableSendRecords(matches);
-        foreach (var match in matches)
+        try
         {
-            if (match.Changed)
+            AirtableDoneLabel.Text = "";
+            ErrorLabel.IsVisible = false;
+            _global.AirtableUploadCount = 0;
+            AirtableSend.IsEnabled = false;
+            var matches = await db.GetMatchItemsAsync();
+            _global.AirtableUploadCount = await AirtableDatabase.AirtableSendRecords(matches);
+            foreach (var match in matches)
             {
-                match.Changed = false;
-                await db.SaveMatchItemAsync(match);
+                if (match.Changed)
+                {
+                    match.Changed = false;
+                    await db.SaveMatchItemAsync(match);
+                }
             }
+            AirtableDoneLabel.Text = "Done!";
+            AirtableSend.IsEnabled = true;
+        }
+        catch (Exception ex)
+        {
+            ErrorLabel.Text = ex.Message;
+            ErrorLabel.IsVisible = true;
         }
     }
 }

@@ -6,7 +6,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:BertScout2026"
     Shell.FlyoutBehavior="Flyout"
-    Title="BertScout2026">
+    Title="Bert Scout 2026">
 
     <FlyoutItem Title="Login">
         <Tab>
@@ -26,24 +26,23 @@
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Match Schedule">
+    <!--<FlyoutItem Title="Match Schedule">
         <Tab>
             <ShellContent
                 Title="Match Schedule"
                 ContentTemplate="{DataTemplate local:MatchSchedulePage}"
                 />
         </Tab>    
-    </FlyoutItem>
+    </FlyoutItem>-->
 
-
-    <FlyoutItem Title="List Matches">
+    <!--<FlyoutItem Title="List Matches">
         <Tab>
             <ShellContent
                 Title="List Matches"
                 ContentTemplate="{DataTemplate local:ListMatchesPage}"
                 />
         </Tab>
-    </FlyoutItem>
+    </FlyoutItem>-->
 
     <FlyoutItem Title="Airtable">
         <Tab>

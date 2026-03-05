@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:DataType="ContentPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="BertScout2026.AirtablePage"
+    xmlns:local="clr-namespace:BertScout2026"
+    x:DataType="local:GlobalViewModel"
     Title="AirtablePage"
     >
 
@@ -26,6 +27,40 @@
             HeightRequest="50"
             HorizontalOptions="Center"
             Clicked="AirtableSend_Clicked"
+            />
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            >
+
+            <Label
+                Text="Number of records uploaded:"
+                Margin="0,0,0,0"
+                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
+
+            <Label
+                x:Name="AirtableCountLabel"
+                Margin="10,0,0,0"
+                Text="{Binding AirtableUploadCount}"
+                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
+
+            <Label
+                x:Name="AirtableDoneLabel"
+                Text=""
+                Margin="10,0,0,0"
+                FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                />
+
+        </HorizontalStackLayout>
+
+        <Label
+            x:Name="ErrorLabel"
+            IsVisible="False"
+            TextColor="Red"
+            Text=""
+            FontSize="{OnPlatform WinUI=Small, Android=Medium}"
             />
 
     </VerticalStackLayout>

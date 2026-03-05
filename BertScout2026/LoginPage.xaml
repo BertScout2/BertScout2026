@@ -5,7 +5,7 @@
     xmlns:local="clr-namespace:BertScout2026"
     x:Class="BertScout2026.LoginPage"
     x:DataType="local:GlobalViewModel"
-    Title="LoginPage">
+    Title="Login">
 
     <VerticalStackLayout
         VerticalOptions="Center"
