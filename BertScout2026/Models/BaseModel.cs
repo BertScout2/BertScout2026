@@ -69,7 +69,7 @@ public class BaseModel
         Changed = reader.GetInt32(3) == 1;
     }
 
-    public string SQLInjectionFix(string value)
+    public static string SQLInjectionFix(string value)
     {
         return value.Replace("'", "''");
     }

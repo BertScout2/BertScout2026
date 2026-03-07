@@ -6,10 +6,10 @@ namespace BertScout2026.Database;
 public class MatchDatabase : BaseDatabase
 {
     private const string MatchDBFilename = "MatchScout2026.db3";
-    private const string TableName = "Matches";
+    private const string TableName = Match.TableName;
     private SqliteConnection Database = new();
-    private string? _databasePath;
-    private bool _created = false;
+    private string? databasePath;
+    private bool created = false;
 
     public MatchDatabase()
     {
@@ -17,14 +17,14 @@ public class MatchDatabase : BaseDatabase
 
     private async Task InitMatchDB()
     {
-        if (_created)
+        if (created)
         {
             return;
         }
         try
         {
-            _databasePath = Path.Combine(DatabasePath, MatchDBFilename);
-            Database = new SqliteConnection("Data Source=" + _databasePath);
+            databasePath = Path.Combine(DatabasePath, MatchDBFilename);
+            Database = new SqliteConnection("Data Source=" + databasePath);
             await Database.OpenAsync();
             var createTableCmd = Database.CreateCommand();
             createTableCmd.CommandText = Match.CreateTableCommand();
@@ -33,11 +33,11 @@ public class MatchDatabase : BaseDatabase
             createIndexCmd.CommandText = Match.CreateTableIndexCommand();
             await createIndexCmd.ExecuteNonQueryAsync();
             Database.Close();
-            _created = true;
+            created = true;
         }
         catch (Exception ex)
         {
-            throw new SystemException($"Error initializing Matches database: {_databasePath}\r\n{ex.Message}");
+            throw new SystemException($"Error initializing Matches database: {databasePath}\r\n{ex.Message}");
         }
     }
 
@@ -147,7 +147,7 @@ public class MatchDatabase : BaseDatabase
         return null;
     }
 
-     public async Task<int> SaveMatchItemAsync(Match item)
+    public async Task<int> SaveMatchItemAsync(Match item)
     {
         await InitMatchDB();
         await Database.OpenAsync();

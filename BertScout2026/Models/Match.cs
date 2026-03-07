@@ -5,7 +5,7 @@ namespace BertScout2026.Models;
 
 public class Match : BaseModel
 {
-    private const string TableName = "Matches";
+    public const string TableName = "Matches";
 
     // Meta data
     public int MatchNumber { get; set; }
