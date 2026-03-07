@@ -67,7 +67,7 @@
                         Keyboard="Numeric"
                         MaxLength="3"
                         IsEnabled="True"
-                        Text=""
+                        Text="{Binding TargetMatchNumber}"
                         FontSize="{OnPlatform WinUI=Small, Android=Medium}"
                         />
 

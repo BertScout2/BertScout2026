@@ -24,4 +24,12 @@ public partial class ListMatchesPage : ContentPage
         var result = await db.GetMatchSummaryListAsync();
         _global.MatchSummaries = result;
     }
+
+    //private void GoToMatchClicked(object? sender, EventArgs e)
+    //{
+    //    _global.TargetMatchNumber = ((Match)sender!).MatchNumber.ToString();
+    //    Routing.RegisterRoute("MainPage", typeof(MainPage));
+    //    var task = Task.Run(() => Shell.Current.GoToAsync("MainPage"));
+    //    task.Wait();
+    //}
 }

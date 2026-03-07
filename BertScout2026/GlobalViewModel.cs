@@ -51,4 +51,17 @@ public partial class GlobalViewModel : INotifyPropertyChanged
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MatchSummaries)));
         }
     }
+
+    public string TargetMatchNumber
+    {
+        get
+        {
+            return Global.TargetMatchNumber;
+        }
+        set
+        {
+            Global.TargetMatchNumber = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TargetMatchNumber)));
+        }
+    }
 }

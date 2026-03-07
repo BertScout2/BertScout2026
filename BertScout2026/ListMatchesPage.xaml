@@ -27,6 +27,7 @@
                         <ColumnDefinition Width="100"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
+                        <!--<ColumnDefinition Width="100"/>-->
                     </Grid.ColumnDefinitions>
                     <Label
                         Grid.Column="0"
@@ -56,6 +57,11 @@
                         Grid.Column="6"
                         Text="{Binding Uploaded}"
                         />
+                    <!--<Button
+                        Grid.Column="7"
+                        Text="Go to match"
+                        Clicked="GoToMatchClicked"
+                        />-->
                 </Grid>
             </DataTemplate>
 
