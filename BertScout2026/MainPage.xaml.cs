@@ -790,8 +790,10 @@ namespace BertScout2026
         [
             "Can pick from the floor.",
             "Can pick from the outpost.",
+            "Picks up fuel fast.",
             "Got a fuel stuck inside.",
             "Missed shooting fuel into hub a lot.",
+            "Good feeder to endzone.",
             "Dropped fuel a lot.",
             "Tried to climb but failed.",
             "Can go underneath trench.",

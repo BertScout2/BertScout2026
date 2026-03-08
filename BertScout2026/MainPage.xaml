@@ -1019,7 +1019,7 @@
                     >
 
                     <Label
-                        Text="Score:"
+                        Text="Score (number of stars):"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
