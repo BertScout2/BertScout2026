@@ -24,13 +24,13 @@
             />
 
         <Label
-            Text="Version 2026.03.05"
+            Text="Version 2026.03.08"
             HorizontalOptions="Center"
             FontSize="{OnPlatform WinUI=Small, Android=Medium}"
             />
 
         <Label
-            Text="Written by Ian, Evan, Thomas, and Scott"
+            Text="Written by Ian, Evan, Thomas, Patrick, and Scott"
             HorizontalOptions="Center"
             FontSize="{OnPlatform WinUI=Small, Android=Medium}"
             />
