@@ -18,7 +18,7 @@ public class AirtableDatabase
     // identifier for Airtable BertScout2026 database ("base")
     private const string AIRTABLE_BASE = "appZplIjMnsIy50Ku";
     // identifier for Airtable BertScout2026 "Matches" table
-    private const string AIRTABLE_TABLE = "tbloentIMHSxGJRjX";
+    private const string AIRTABLE_MATCHES_TABLE = "tbloentIMHSxGJRjX";
 
     // Token is encrypted base64 to avoid GitHub searches for plain text Airtable
     // tokens. Not great, but better than an unencrypted string. Any symetrical
@@ -158,7 +158,7 @@ public class AirtableDatabase
                 sendList.Add(newRecordList[0]);
                 newRecordList.RemoveAt(0);
             } while (newRecordList.Count > 0 && sendList.Count < 10);
-            result = await airtableBase.CreateMultipleRecords(AIRTABLE_TABLE, sendList.ToArray());
+            result = await airtableBase.CreateMultipleRecords(AIRTABLE_MATCHES_TABLE, sendList.ToArray());
             if (result == null || !result.Success)
             {
                 return finalCount; // some may have sent
@@ -201,7 +201,7 @@ public class AirtableDatabase
                 sendList.Add(updatedRecordList[0]);
                 updatedRecordList.RemoveAt(0);
             } while (updatedRecordList.Count > 0 && sendList.Count < 10);
-            result = await airtableBase.UpdateMultipleRecords(AIRTABLE_TABLE, sendList.ToArray());
+            result = await airtableBase.UpdateMultipleRecords(AIRTABLE_MATCHES_TABLE, sendList.ToArray());
             if (!result.Success)
             {
                 return finalCount; // some may have sent
