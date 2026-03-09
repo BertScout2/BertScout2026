@@ -23,7 +23,7 @@
 		<ApplicationTitle>BertScout2026</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.bert133.bertscout2026</ApplicationId>
+		<ApplicationId>com.BertRobotics.BertScout2026</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>

@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace BertScout2026
+﻿namespace BertScout2026
 {
     public partial class App : Application
     {
