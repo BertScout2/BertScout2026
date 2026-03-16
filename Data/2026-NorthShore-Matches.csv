@@ -1,0 +1,252 @@
+﻿ID,TeamNumber,MatchNumber,ScoutName,AutoNumberOfCycles,AutoShootingSpeed,AutoBallsPerCycle,AutoAccuracy,AutoRobotSpeed,AutoClimbingLevel,TeleNumberOfCycles,TeleShootingSpeed,TeleBallsPerCycle,TeleAccuracy,TeleRobotSpeed,TeleClimbingLevel,Score,Comments
+136,433,1,DAB,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,2.00,1.00,1.00,0.00,0.00,Had technical issues. 
+137,151,3,pat,0.00,1.00,1.00,1.00,1.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,1.00,No just no. kitbot and slow. do not pick would be better with no robot-pat
+138,4546,10,td,0.00,2.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,4.00,"Herded many, many, many balls so nutrons could shoot balls. "
+139,2876,11,rachel,0.00,0.00,0.00,0.00,1.00,0.00,4.00,1.00,1.00,1.00,1.00,0.00,1.00,First time scouting. they were steadily not good. missed most balls. never filled up very much
+140,69,12,rachel,1.00,1.00,1.00,0.00,1.00,0.00,5.00,2.00,1.00,2.00,1.00,0.00,3.00,Shooting not bad. takes forever to collect balls
+141,3958,13,rachel,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,1.00,0.00,0.00,Slow slow. took the whole match to fill up
+142,10156,14,rachel,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,2.00,Defence only. not that bad at it
+143,6367,15,Thomas6367,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,2.00,0.00,3.00,Can pick from the floor. Can go underneath trench. 
+144,238,16,Td..,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Never moved. 
+145,4169,17,Td..,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Just wandered around. 
+146,3566,18,Td..,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Played defense. Can pick from the outpost. Pushed balls out of opposing area into their scoring area.
+147,5563,19,Td..,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Wanderwd around then Broke down. 
+148,1058,20,Td..,0.00,3.00,3.00,3.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,0.00,0.00,
+149,2876,21,Td..,0.00,1.00,2.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,2.00,0.00,3.00,
+150,4169,22,Td..,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Wanders but doesn't score
+151,4546,23,Td..,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"didn't do much, Hit the wall and died"
+152,238,24,Td..,0.00,2.00,2.00,3.00,3.00,0.00,0.00,0.00,3.00,3.00,3.00,0.00,5.00,Huge hopper
+153,97,25,Td..,1.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00,1.00,2.00,1.00,0.00,3.00,
+154,2084,26,Td..,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Didn't do much
+155,2713,27,Td..,0.00,3.00,3.00,3.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,0.00,5.00,Great at scooping balls from other end of field and shooting toward their end zone
+156,2877,28,Td..,0.00,2.00,2.00,2.00,2.00,0.00,0.00,3.00,3.00,3.00,2.00,0.00,4.00,Can shoot from great distance
+157,4311,29,Td..,0.00,1.00,1.00,1.00,0.00,0.00,0.00,1.00,1.00,1.00,0.00,0.00,2.00,Gathered balls and shot to their end of the field. Played defense. 
+158,10912,30,Td..,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Tried to play defense. didn't do much at all.
+159,4169,31,louis,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Road around field
+160,5813,32,louis,1.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,
+161,2713,33,td,1.00,2.00,3.00,2.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,2.00,0.00,Played defense. 
+162,11483,34,james,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,2.00,Gathered balls
+163,4311,35,james,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,0.00,Can pick from the floor. 
+164,10912,36,james,2.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,3.00,Can pick from the floor. 
+165,1761,37,james,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Spun in circles. intake/shooter issues? crossed the field at 20 seconds to go and then died
+166,5813,38,Zander,1.00,3.00,3.00,2.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,5.00,great performance
+167,1922,39,Zander,0.00,0.00,0.00,0.00,0.00,0.00,4.00,1.00,1.00,3.00,2.00,0.00,4.00,
+168,3205,40,Zander,1.00,0.00,0.00,0.00,2.00,0.00,2.00,1.00,1.00,2.00,2.00,0.00,1.00,Very bad shooter. good at collecting balls on their side of the field. 
+169,2877,41,Zander,2.00,1.00,1.00,2.00,3.00,0.00,3.00,2.00,2.00,2.00,3.00,0.00,2.00,"Inconsistent shooting. sometimes slow and inaccurate, sometimes decent"
+170,97,42,Zander,1.00,1.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,1.00,Major shooter issues
+171,78,43,Zander,1.00,3.00,2.00,1.00,3.00,0.00,5.00,3.00,3.00,1.00,3.00,0.00,2.00,"Misfired a lot. over the alliance wall, the opposite side of the field, and early into the goal. "
+172,125,44,Zander,2.00,3.00,3.00,3.00,2.00,0.00,7.00,3.00,3.00,3.00,2.00,0.00,5.00,"Excuse my language, but woah. "
+173,5735,45,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,"I don't know if they shot any balls or not. any time I saw balls, I think it was from another robot. "
+174,9443,1,td,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Played a little defense. can only go over trench. Meandered around the field. did not pick up balls or shoot any.
+175,3566,2,colby,0.00,1.00,0.00,2.00,0.00,0.00,4.00,1.00,1.00,2.00,1.00,0.00,1.00,Slow and didn't move a lot. Could do trench.
+176,3205,3,colby,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,Only played offence and attacked other teams robots
+177,2423,4,colby,0.00,0.00,0.00,0.00,1.00,0.00,5.00,2.00,1.00,3.00,1.00,0.00,2.00,Broke the entire front of robot but still managed to help their team. Wrong intake height for trench.
+178,5735,5,colby,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Didn't move or shoot at all
+179,2876,6,colby,0.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,2.00,1.00,2.00,0.00,2.00,Can go underneath trench. Can pick from the floor. Missed shooting fuel into hub a lot. Broke from being rammed into. Struggled with bump.
+180,5459,7,colby,1.00,2.00,2.00,1.00,1.00,0.00,3.00,2.00,2.00,1.00,2.00,0.00,2.00,Can pick from the floor. Missed shooting fuel into hub a lot. Tried to climb but failed. Can go underneath trench. 
+181,97,8,colby,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,Can pick from the floor. Can go underneath trench. 
+182,5563,9,scott,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,Played defense. No auto. only shot once
+183,125,10,scott,0.00,0.00,3.00,0.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,5.00,Can pick from the floor. Can go underneath trench. 
+184,88,12,DAB,1.00,3.00,2.00,3.00,2.00,0.00,1.00,3.00,0.00,0.00,2.00,0.00,0.00,"they stated moving fuel because the war something arguing with the robot. They also couldn't get under the bar for quite a while, and they didn't to other the speed bump."
+185,5735,13,jean,1.00,2.00,1.00,2.00,1.00,0.00,9.00,2.00,2.00,2.00,1.00,0.00,0.00,slow but steady. can shoot about 10 balls or round. Also moves fuel during off time to their side.
+186,1922,14,jean,0.00,0.00,0.00,0.00,0.00,0.00,6.00,1.00,2.00,3.00,1.00,0.00,0.00,Shots about 20 or so fuel per cycle.
+187,3205,15,DAB,1.00,1.00,1.00,2.00,1.00,0.00,1.00,1.00,1.00,2.00,0.00,0.00,0.00,"had trouble with inake,  stopped working for 20 sec.
+"
+188,1727,16,DAB,1.00,2.00,2.00,2.00,0.00,0.00,3.00,2.00,2.00,2.00,1.00,0.00,0.00,
+189,4546,17,DAB,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,2.00,"Broke down. 
+"
+190,125,18,DAB,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,0.00,"Fast, did miss some at the  end.
+"
+191,8626,19,DAB,1.00,2.00,2.00,3.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"Broke down.  right after auto
+
+"
+192,1922,20,DAB,1.00,2.00,2.00,2.00,2.00,0.00,4.00,2.00,3.00,0.00,0.00,0.00,0.00,
+193,2713,21,DAB,2.00,3.00,3.00,3.00,3.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,0.00,"Good bot
+"
+194,69,22,DAB,1.00,2.00,2.00,2.00,2.00,0.00,4.00,2.00,2.00,1.00,2.00,0.00,0.00,
+195,246,23,DAB,1.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,Got stuck on ramp for awhile.
+196,433,24,DAB,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00,Played defense. 
+197,5459,25,DAB,2.00,2.00,2.00,2.00,2.00,1.00,2.00,2.00,1.00,1.00,1.00,1.00,0.00,
+198,151,26,DAB,1.00,1.00,2.00,2.00,2.00,0.00,7.00,2.00,1.00,2.00,2.00,0.00,0.00,
+199,8626,27,DAB,0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Played defense. 
+200,6367,28,DAB,0.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,1.00,DON'T PICK! 
+201,3566,29,DAB,2.00,3.00,3.00,3.00,3.00,0.00,4.00,1.00,1.00,1.00,1.00,0.00,2.00,Really good auto. not great teleop
+202,1761,30,DAB,1.00,1.00,1.00,1.00,1.00,0.00,2.00,1.00,1.00,1.00,1.00,0.00,1.00,Lined up to shoot. shot backwards
+203,238,31,DAB,2.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,Stopped watchjng . trying to find balieys bag. they were good but not good gkod.
+204,4546,32,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Stopped moving. rsl was on.
+205,4761,33,DAB,1.00,2.00,2.00,2.00,2.00,0.00,3.00,2.00,3.00,3.00,0.00,0.00,3.00,
+206,5563,34,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Was not shooting. then stopped.
+207,433,35,DAB,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,1.00,1.00,2.00,0.00,0.00,
+208,78,36,DAB,1.00,1.00,1.00,1.00,1.00,0.00,3.00,1.00,1.00,1.00,2.00,0.00,0.00,Spit some out before shooting each time.
+209,3958,37,DAB,1.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Feeder bot. Played defense. Played defense. 
+210,6731,38,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Played defense. 
+211,2713,39,DAB,1.00,2.00,2.00,2.00,2.00,0.00,4.00,3.00,3.00,2.00,0.00,0.00,0.00,"Sometimes accurate, sometimes miss most."
+212,5459,40,DAB,1.00,3.00,3.00,3.00,2.00,0.00,3.00,2.00,2.00,2.00,2.00,1.00,2.00,
+213,9443,41,DAB,0.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00,Played defense. 
+214,4169,42,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Gathered balls but can't shoot right.
+215,4311,43,DAB,1.00,2.00,2.00,1.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"Was a feeder bot, then went to defense."
+216,4761,44,DAB,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,3.00,3.00,0.00,3.00,Can pick from the floor. Can go underneath trench. 
+217,4546,45,DAB,1.00,2.00,2.00,2.00,0.00,0.00,2.00,2.00,2.00,3.00,3.00,0.00,0.00,Can pick from the floor. Can go underneath trench. Played defense. 
+218,125,2,the goat,2.00,3.00,3.00,3.00,3.00,0.00,13.00,3.00,3.00,3.00,3.00,0.00,5.00,They drag shot a ton and fed so I counted cycles for.abt every 10 balls or.so also its buttons lol
+219,2713,5,the goat,1.00,3.00,3.00,3.00,2.00,0.00,4.00,3.00,3.00,3.00,2.00,0.00,3.00,Shoots to feed a lot bounce back out then it pushes kinda mid feeder stopped mid match ore stop I rate them a 4 coulda been more efficient
+220,4546,6,the goat,1.00,1.00,2.00,2.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Followed wrong bot at start auto was right something didn't work after I saw them like mid match and they never shot bad feeding tho
+221,1761,7,the goat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,Turns 45 degrees in auto didn't move for like 30s looks like a swerve module disconnected did basically nothing quit trying to move at like 1m
+222,4169,8,the goat,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,1.00,1.00,0.00,1.00,Didn't move auto dodo did pretty much nothing made maybe 25 balls
+223,1721,9,the goat,1.00,2.00,2.00,3.00,2.00,0.00,4.00,2.00,1.00,2.00,2.00,0.00,2.00,Needs net over intake can't shoot half the hopper like 2 bpc
+224,1922,10,the goat,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,3.00,0.00,0.00,3.00,Missed auto MB only a 3 cuz they did stuff and weren't terrible
+225,78,11,the goat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Got back from lunch missed this match
+226,5813,12,the goat,1.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,They put out like 10-20 a cycle 
+227,2084,13,the goat,0.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,1.00,No move auto makes 1\20 shots 😭
+228,4761,14,the goat,1.00,3.00,2.00,0.00,0.00,0.00,5.00,2.00,3.00,2.00,2.00,0.00,4.00,Low 4 prob the worst 4 I've said
+229,97,15,the goat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Didn't even load balls in for auto I don't even see an intake
+230,2876,16,the goat,0.00,0.00,0.00,0.00,2.00,0.00,2.00,1.00,1.00,2.00,2.00,0.00,2.00,Went to blue side was red
+231,1761,17,the goat,0.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,3.00,0.00,0.00,0.00,Moved 2in auto shoots 2 at a time stopped moving
+232,58133,18,the goat,1.00,3.00,3.00,3.00,2.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,Last 10s intake got stuck
+233,2084,19,the goat,0.00,0.00,0.00,0.00,0.00,0.00,4.00,1.00,1.00,3.00,1.00,0.00,1.00,No move auto scored 8 balls in 4 cycles
+234,2423,20,the goat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,missed mb
+235,4311,21,the goat,1.00,3.00,2.00,2.00,3.00,0.00,5.00,2.00,3.00,3.00,2.00,0.00,3.00,Missed abt half 
+236,10156,22,the goat,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,1.00,1.00,3.00,0.00,1.00,Didn't move auto tank drive? made like 1\10 shots
+237,3566,23,the goat,2.00,2.00,1.00,3.00,2.00,0.00,7.00,2.00,2.00,3.00,2.00,0.00,4.00,Pretty decent
+238,6731,24,thomas,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,2.00,Played defense. 
+239,6201,25,thomas,0.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,2.00,2.00,2.00,1.00,3.00,Played defense. Can go underneath trench. 
+240,3205,26,thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,2.00,2.00,0.00,2.00,Can go underneath trench. Played defense. 
+241,9443,27,thomas,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,3.00,2.00,2.00,0.00,4.00,Filled the turret. WARNING CAN TIP OVER! Can pick from the floor. Played defense. 
+242,125,28,thomas,0.00,0.00,0.00,0.00,0.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,FAST! Can pick from the floor. Can go underneath trench. 
+243,433,29,thomas,0.00,0.00,0.00,0.00,2.00,0.00,0.00,2.00,2.00,2.00,2.00,0.00,3.00,Can pick from the floor. Can go underneath trench. Broke down. 
+244,78,30,thomas,0.00,0.00,0.00,0.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,0.00,4.00,Can pick from the floor. Dropped fuel sometimes. Can pick from the outpost. 
+245,5459,31,thomas,0.00,2.00,2.00,1.00,3.00,0.00,3.00,2.00,2.00,1.00,2.00,1.00,3.00,Can pick from the floor. Can go underneath trench. Had technical issues. Played defense. 
+246,9443,32,thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,3.00,3.00,0.00,3.00,Played defense. 
+247,2876,33,thomas,1.00,0.00,0.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,Can go underneath trench. Played defense. 
+248,3205,34,thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,No moving
+249,2423,35,thomas,1.00,3.00,3.00,2.00,2.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,3.00,Single shooter. fairly accurate. good at feeding on down times
+250,1721,36,thomas,1.00,2.00,1.00,1.00,1.00,0.00,2.00,2.00,1.00,1.00,1.00,0.00,1.00,Bad shooter. okay at pushing balls towards zone. that's all they did
+251,97,37,thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,no blinky light. :(
+252,246,38,thomas,1.00,1.00,1.00,1.00,0.00,0.00,4.00,2.00,1.00,2.00,1.00,0.00,3.00,Decent shooter. slow set up to shoot
+253,4546,39,rachel,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,2.00,Didn't score but actually really good at corraling the balls over to their side. Didn't pick them up.
+254,88,40,rachel,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Going to be honest I didn't pay attention. that's my bad. its 88 they are alright
+255,1761,41,rachel,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Tried to defend. ended up just being in the way of their own team. very sparadic. died at the end
+256,69,42,rachel,1.00,3.00,3.00,2.00,1.00,0.00,3.00,2.00,2.00,3.00,2.00,0.00,4.00,Missed 4 balls. slow set up to shoot. good at pick up
+257,6367,43,joyce,0.00,0.00,0.00,0.00,0.00,0.00,6.00,1.00,1.00,2.00,1.00,0.00,0.00,
+258,1721,44,joyce,1.00,1.00,1.00,1.00,1.00,0.00,8.00,1.00,1.00,2.00,1.00,0.00,1.00,
+259,3205,45,joyce,0.00,0.00,0.00,0.00,0.00,0.00,5.00,0.00,1.00,2.00,1.00,0.00,1.00,Don't have auto
+260,88,1,Zander,2.00,0.00,2.00,3.00,3.00,0.00,2.00,0.00,3.00,3.00,3.00,0.00,3.00,"Intake seemed to stop working halfway through. at max ball capacity, they don't fit under the bar. "
+261,8626,3,Zander,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,2.00,3.00,0.00,0.00,2.00,played defense. 
+262,4761,4,Zander,1.00,2.00,2.00,2.00,0.00,0.00,0.00,1.00,1.00,0.00,2.00,0.00,0.00,Balls were shot but didnt go more than 1 foot high
+263,1058,5,Zander,1.00,3.00,3.00,0.00,2.00,0.00,2.00,3.00,3.00,2.00,3.00,0.00,4.00,1 cycle in auto fed balls to their side of the field. spent the second half of the match feeding human players. 
+264,5813,6,Zander,1.00,2.00,3.00,3.00,2.00,0.00,8.00,2.00,3.00,3.00,2.00,0.00,5.00,Good cycles
+265,151,7,Zander,1.00,1.00,2.00,2.00,0.00,0.00,4.00,2.00,2.00,0.00,2.00,0.00,3.00,Much. better accuracy closer to the goal
+266,2877,8,Zander,1.00,1.00,2.00,2.00,2.00,0.00,4.00,1.00,2.00,2.00,2.00,0.00,2.00,Collided into our robot
+267,238,9,Zander,2.00,2.00,2.00,3.00,1.00,0.00,7.00,2.00,3.00,1.00,2.00,0.00,4.00,
+268,10156,10,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,No auto. Kept getting caught under the trench and got completely stuck on the bump once. 
+269,4311,11,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Missed match after lunch
+270,2713,12,Zander,1.00,0.00,1.00,0.00,0.00,0.00,5.00,2.00,3.00,2.00,0.00,0.00,4.00,High ball capacity. Didn't always use it
+271,6731,13,Zander,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,2.00,2.00,2.00,0.00,2.00,Intake/hopper mechanisms had some issues. robot disconnected in the last 30 seconds. 
+272,9443,14,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Pushed balls to their side of the field. very tippy. did a lot of ball surfing
+273,246,15,Zander,1.00,2.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Pushed balls
+274,1058,16,Zander,1.00,3.00,2.00,2.00,3.00,0.00,3.00,2.00,3.00,3.00,3.00,0.00,0.00,"In auto, zoomed across the field and launched off the ramp onto another robot. penalty for that. "
+275,6731,17,Zander,1.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,3.00,2.00,0.00,4.00,Kindle died during this match. data may be slightly inaccurate 
+276,69,18,Zander,2.00,2.00,2.00,2.00,2.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,2.00,Intake started binding up toward the end of the match
+277,88,19,Zander,1.00,2.00,2.00,2.00,2.00,0.00,3.00,1.00,1.00,2.00,0.00,0.00,3.00,Slowed to a crawl in the last 10 seconds. 
+278,1721,20,Zander,1.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Too many people in the way this match. missed teleop
+279,133,21,Colby,1.00,3.00,3.00,3.00,3.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,5.00,Can pick from the floor. Got a fuel stuck inside. Tried to climb but failed. Can go underneath trench. 
+280,5735,22,Colby,0.00,1.00,0.00,2.00,0.00,0.00,8.00,2.00,1.00,2.00,2.00,0.00,3.00,Can pick from the floor. Missed shooting fuel into hub a lot. Can go underneath trench. 
+281,8626,23,Colby,0.00,2.00,0.00,3.00,0.00,0.00,2.00,1.00,1.00,2.00,1.00,0.00,2.00,Can pick from the outpost. Missed shooting fuel into hub a lot. Dropped fuel a lot. Can go underneath trench. Had problems with intake.
+282,78,24,Colby,0.00,0.00,0.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,1.00,Can pick from the floor. Played defense. Never shot fuel.
+283,3958,25,Colby,0.00,0.00,0.00,0.00,3.00,0.00,3.00,2.00,1.00,1.00,3.00,0.00,1.00,Can pick from the floor. Missed shooting fuel into hub a lot. Can go underneath trench. Had technical issues. Got stuck on bump.
+284,133,26,Zander,1.00,0.00,0.00,0.00,0.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,Tried to climb but failed. 
+285,5735,27,Colby,0.00,1.00,0.00,1.00,0.00,0.00,2.00,1.00,2.00,1.00,2.00,0.00,1.00,Can pick from the floor. Missed shooting fuel into hub a lot. Can go underneath trench. Played defense. Had technical issues. 
+286,88,28,Colby,3.00,2.00,2.00,3.00,2.00,0.00,4.00,2.00,2.00,3.00,2.00,0.00,3.00,Can pick from the floor. Can go underneath trench. Played defense and offense well.
+287,6201,29,Zander,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,1.00,1.00,2.00,0.00,0.00,Intake fell off :(
+288,11483,30,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,Just a base. can't score. played defense. got stuck on the opposing ramp
+289,3958,31,Zander,1.00,2.00,1.00,1.00,0.00,0.00,2.00,2.00,1.00,1.00,1.00,0.00,1.00,
+290,2084,32,Zander,1.00,2.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Pushed balls and mild defense
+291,6201,33,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Didn't move. 
+292,3566,34,Colby,1.00,1.00,2.00,3.00,1.00,0.00,5.00,1.00,2.00,3.00,2.00,0.00,3.00,Can pick from the floor. Can pick from the outpost. Can go underneath trench. Didn't shoot a lot but never missed a shot.
+293,1922,35,Colby,0.00,1.00,2.00,0.00,1.00,0.00,6.00,1.00,2.00,3.00,2.00,0.00,3.00,Can pick from the floor. Can go underneath trench. Missed all auto shots. Slow shooting but good shots.
+294,10156,36,Colby,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,2.00,0.00,1.00,Can pick from the floor. Missed shooting fuel into hub a lot. Dropped fuel a lot. Can go underneath trench. Struggled to shoot.
+295,8626,37,Colby,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,3.00,1.00,0.00,1.00,Can pick from the floor. Can pick from the outpost. Got a fuel stuck inside. Dropped fuel a lot. Can go underneath trench. Played defense. Shot 6 balls the entire game. No auto.
+296,133,38,louid,1.00,3.00,3.00,2.00,3.00,0.00,6.00,3.00,3.00,2.00,3.00,0.00,5.00,Can pick from the floor. Can go underneath trench. 
+297,1058,43,Colby,1.00,0.00,0.00,0.00,0.00,0.00,5.00,3.00,3.00,3.00,2.00,0.00,3.00,Can pick from the floor. Got stuck on bump. Worked well with teammates. 
+298,246,5,Jeanette ,1.00,2.00,2.00,0.00,0.00,0.00,4.00,1.00,2.00,0.00,2.00,0.00,2.00,Can go underneath trench. Pushed more balls to side than picked up then at the end started to pick up balls. no accuracy in shooting got very few balls in
+299,1922,6,Jeanette ,1.00,2.00,1.00,1.00,0.00,0.00,3.00,3.00,3.00,2.00,0.00,0.00,4.00,Too tall for trench. accurate shooting. can shoot accurate while picking up balls. long distance shooter. gets stuck on the balls a lot though. ran defence and did well.
+300,6201,7,Jeanette ,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK!  no movement in auto. short distance shooter. no accuracy few balls went in. can go under if hanger is down. good pushing balls. attempted a climb not successful.
+301,6367,8,Jeanette ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! 
+302,3566,9,Jeanette ,1.00,1.00,1.00,0.00,0.00,0.00,4.00,3.00,2.00,0.00,0.00,0.00,2.00,can go under trench. long and mid distance shooter. no accuracy in shooting most of the game but last 1\4 of match starting making more balls at the mid distance. decent at moving balls to their side but also did it several times to the other side.
+303,10912,10,Jeanette ,1.00,3.00,2.00,3.00,0.00,0.00,1.00,1.00,1.00,0.00,3.00,0.00,3.00,fantastic at defence! very fast got most shots in auto a mid distance. can go under trench. great ball pusher but did not pick up to many balls. 
+304,246,11,Jeanette ,1.00,3.00,3.00,2.00,3.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,3.00,fast can go underneath trench. short distance shooting. good at pushing balls back to their side. defence from other side so good they could not get back on their side and blocked from shooting 
+305,1761,12,Jeanette ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! 
+306,8626,13,Jeanette ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Broke down. 
+307,133,14,scott,1.00,3.00,3.00,3.00,0.00,0.00,9.00,3.00,3.00,3.00,2.00,0.00,5.00,Can pick from the floor. Can go underneath trench. 
+308,3205,15,Jeanette ?fykbxx¥,1.00,2.00,2.00,2.00,0.00,0.00,2.00,1.00,1.00,1.00,1.00,0.00,1.00,Got a fuel stuck inside. Can go underneath trench. Long and mid distance shooter. accuracy comes and goes messy run
+309,1721,16,Jeanette ?fykbxx¥,1.00,3.00,0.00,0.00,0.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,1.00,Can pick from the outpost. Can pick from the floor. Can go underneath trench. When it went it went fast but it hardly left the front of the hooper.
+310,4311,17,Jeanette ?fykbxx¥,1.00,2.00,0.00,0.00,0.00,0.00,7.00,1.00,1.00,1.00,2.00,0.00,2.00,Too tall for trench. Missed shooting fuel into hub a lot. Had technical issues.
+311,10912,18,Jeanette ?fykbxx¥,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,1.00,Very fast but hits everything. Can go underneath trench. Played defense. did not pick up any balls. mid distance shooter during auto.
+312,78,19,Jeanette ?fykbxx¥,1.00,3.00,3.00,3.00,2.00,0.00,3.00,1.00,1.00,1.00,2.00,0.00,1.00,shooter and pick up broke. too tall for trench. 
+313,2877,20,Jeanette  ,0.00,0.00,0.00,0.00,2.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,can pick up and shoot at the same time. mid to slightly long distance shooter
+314,151,21,Jeanette  ,2.00,2.00,0.00,0.00,0.00,0.00,5.00,3.00,2.00,2.00,2.00,0.00,3.00,Can pick from the outpost. Was not bad
+315,1761,22,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! 
+316,10912,23,Jeanette  ,1.00,3.00,3.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Fast. amazing defensive work may be best at defense all day. did not pick up any balls or shoot
+317,125,24,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,1.00,3.00,3.00,3.00,3.00,0.00,5.00,Can pick from the floor. Can pick from the outpost. Can go underneath trench. long distance shooter. Large capacity Hopper. was a big target through the game by other robots doing defense. 
+318,5813,25,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,3.00,2.00,0.00,5.00,Long distance shooter. too tall to go under. Can pick from the floor. Can pick from the outpost. large hopper
+319,1721,26,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,0.00,0.00,0.00,2.00,they were slow getting balls and moving around
+320,69,27,Jeanette  ,1.00,1.00,0.00,0.00,0.00,0.00,2.00,1.00,1.00,0.00,0.00,0.00,1.00,DON'T PICK Can pick from the floor. Can pick from the outpost. Can go underneath trench. Picked a lot of balls made 2. did not add balls to the section only picked them up to shoot.
+321,2876,28,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,1.00, Can go underneath trench. Good ball pusher decent defense and getting away from defense.
+322,10156,29,Jeanette  ,1.00,3.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! 
+323,2423,30,Jeanette  ,1.00,2.00,0.00,0.00,0.00,0.00,5.00,1.00,1.00,1.00,0.00,0.00,0.00,Broke down. (intake) needed a full stop damage so bad
+324,6731,31,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Played defense. Was okay at it.
+325,1058,32,Jeanette  ,1.00,3.00,3.00,3.00,3.00,0.00,1.00,3.00,3.00,2.00,0.00,0.00,2.00,Large hopper shoots well but had a terrible round. ran into a lot and spent second half doing nothing. was taking heavy hits from the other team playing defense.
+326,2877,33,Jeanette  ,2.00,3.00,0.00,0.00,0.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,fast and accurate. long distance shooter. Can pick from the floor. Can pick from the outpost. Can go underneath trench. Feeds ball to their side well. targets by other team defence and did well shaking them off. smaller hooper.
+327,6367,34,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,1.00,1.00,0.00,0.00,2.00,Can go underneath trench. Mid distance shooter. did not bring any balls to their side. 
+328,238,35,Jeanette  ,2.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,Too tall for trench. long and mid distance shooter. large hopper. 
+329,4169,36,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,DON'T PICK! played defense but was terrible at it.
+330,2084,37,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! Can go underneath trench. Went around in circles
+331,1058,38,Jeanette  ,1.00,2.00,0.00,0.00,0.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,4.00,"Can pick up balls, shoots from far away holds alot of balls"
+332,433,39,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,4.00,1.00,1.00,1.00,0.00,0.00,2.00,Can go underneath trench. Spent entire time in shooting position but hardly shot but when they did it was good. intake looks like may be having an issue.
+333,10156,40,Jeanette  ,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,rough defense entire time but effective.  may or may not have gotten a penalty. fast and small.
+334,2423,41,Jeanette  ,1.00,3.00,3.00,2.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,Large hopper. took a beat from defense but held its own well. long and mid distance shooter. Can pick from the floor. Can go underneath trench. Can pick from the outpost. 
+335,151,42,Jeanette  ,2.00,3.00,2.00,3.00,1.00,0.00,7.00,2.00,1.00,3.00,1.00,0.00,3.00,Fast to move but so very slow to intake balls. small hopper. great at pushing balls to their side. Can go underneath trench. Can pick from the floor. 
+336,238,43,Jeanette  ,2.00,2.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,Larger hopper fast to reload. mid distance shooter. was a target for the defense from other team. too tall for trench. 
+337,11483,44,Jeanette  ,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,No hopper. no shooter. good a defense and pushing balls 
+338,133,45,Jeanette  ,1.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,1.00,2.00,2.00,0.00,0.00,Not a good round 
+339,2877,1,Thomas,1.00,1.00,2.00,2.00,2.00,0.00,7.00,3.00,3.00,3.00,2.00,0.00,4.00,Can pick from the floor. Can go underneath trench. 
+340,133,2,Thomas,0.00,2.00,3.00,0.00,2.00,0.00,8.00,3.00,3.00,2.00,3.00,0.00,5.00,Can pick from the floor. Can go underneath trench. I will pick this team
+341,10912,3,Thomas,1.00,3.00,1.00,2.00,2.00,0.00,2.00,3.00,1.00,2.00,3.00,0.00,4.00,"Very fast, Can pick from the floor. Can go underneath trench. Played defense. "
+342,6731,4,Thomas,1.00,2.00,2.00,1.00,2.00,0.00,2.00,2.00,3.00,2.00,2.00,0.00,3.00,Can pick from the floor. Missed shooting fuel into hub a lot. Can go underneath trench. 
+343,10156,5,Thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,2.00,2.00,0.00,2.00,Can pick from the outpost. Played defense. 
+344,78,6,Td,1.00,2.00,3.00,2.00,2.00,0.00,4.00,3.00,3.00,2.00,3.00,0.00,5.00,Gather and shoots Can pick from the floor. Can pick from the outpost. 
+345,433,7,pat,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,2.00,0.00,2.00,0.00,2.00,Can pick from the floor. Missed shooting fuel into hub a lot. Can go underneath trench.  bad driver looked like people dont know how to drive and shoot-pat
+346,133,8,pat,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! Broke down. 
+347,3958,9,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,3.00,Played defense. Push fuel around. Can go underneath trench. 
+348,2423,10,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,10.00,3.00,2.00,3.00,3.00,0.00,5.00,Can pick from the floor. Can go underneath trench. Only picked up fuel during auto.
+349,11483,11,James,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Missed match for lunch
+350,1058,12,James,1.00,2.00,2.00,2.00,2.00,0.00,3.00,3.00,3.00,2.00,2.00,0.00,3.00,Stuck during auto.
+351,2877,13,James,1.00,1.00,1.00,0.00,0.00,0.00,9.00,2.00,1.00,2.00,2.00,0.00,0.00,"low inv
+"
+352,133,14,James,1.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,3.00,DON'T PICK! 
+353,433,15,James,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,1.00,1.00,1.00,0.00,2.00,Can pick from the floor. 
+354,151,16,James,1.00,2.00,1.00,2.00,2.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,4.00,Got hit
+355,2713,17,James,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,Nothing
+356,5735,18,James,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,1.00,2.00,2.00,0.00,3.00,No atuo
+357,6201,19,James,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,2.00,1.00,1.00,0.00,0.00,Nothing
+358,3205,20,James,1.00,3.00,2.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Parked under the fixed blue trench then sat there most of tele-op.  jean
+359,9443,21,pat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,Robot did nothing just moved around did not shoot or pick up just drove 
+360,6367,22,pat,0.00,0.00,0.00,0.00,0.00,0.00,4.00,1.00,3.00,3.00,2.00,0.00,3.00,Can pick from the floor. Robot had issues shooting fuel got stuck and would not fire would pick well rounded robot single shooter
+361,4761,23,pat,1.00,3.00,0.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,3.00,0.00,0.00,Can pick from the floor. Can go underneath trench. I realy like this robot its fast and good would definitely have first pick
+362,6731,24,pat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Played defense. Can go underneath trench. Caused a penalty. 
+363,6201,25,pat,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,3.00,2.00,1.00,3.00,Can pick from the floor. Got a fuel stuck inside. Can go underneath trench. Played defense sort of. 
+364,5563,26,pat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Dead battery DON'T PICK! Played defense. Caused a penalty. Had technical issues. 
+365,4546,27,pat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,1.00,Had technical issues. Can go underneath trench. Robot just moved around did not grab or shoot
+366,246,28,scott,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,lobstahs Played defense. Caused a penalty.  did not shoot or grab
+367,4761,29,scott,1.00,3.00,2.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,0.00,0.00,3.00,Can pick from the floor. Missed shooting fuel into hub a lot. 
+368,5563,30,scott,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Did not show
+369,1922,31,scott,1.00,1.00,1.00,1.00,0.00,0.00,4.00,2.00,2.00,3.00,1.00,0.00,2.00,Balls stuck in intake
+370,97,32,scott,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00,DON'T PICK! 
+371,5735,33,scott,1.00,3.00,3.00,3.00,0.00,0.00,3.00,2.00,2.00,1.00,1.00,0.00,2.00,Can pick from the floor. Missed shooting fuel into hub a lot. 
+372,69,34,pat,2.00,2.00,2.00,2.00,1.00,0.00,4.00,1.00,2.00,2.00,2.00,0.00,3.00,Can pick from the floor. Can go underneath trench. Middle of the road could be 3rd pick
+373,88,35,pat,2.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,5.00,Can pick from the floor. Can go underneath trench. Supercharged very good
+374,5459,36,pat,1.00,1.00,0.00,0.00,0.00,1.00,0.00,3.00,2.00,2.00,2.00,0.00,2.00,robot had auto climb shooter and Hopper loose broken had difficulty going under trench
+375,125,37,pat,1.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,So many balls very good 1st pick and can shoot from anywhere
+376,151,38,the goat,2.00,3.00,2.00,2.00,2.00,0.00,5.00,3.00,2.00,1.00,2.00,0.00,3.00,Broke after defended. but regained control
+377,2084,43,pat,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+378,8626,44,pat,0.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,1.00,1.00,2.00,0.00,2.00,Can pick from the floor. Can go underneath trench. 
+379,5735,45,jamesp],1.00,2.00,2.00,2.00,2.00,0.00,5.00,2.00,2.00,1.00,2.00,0.00,3.00,Missed shooting fuel into hub a lot. 

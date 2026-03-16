@@ -1,0 +1,41 @@
+﻿Id,Team_Num,Drive_Train,Drive_Train_Other,Start_Left,Start_Middle,Start_Right,Auto_Climb,Auto_Shoot,Auto_Best,Max_Fuel,Can_Climb,Climb_Level,Climb_Loc_Side,Climb_Loc_Middle,Strength,Fps,Travel_Route_Over,Travel_Route_Under,Human_Acc,Comments
+11,69,1,,1,1,1,0,1,"shoot, pickup in neutral, shoot again",25,0,0,0,0,fast duel fixed turret shooter ,3,0,1,1,
+12,78,1,,1,0,1,0,1,depo side,75,1,1,1,0,"Hooper capacity, expandable/retractable hooper, turret",6,1,0,3,
+13,88,1,,1,0,1,1,1,"double swipe, 50-70 points",40,1,1,1,0,"shooting, shuttle, climbing",12,0,1,3,
+14,97,1,,0,1,0,0,1,"middle, shoot preload",30,0,0,0,0,"intake, shooting well",3,0,1,2,
+15,125,1,,1,0,1,0,1,"start under trench, neutral , shoot, neutral, shoot",50,0,0,0,0,moving and shooting,15,0,1,2,
+16,151,1,,1,0,0,0,1,"set up anywhere, closer preferred, shoot preloaded",15,0,0,0,0,"collecting , accurate shootingn",3,0,1,1,
+17,238,1,,1,0,0,0,1,"shoots 8 start with, neutral ",65,0,0,0,0,2 shooters,6,1,0,2,
+18,246,1,,0,1,0,0,1,shoot 8 preload,25,0,0,0,0,"90° intake, drive and shoot at same time",0,0,1,2,
+19,433,1,,0,1,0,1,1,shoot ,40,0,0,0,0,shoot,0,0,1,2,
+20,1058,1,,1,0,1,0,1,"neutral, pick up 30-40, shoot, repeat for 2nd time ",75,0,0,0,0,quick shooting ,11,1,0,3,
+21,1721,1,,0,1,0,0,1,"center, deploy intake, backup, shoot",35,0,0,0,0,"shooting, 95% accuracy",7,0,1,2,
+22,1761,1,,0,1,0,0,0,no auto setup,4,0,0,0,0,driving ,2,0,1,2,
+23,1922,1,,0,0,1,0,1,"outpost end shoot, work in progress",55,0,0,0,0,consistent shooter,4,1,0,2,
+24,2084,1,,1,1,1,0,1,work in progress ,50,0,0,0,0,"intake, shooting in process to be less finnacuy",5,0,1,0,
+25,2423,1,,1,0,1,0,1,"center collect, shoot",60,0,0,0,0,"reliable shooter, auto is good, robot looks nice ",6,0,1,2,
+26,2713,1,,1,0,1,0,1,trench outpost,75,0,0,0,0,"shooting, high fuel capacity, dieroader",9,0,1,0,
+27,2876,1,,1,0,0,0,1,"trench, depo, shoot",30,0,0,0,0,"herd/feeding, defense, shooting",2,0,1,3,
+28,2877,1,,1,0,0,0,1,"double, out shoot, out shoot",26,0,0,0,0,"shoot on the move, intake/feed",5,0,1,3,
+29,3205,1,,0,1,0,0,1,electrical issues right now,35,0,0,0,0,"defense, heavy, experienced driver, strategy",6,0,1,2,
+30,3566,1,,0,0,1,0,1,"preload, shoot, outpost, shoot ",35,0,0,0,0,intake,0,0,1,2,
+31,3958,1,,0,1,0,0,1,"intake, shoot, drive ",12,0,0,0,0,"driving, mobility, intake, shoot",3,1,1,3,
+32,4169,1,,1,0,0,0,1,"shoot, pick up ",60,0,0,0,0,holding 60 fuel,5,1,0,2,
+33,4311,1,,1,0,1,0,1,work in progress: shoots preloaded,50,0,0,0,0,"quad shooter, passing/feeder",0,1,0,1,
+34,4546,1,,0,1,0,0,1,shoot preload,25,0,0,0,0,"solid consistent intake, can pick up, feeder",5,0,1,0,"No human player
+
+"
+35,4761,1,,1,0,1,0,1,"trench start, shoot preload ",50,0,0,0,0,"driving good, shooter can bounce back well, feeding ",0,0,1,2,
+36,5459,1,,0,0,1,1,1,"climb work in progress, shoot, climb",30,1,1,1,0,"climb, extendable hopper, vision ",5,0,1,2,
+37,5563,1,,1,1,1,0,0,no auto,45,0,0,0,0,"intake, shuttle",0,1,1,2,
+38,5735,1,,1,0,0,1,1,shoot preload,15,1,1,1,0,"shoot fast and consistently, turret",6,0,1,3,
+39,5813,1,,0,0,1,0,1,"either side, neutral, shoot, 40 scored ",50,0,0,0,0,"shoot on the move, shooting ",10,1,0,3,
+40,6201,1,,0,1,0,1,1,"hypothetically climb in auto, center shoot 8 preload",35,1,1,1,0,"intake, fuel won't get stuck, defense good",4,0,1,2,
+41,6367,2,,1,0,1,0,0,no auto as of now,30,0,0,0,0,"intake, under trench, bump, human player",2,0,1,3,
+42,6731,1,,1,0,0,0,1,"left, neutral, depo",47,0,0,0,0,"turret - shooting, intake",5,0,1,2,
+43,8626,1,,1,0,1,0,1,shoot preload,15,0,0,0,0,"feeding, consistent shoot",6,0,1,1,
+44,9443,1,,0,0,0,0,0,"no auto, in progress",47,0,0,0,0,"defense, feeding",0,1,0,2,"Cannot go under
+"
+45,10156,2,,0,0,0,0,0,no auto,15,0,0,0,0,"shooting okay, intake, defense ",4,0,1,1,
+46,10912,2,,1,1,1,0,1,scores 8,12,0,0,0,0,feeding,3,0,1,2,
+47,11483,1,,1,0,0,0,0,none,0,0,0,0,0,"sweeper bot, defense ",0,0,1,1,Sweeper bot
