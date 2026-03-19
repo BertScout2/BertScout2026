@@ -123,6 +123,7 @@ namespace BertScout2026
             //SetTeleRoute(0);
             SetTeleClimbingLevel(0);
             SetScoreStar(0);
+            SetDefenseScoreStar(0);
             SetComments("");
         }
 
@@ -147,6 +148,7 @@ namespace BertScout2026
             //SetTeleRoute(match.TeleRoute);
             SetTeleClimbingLevel(match.TeleClimbingLevel);
             SetScoreStar(match.Score);
+            SetDefenseScoreStar(match.DefenseScore);
             SetComments(match.Comments);
         }
 
@@ -846,6 +848,51 @@ namespace BertScout2026
             ScoreStar3.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
             ScoreStar4.BackgroundColor = value == 4 ? ColorButtonOn : ColorButtonOff;
             ScoreStar5.BackgroundColor = value == 5 ? ColorButtonOn : ColorButtonOff;
+        }
+
+        #endregion
+
+        #region DefenseScore
+
+        private void DefenseScoreStar0Clicked(object? sender, EventArgs e)
+        {
+            SetDefenseScoreStar(0);
+            SaveData();
+        }
+        private void DefenseScoreStar1Clicked(object? sender, EventArgs e)
+        {
+            SetDefenseScoreStar(1);
+            SaveData();
+        }
+        private void DefenseScoreStar2Clicked(object? sender, EventArgs e)
+        {
+            SetDefenseScoreStar(2);
+            SaveData();
+        }
+        private void DefenseScoreStar3Clicked(object? sender, EventArgs e)
+        {
+            SetDefenseScoreStar(3);
+            SaveData();
+        }
+        private void DefenseScoreStar4Clicked(object? sender, EventArgs e)
+        {
+            SetDefenseScoreStar(4);
+            SaveData();
+        }
+        private void DefenseScoreStar5Clicked(object? sender, EventArgs e)
+        {
+            SetDefenseScoreStar(5);
+            SaveData();
+        }
+        private void SetDefenseScoreStar(int value)
+        {
+            match.DefenseScore = value;
+            DefenseScoreStar0.BackgroundColor = value == 0 ? ColorButtonOn : ColorButtonOff;
+            DefenseScoreStar1.BackgroundColor = value == 1 ? ColorButtonOn : ColorButtonOff;
+            DefenseScoreStar2.BackgroundColor = value == 2 ? ColorButtonOn : ColorButtonOff;
+            DefenseScoreStar3.BackgroundColor = value == 3 ? ColorButtonOn : ColorButtonOff;
+            DefenseScoreStar4.BackgroundColor = value == 4 ? ColorButtonOn : ColorButtonOff;
+            DefenseScoreStar5.BackgroundColor = value == 5 ? ColorButtonOn : ColorButtonOff;
         }
 
         #endregion

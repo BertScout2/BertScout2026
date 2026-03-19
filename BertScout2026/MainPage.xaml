@@ -1019,7 +1019,7 @@
                     >
 
                     <Label
-                        Text="Score (number of stars):"
+                        Text="Score (# of stars):"
                         HorizontalTextAlignment="Center"
                         WidthRequest="245"
                         Style="{StaticResource SubHeadline}"
@@ -1081,7 +1081,76 @@
                         HorizontalOptions="Center" />
 
                 </HorizontalStackLayout>
-                
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Start"
+                    Margin="0,10,0,0"
+                    >
+
+                    <Label
+                        Text="Defense (# of stars):"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="245"
+                        Style="{StaticResource SubHeadline}"
+                        FontSize="{OnPlatform WinUI=Small, Android=Medium}"
+                        />
+
+                    <Button
+                        x:Name="DefenseScoreStar0"
+                        Text="0"
+                        Clicked="DefenseScoreStar0Clicked"
+                        Margin="0,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="50"
+                        HorizontalOptions="Center" />
+
+                    <Button
+                        x:Name="DefenseScoreStar1"
+                        Text="1"
+                        Clicked="DefenseScoreStar1Clicked"
+                        Margin="5,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="50"
+                        HorizontalOptions="Center" />
+
+                    <Button
+                        x:Name="DefenseScoreStar2"
+                        Text="2"
+                        Clicked="DefenseScoreStar2Clicked"
+                        Margin="5,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="50"
+                        HorizontalOptions="Center" />
+
+                    <Button
+                        x:Name="DefenseScoreStar3"
+                        Text="3"
+                        Clicked="DefenseScoreStar3Clicked"
+                        Margin="5,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="50"
+                        HorizontalOptions="Center" />
+
+                    <Button
+                        x:Name="DefenseScoreStar4"
+                        Text="4"
+                        Clicked="DefenseScoreStar4Clicked"
+                        Margin="5,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="50"
+                        HorizontalOptions="Center" />
+
+                    <Button
+                        x:Name="DefenseScoreStar5"
+                        Text="5"
+                        Clicked="DefenseScoreStar5Clicked"
+                        Margin="5,0,0,0"
+                        BackgroundColor="LightGray"
+                        WidthRequest="50"
+                        HorizontalOptions="Center" />
+
+                </HorizontalStackLayout>
+
                 <Grid>
                     <HorizontalStackLayout
                         HorizontalOptions="Center">

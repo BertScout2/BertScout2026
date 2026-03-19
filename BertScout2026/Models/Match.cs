@@ -36,6 +36,7 @@ public class Match : BaseModel
 
     // End game
     public int Score { get; set; }
+    public int DefenseScore { get; set; }
     public string Comments { get; set; } = "";
 
     public Match()
@@ -79,6 +80,7 @@ public class Match : BaseModel
             , TeleRoute INTEGER NOT NULL
             , TeleClimbingLevel INTEGER NOT NULL
             , Score INTEGER NOT NULL
+            , DefenseScore INTEGER NOT NULL
             , Comments TEXT NOT NULL
             )";
     }
@@ -123,6 +125,7 @@ public class Match : BaseModel
             , TeleRoute
             , TeleClimbingLevel
             , Score
+            , DefenseScore
             , Comments";
     }
 
@@ -156,6 +159,7 @@ public class Match : BaseModel
             , {TeleRoute}
             , {TeleClimbingLevel}
             , {Score}
+            , {DefenseScore}
             , '{SQLInjectionFix(Comments)}'
             )";
     }
@@ -188,6 +192,7 @@ public class Match : BaseModel
             , TeleRoute = {TeleRoute}
             , TeleClimbingLevel = {TeleClimbingLevel}
             , Score = {Score}
+            , DefenseScore = {DefenseScore}
             , Comments = '{SQLInjectionFix(Comments)}'
             WHERE Id = {Id}";
     }
@@ -218,7 +223,8 @@ public class Match : BaseModel
         match.TeleRoute = reader.GetInt32(BaseFieldCount + 19);
         match.TeleClimbingLevel = reader.GetInt32(BaseFieldCount + 20);
         match.Score = reader.GetInt32(BaseFieldCount + 21);
-        match.Comments = reader.GetString(BaseFieldCount + 22);
+        match.DefenseScore = reader.GetInt32(BaseFieldCount + 22);
+        match.Comments = reader.GetString(BaseFieldCount + 23);
         return match;
     }
 }
