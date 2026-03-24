@@ -790,7 +790,6 @@ namespace BertScout2026
         #endregion
         private readonly List<string> CommentList =
         [
-            "Can pick from the floor.",
             "Can pick from the outpost.",
             "Picks up fuel fast.",
             "Got a fuel stuck inside.",
@@ -802,6 +801,7 @@ namespace BertScout2026
             "Played defense.",
             "Caused a penalty.",
             "Had technical issues.",
+            "Hits wall often",
             "Broke down.",
             "Never moved.",
             "DON'T PICK!",
