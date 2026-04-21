@@ -1,0 +1,51 @@
+﻿Id,Team_Num,Drive_Train,Drive_Train_Other,Start_Left,Start_Middle,Start_Right,Auto_Climb,Auto_Shoot,Auto_Best,Max_Fuel,Can_Climb,Climb_Level,Climb_Loc_Side,Climb_Loc_Middle,Strength,Fps,Travel_Route_Over,Travel_Route_Under,Human_Acc,Auto_Cycles,Play_Defense,Will_Feed,Comments
+86,58,1,,0,0,0,0,1,,30,0,0,0,0,shoot anywhere,6,0,1,2,1,1,1,
+87,78,1,,0,0,1,0,1,,45,0,0,0,0,throughput,15,0,1,3,2,1,1,
+88,125,1,,1,0,1,0,1,,75,0,0,0,0,clean up side of feild,15,0,1,2,2,0,1,
+89,131,1,,1,1,1,0,1,,40,0,0,0,0,scoring,7,0,1,3,2,1,1,
+90,133,1,,1,0,1,0,0,,50,0,0,0,0,your elemental power is green,0,0,1,3,2,1,1,
+91,151,1,,0,0,0,0,1,,18,0,0,0,0,pass and defence,4,0,1,2,2,1,1,
+92,155,1,,1,1,1,0,1,,30,0,0,0,0,shoot anywhere,3,0,1,2,1,1,1,
+93,172,1,,1,1,1,1,1,,45,1,1,1,1,,8,1,1,2,3,1,1,Good defense 
+94,173,1,,1,0,1,0,1,,65,0,0,0,0,defence and pass,8,1,0,2,2,1,0,Only go over
+95,175,1,,1,0,1,1,1,,75,1,1,1,0,passing shooting,3,1,1,3,2,1,1,
+96,195,1,,1,0,1,0,1,,50,0,0,0,0,score,20,1,1,2,2,0,1,
+97,230,1,,1,0,1,0,1,,40,0,0,0,0,high points,12,1,0,2,2,1,1,
+98,236,1,,1,0,1,1,1,,40,1,1,1,1,shooting from anywhere,6,1,1,3,2,0,1,
+99,348,1,,1,0,1,1,1,,40,1,1,1,0,,2,1,1,2,1,0,0,No floor auto hard to talk to
+100,509,1,,1,0,1,0,0,,34,0,0,0,0,defence,7,1,1,2,2,1,1,
+101,571,1,,1,0,1,0,1,,40,0,0,0,0,big ball storage,8,1,1,2,2,1,1,
+102,1058,1,,1,0,1,0,1,,50,0,0,0,0,fast cyckes,12,1,1,3,2,1,1,
+103,1073,1,,1,1,1,1,1,,55,1,1,1,0,turret,6,1,1,2,2,0,1,
+104,1512,1,,1,0,1,0,1,,45,0,0,0,0,offence and defence,8,1,0,3,15,1,1,
+105,1729,1,,1,1,1,0,1,,100,0,0,0,0,accuracy,10,1,0,2,1,1,1,
+106,1768,1,,1,0,1,0,1,,55,0,0,0,0,fuel shooting,20,1,1,2,3,1,1,
+107,2067,1,,0,1,0,0,1,,80,0,0,0,0,scoring,12,1,0,2,1,1,1,Only over
+108,2079,1,,1,0,0,0,1,left side,60,0,0,0,0,fast shooting,7,1,1,3,2,1,1,
+109,2170,1,,0,0,0,0,0,no auto ,35,0,0,0,0,defense,7,1,1,3,0,1,1,
+110,2370,1,,1,0,1,0,1,,40,0,0,0,0,shoot while moving,5,1,1,2,2,1,1,
+111,2713,1,,1,0,1,0,1,"start at trench, 2 sweep cycles",70,0,0,0,0,"shooting, shoot on the fly",8,1,1,2,2,1,1,"Prefer not to play defense but will, can do both over and under"
+112,2876,1,,1,0,1,0,1,shoot preload of 8,36,0,0,0,0,"defense, hoarding, shooting ",0,1,1,3,1,1,1,
+113,3146,1,,1,0,1,0,1,"1.5 auto, start at trench, sweep one full cycle, start another ",45,0,0,0,0,"high Hooper capacity, reliable intake, shooter",4,0,1,2,1,1,1,
+114,3623,1,,0,1,0,1,1,"shootd their preloaded fuel, hypothetical my can climb in auto. ",35,1,1,1,0,"feeding, defense, feeding to human player,",7,0,1,3,0,1,1,"Can do anywhere during auto
+climer in the works"
+115,3654,1,,0,1,0,0,1,shoot preload,20,0,0,0,0,"shuttle, defense ",5,1,1,2,1,1,1,
+116,3958,1,,0,1,0,0,1,"Center, under trench to middle, feed their alliance ",25,0,0,0,0,"defense, feeding ",6,1,1,3,2,1,1,"Both, prefer trench "
+117,4311,1,,1,0,1,0,1,"2 sweep cycle from left or right trench, scoring about 30 total",45,0,0,0,0,"wide shooter, large hooper, speed",10,1,0,2,2,1,1,
+118,4905,1,,1,0,1,0,1,"start on trench, full sweep, begin another",40,0,0,0,0,"simple design, no major breaks/don't break often very robust",3,0,1,3,1,1,1,
+119,4925,1,,0,1,0,0,1,"back up shoot preload, depo auto having issues",50,0,0,0,0,"shooting, defense and offense, very little penalty matches ",3,1,1,3,1,1,1,
+120,5112,1,,1,1,0,0,1,"center, depo, score",35,0,0,0,0,"defense, feeding/passing ",4,1,0,3,1,1,1,
+121,5687,1,,1,0,1,0,1,"trench, 2 sweep",65,0,0,0,0,"big hooper, trench and bump, shoot from anywhere ",20,1,1,3,2,0,0,"Only defend if broken , feed no pass yes"
+122,5813,1,,1,1,1,0,1,"left trench, center, 2 sweeps",35,0,0,0,0,shooting ,10,0,1,3,2,1,1,Only defend if broken 
+123,6324,1,,1,0,1,0,1,"start on trench, collect in center, over bump, shoot, repeat",50,0,0,0,0,"drum shooter, fast intake ",19,0,1,2,2,1,1,Prefer under but can do both 
+124,7127,1,,0,0,1,0,1,double sweep starting on the right trench,40,0,0,0,0,"shoot on the move, shoot under defense",7,0,1,1,2,1,1,
+125,8567,1,,1,1,0,0,1,"left/middle start, center sweep, score ",30,0,0,0,0,"defense, shuttle, spread fuel on other alliance/steal, shooting",6,0,1,3,1,1,1,Able to become fully defense bot due to metal structure of hooper 
+126,8708,1,,0,0,1,0,1,"pick up from human player, than depo shoot ",30,0,0,0,0,wide and accurate shoot range ,6,1,1,2,2,1,1,"Willing to play defense, not great at it. "
+127,8709,1,,1,0,1,0,1,"start on bump/hub, over bump, collect, over bump, shoot",50,0,0,0,0,"fast shooter, large capacity ",8,1,0,3,1,1,1,"Cannot fit under trench, human play is a variety baseball player "
+128,8724,1,,1,1,1,0,1,"2 sweeps, 40~ total scored ",45,0,0,0,0,offense,0,0,1,3,2,0,1,
+129,9644,1,,1,0,1,0,1,"2 sweep neural zone auto, start at trench back under trench. they also have a steal auto",35,0,0,0,0,"defense, feeding ",12,0,1,3,2,1,1,
+130,9710,1,,0,1,0,0,1,shoot preload,25,0,0,0,0,defense ,5,0,1,3,1,1,1,
+131,10063,1,,0,1,0,0,1,"center, shoot preload, depo shoot ",20,0,0,0,0,"defense, feeding, drive team ",3,0,1,3,2,1,1,Can do both over and under. intake IN THE WORKS (intake got oblirated may not be fixed)
+132,10254,1,,1,1,1,1,1,"start left / right bump, center, sweep ",65,1,1,0,1,"accurate, large Hooper ",12,1,0,2,1,0,0,Working on an L 3 climb 
+133,10910,1,,1,1,1,0,0,"cab do anywhere, don't technically have an auto",15,0,0,0,0,"heavy defense, willing to be a wall / break bot for defense.  shuttling ",3,0,1,3,0,1,1,Under but will go behind whoever is in front of them 
+134,11175,1,,0,1,0,0,1,"middle, shoot preload",12,0,0,0,0,"defense, people get stuck on bumpers often",4,1,1,2,1,1,1,

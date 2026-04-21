@@ -1,0 +1,624 @@
+﻿ID,TeamNumber,MatchNumber,ScoutName,AutoNumberOfCycles,AutoShootingSpeed,AutoBallsPerCycle,AutoAccuracy,AutoRobotSpeed,AutoClimbingLevel,TeleNumberOfCycles,TeleShootingSpeed,TeleBallsPerCycle,TeleAccuracy,TeleRobotSpeed,TeleClimbingLevel,Score,DefenseScore,Comments
+664,9644,1,semaj,1.00,2.00,2.00,3.00,1.00,0.00,0.00,2.00,2.00,2.00,2.00,0.00,3.00,2.00,Played defense. feed there side even in tele
+665,10254,1,Terri,1.00,2.00,1.00,2.00,2.00,0.00,3.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,"Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Caused a penalty, yellow card"
+666,151,2,Terri,1.00,1.00,1.00,3.00,1.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Can pick from the floor. Can pick from the outpost. Good feeder to endzone. Can go underneath trench. Played defense. 
+667,5687,2,semaj,1.00,2.00,3.00,3.00,2.00,0.00,7.00,2.00,3.00,2.00,2.00,0.00,4.00,0.00,Can pick from the floor. 
+668,8709,3,Terri,1.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,1.00,1.00,1.00,0.00,3.00,0.00,"Can pick from the floor. Can't go under trench. heavily defended, was not able to shoot well because of that."
+669,131,3,semaj,1.00,1.00,3.00,2.00,1.00,0.00,5.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Can pick from the floor. 
+670,4925,4,Terri,0.00,0.00,0.00,0.00,0.00,0.00,4.00,1.00,1.00,1.00,1.00,0.00,2.00,0.00,backed up in auto but was shooting backwards. shot only a few at a time.
+671,4905,4,semaj,1.00,1.00,1.00,1.00,1.00,0.00,8.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,Shoot like 2 every second
+672,2079,5,Terri,0.00,0.00,0.00,0.00,0.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Shoots from middle of the field to end zone
+673,78,5,semaj,1.00,2.00,2.00,2.00,2.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Picks up fuel fast. 
+674,173,6,Terri,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,1.00,1.00,1.00,0.00,2.00,4.00,Team 5000 stole our fuel we put in the end zone
+675,5813,6,jeanette,2.00,2.00,1.00,0.00,0.00,0.00,7.00,2.00,2.00,2.00,0.00,0.00,0.00,0.00,they were good
+676,571,7,Terri,1.00,2.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Super fast and accurate robot. shoots while scooping and moving.
+677,4311,7,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,1.00,0.00,0.00,2.00,0.00,Can pick from the floor. Picks up fuel fast. 
+678,172,8,Terri,0.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,1.00,1.00,2.00,0.00,2.00,0.00,Shoot fuel to the end zone at times
+679,10063,8,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"hit everything ,broke there intake right at the start"
+680,1073,9,jeanette,1.00,2.00,0.00,0.00,0.00,0.00,8.00,2.00,2.00,3.00,0.00,0.00,0.00,0.00,Could shoot one fuel at a time to the hub
+681,131,9,Terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,only scooped up fuel to shoot to end zone
+682,2876,10,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,1.00,2.00,0.00,1.00,2.00,Played defense. 
+683,10254,10,Terri,1.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,"was heavily defended. when heavily defended, didn't shoot well."
+684,1729,11,jeanette,1.00,3.00,3.00,3.00,2.00,0.00,3.00,3.00,3.00,3.00,2.00,0.00,0.00,0.00,
+685,5813,11,Bailey,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+686,4905,12,jeanette,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Beach themself and could not move last half of the game. played defense
+687,2067,12,Bailey,1.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,Good
+688,2718,13,jeanette,3.00,0.00,0.00,0.00,0.00,0.00,4.00,3.00,3.00,3.00,0.00,0.00,0.00,0.00,Very good I would pick  this team is 2713
+689,8724,13,Bailey,1.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Good robot
+690,10063,14,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,Can go underneath trench. Just pushed fuel around played defense
+691,1512,14,Bailey,1.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,decent.
+692,571,15,jeanette,2.00,2.00,0.00,0.00,0.00,0.00,7.00,2.00,3.00,2.00,3.00,0.00,0.00,0.00,Can pick from the outpost. Can pick from the floor. Can pick from the floor. Picks up fuel fast. 
+693,8567,15,Bailey,1.00,2.00,1.00,2.00,1.00,0.00,5.00,2.00,1.00,3.00,2.00,0.00,2.00,0.00,Can pick from the floor. 
+694,348,16,thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,0.00,3.00,Played defense. 
+695,195,16,Terri,1.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,2.00,2.00,0.00,0.00,3.00,0.00,
+696,1768,17,thomas,1.00,3.00,3.00,3.00,2.00,0.00,3.00,3.00,3.00,3.00,2.00,0.00,5.00,0.00,Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Can go underneath trench. 
+697,509,17,Terri,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Moved in auto but no shots. played defense. was throwing some balls from center field to end zone
+698,5687,18,thomas,1.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Can go underneath trench. 
+699,131,18,Terri,1.00,1.00,1.00,1.00,1.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,4.00,0.00,
+700,8724,19,thomas,2.00,2.00,2.00,3.00,2.00,0.00,9.00,2.00,2.00,3.00,3.00,0.00,4.00,0.00,Can pick from the floor. Good feeder to endzone. Picks up fuel fast. 
+701,5112,19,Terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,No show
+702,125,20,thomas,1.00,3.00,2.00,2.00,3.00,0.00,10.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Can pick from the floor.  Good feeder to endzone. Picks up fuel fast. Can go underneath trench. 
+703,230,20,Terri,1.00,0.00,0.00,0.00,0.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Played excellent defense at times too
+704,10254,21,jaaaaaaaamesssssssss,1.00,2.00,3.00,2.00,2.00,0.00,3.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,Big hoper
+705,4311,21,Terri,2.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Did good in auto then chugged and chugged and chugged then died.
+706,2713,22,jaaaaaaaamesssssssss,1.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Missed a bit
+707,7127,22,Terri,0.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,
+708,571,23,jaaaaaaaamesssssssss,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,Was eating popsicle so not acrter
+709,348,23,Terri,1.00,1.00,1.00,1.00,1.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,4.00,0.00,
+710,3146,24,jaaaaaaaamesssssssss,1.00,0.00,0.00,0.00,0.00,0.00,4.00,3.00,2.00,3.00,2.00,0.00,3.00,0.00,Picks up fuel fast. 
+711,4925,24,Terri,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,2.00,2.00,0.00,0.00,3.00,0.00,Robot died near hub
+712,133,25,jaaaaaaaamesssssssss,2.00,3.00,2.00,2.00,2.00,0.00,5.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! DON'T PICK! DON'T PICK! 
+713,1729,25,Terri,1.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,
+714,8724,26,rachel,2.00,2.00,2.00,2.00,2.00,0.00,8.00,2.00,2.00,2.00,2.00,0.00,4.00,0.00,very good. just not top top robot
+715,4311,26,Jean,2.00,3.00,3.00,2.00,2.00,0.00,5.00,3.00,3.00,2.00,3.00,0.00,3.00,0.00,"On: shoots well, but a defense bit can push them so that they miss.
+Off: sweeps around neutral zone and shoots fuel to their side."
+716,1058,27,rachel,0.00,0.00,0.00,0.00,0.00,0.00,7.00,3.00,2.00,2.00,2.00,0.00,3.00,0.00,no middle auto. seemed to struggle with picking up ball
+717,2370,27,Jean,2.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,"Off: they are very efficient at picking up fuel in neutral zone and sending it to their side. then during on, they can quickly pick up much fuel and shot it in the hub.  
+Need to interfere with their picking up fuel during off time."
+718,151,28,rachel,1.00,2.00,2.00,2.00,1.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Didn't even do defense.just pushed balls around
+719,10254,28,Jean,1.00,3.00,3.00,3.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,4.00,0.00,"auto: does one run through neutral and shoots fuel. waited for 5 seconds before moving back to neutral zone. holds a lot of fuel.
+
+runs around neutral zone collecting fuel and then shooting when on."
+720,2876,29,rachel,0.00,0.00,0.00,0.00,1.00,0.00,4.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,Can't pick up good
+721,2713,29,Jean,2.00,3.00,3.00,2.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,"sends fuel from neutral during off then shoots accumulated fuel into hub very efficiently.  very fast.  
+
+"
+722,8709,30,rachel,1.00,0.00,0.00,0.00,1.00,0.00,4.00,2.00,1.00,2.00,2.00,0.00,2.00,0.00,Slow picking up
+723,236,30,Jean,2.00,3.00,3.00,2.00,3.00,0.00,5.00,3.00,3.00,2.00,3.00,0.00,3.00,0.00,
+724,195,31,j@m3s,1.00,2.00,3.00,0.00,0.00,0.00,5.00,3.00,3.00,3.00,2.00,0.00,4.00,0.00,Big hopper
+725,9644,31,Jean,2.00,3.00,2.00,2.00,3.00,0.00,3.00,3.00,2.00,1.00,3.00,0.00,2.00,0.00,Aim was very poor. Also seemed to have problems with the intake.
+726,175,32,j@m3s,1.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,Fast
+727,3146,32,Jean,2.00,3.00,2.00,3.00,2.00,0.00,5.00,3.00,3.00,3.00,2.00,0.00,3.00,0.00,they stayed in their zone as much as possible and (once hopper was full) just hung out until it was their turn to shoot into the hub.  wasted a lot of time.
+728,4905,33,j@m3s,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,no shoot in auto
+729,155,33,Jean,2.00,2.00,2.00,3.00,1.00,0.00,4.00,2.00,2.00,3.00,2.00,0.00,2.00,0.00,"could shoot, but was slow about actually picking up fuel."
+730,172,34,j@m3s,1.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Cool lights
+731,58,34,Jean,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,3.00,2.00,0.00,2.00,0.00,"Robot hit in auto so it didn't make it back to shoot then.
+
+"
+732,2713,35,j@m3s,2.00,3.00,3.00,3.00,2.00,0.00,4.00,3.00,3.00,3.00,2.00,0.00,4.00,0.00,Turret shorter
+733,5813,35,Jean,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,3.00,0.00,the were some glitches shooting when the hopper was really full.
+734,1073,36,j@m3s,2.00,3.00,3.00,2.00,2.00,0.00,4.00,3.00,3.00,2.00,2.00,0.00,4.00,0.00,Picks up fuel fast. 
+735,2170,36,Terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Didn't move in auto. played defense and died soon on opposing side of the field.
+736,7127,37,j@m3s,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Left? Had technical issues. 
+737,9644,37,Terri,2.00,0.00,0.00,0.00,0.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,"Auto, backed up and shot"
+738,230,38,thomas,1.00,2.00,3.00,3.00,3.00,0.00,6.00,2.00,3.00,2.00,3.00,0.00,4.00,0.00,"Can pick from the floor. Good feeder to endzone. Picks up fuel fast. 
+
+"
+739,8708,38,Terri,1.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,
+740,6324,39,thomas,2.00,3.00,3.00,2.00,3.00,0.00,7.00,2.00,3.00,3.00,3.00,0.00,3.00,0.00,Picks up fuel fast. Can pick from the floor. Can go underneath trench. Good feeder to endzone. 
+741,3146,39,Terri,2.00,2.00,2.00,2.00,1.00,0.00,5.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"In auto, has a 2 cycle auto where they shoot from the side of hub."
+742,509,40,thomas,1.00,2.00,1.00,0.00,3.00,0.00,2.00,2.00,1.00,3.00,3.00,0.00,3.00,4.00,Played defense. Can pick from the floor. Can go underneath trench. Missed shooting fuel into hub. 
+743,78,40,Terri,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+744,1512,44,james,1.00,3.00,3.00,3.00,2.00,0.00,8.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,
+745,4905,44,rachel,0.00,0.00,3.00,0.00,2.00,0.00,4.00,2.00,1.00,2.00,2.00,0.00,2.00,0.00,Shooter got jammed in auto. never got full after thag. shot 5 at a tims
+746,173,45,james,2.00,0.00,0.00,0.00,0.00,0.00,5.00,3.00,3.00,2.00,2.00,0.00,0.00,0.00,Got fuel from the outpost
+747,2170,45,rachel,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,4.00,Really good. kept a robot in the middle for a solid 30 seconds. worried about a couple pin counts. if the ref would have been stricter there would have been one. but none this tjme. also seemed to die at the very end.
+748,2079,46,james,2.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,3.00,Played defense. 
+749,133,46,rachel,2.00,3.00,2.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Broke..... :(
+750,131,47,james,2.00,2.00,2.00,2.00,1.00,0.00,4.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,Fast
+751,172,47,rachel,1.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,Struggled shooting. just a dribble no stream
+752,58,48,james,1.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Can go underneath trench. 
+753,195,48,rachel,2.00,3.00,3.00,2.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Seems hard to defend. had a robot ram into them and they didn't move
+754,348,49,james,1.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,3.00,2.00,2.00,0.00,2.00,0.00,Can pick from the floor. 
+755,5000,49,rachel,2.00,2.00,2.00,2.00,2.00,0.00,6.00,3.00,3.00,2.00,2.00,0.00,4.00,0.00,Can move while shooting. because of this they spit balls out the field sometimes
+756,8567,50,james,1.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,1.00,1.00,2.00,0.00,2.00,2.00,Small hoper
+757,230,50,rachel,2.00,2.00,2.00,1.00,2.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,not accurate at all in the beginning. seemed to do something to fix jt
+758,3654,51,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Played defense. Never put fuel in hub just keep it in there hopper
+759,8724,51,Jennifer,2.00,1.00,2.00,1.00,0.00,0.00,5.00,2.00,2.00,1.00,2.00,0.00,3.00,0.00,Can back feed by shooting or pushing. Can go underneath trench. 
+760,125,52,jeanette,2.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Never made a mistake Can pick from the floor. Can pick from the outpost. Picks up fuel fast. Good feeder to endzone. 
+761,1073,52,Jennifer,2.00,3.00,2.00,3.00,2.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Did not backfill. just drove around middle and filled hopper.
+762,173,53,jeanette,1.00,1.00,1.00,2.00,0.00,0.00,1.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,Broke down. After tele-op just went in small circles in front of there hub not good.
+763,10254,53,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Moved in auto only. Had technical issues. 
+764,2370,54,jeanette,2.00,3.00,3.00,3.00,3.00,0.00,10.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Can pick from the floor. Can pick from the outpost. Picks up fuel fast. Good feeder to endzone. I would pick these guys very good shooting into hub 
+765,9644,54,Jennifer,1.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,Fed human station by bulldozer 5x. no shooting in telly except right after auto. 
+766,5000,55,jeanette,1.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Can pick from the floor. Can pick from the outpost. Picks up fuel fast. Good feeder to endzone. Can shoot from one side of the field to the other. I would pick.
+767,195,55,Jennifer,1.00,1.00,1.00,1.00,1.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,3.00,0.00,Stealing fuel instead of scoring. Can go underneath trench. Picks up fuel fast. poor auto.
+768,175,56,jeanette,1.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,1.00,2.00,1.00,0.00,0.00,0.00,Can pick from the outpost. Can pick from the floor. Slow moving around the field just really stayed on there side 
+769,236,56,b@!l3y (`~`)!!!!4925,1.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Good robot.
+770,3958,57,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,No this bot just drove around like crazy. he was on the red side and came over to blue side and feed the human players fuel
+771,6324,57,b@!l3y (`~`)!!!!4925,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,
+772,155,58,jeanette,1.00,1.00,1.00,1.00,1.00,0.00,6.00,2.00,2.00,2.00,2.00,0.00,0.00,3.00,Can pick from the floor. Can pick from the outpost. Good feeder to endzone. 
+773,348,58,b@!l3y (`~`)!!!!4925,1.00,2.00,2.00,3.00,0.00,0.00,2.00,2.00,2.00,3.00,2.00,0.00,2.00,0.00,Can pick from the floor. 
+774,9644,59,jeanette,1.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,1.00,2.00,2.00,0.00,0.00,3.00,Can pick from the floor. Can pick from the outpost. Could feed to there side
+775,1768,59,b@!l3y (`~`)!!!!4925,1.00,2.00,3.00,3.00,2.00,0.00,3.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Picks up fuel fast. Shoots and holds a lot.
+776,230,60,jeanette,1.00,1.00,1.00,0.00,2.00,0.00,7.00,2.00,0.00,1.00,2.00,0.00,0.00,2.00,Can pick from the floor. Can pick from the outpost. Got stuck trying to go under the trench and also going over the hump
+777,58,60,b@!l3y (`~`)!!!!4925,0.00,0.00,0.00,0.00,2.00,0.00,1.00,2.00,1.00,3.00,2.00,0.00,3.00,0.00,decent.
+778,2079,61,rachel,1.00,2.00,1.00,2.00,2.00,0.00,8.00,3.00,2.00,2.00,2.00,0.00,4.00,0.00,Crunched intake on trench in auto. nothing broke!! never fills up to max
+779,173,61,b@!l3y (`~`)!!!!4925,1.00,2.00,2.00,2.00,1.00,0.00,2.00,2.00,1.00,2.00,2.00,0.00,3.00,2.00,"Stuck on fuel after cross ramp. mostly a defense bot, but not that great at it. can't empty whole hopper. "
+780,10254,62,rachel,1.00,2.00,3.00,2.00,2.00,0.00,5.00,1.00,3.00,2.00,2.00,0.00,3.00,0.00,Can hold a lot but takes forever to empty
+781,2067,62,Jennifer,1.00,3.00,3.00,3.00,2.00,0.00,3.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,Slow to pick up fuel. hold a lot in their hopper.
+782,195,63,rachel,2.00,3.00,3.00,2.00,2.00,0.00,8.00,3.00,3.00,2.00,3.00,0.00,4.00,0.00,Hard to give any feedback. they adapted to the defence well. 
+783,125,63,Jennifer,1.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Shoot from anywhere.  backfill by shooting. stuck on ramp in auto on second time back so shot into middle. lost their alliance! dropped from 1 to 3rd.
+784,1768,64,rachel,2.00,3.00,3.00,2.00,2.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Really really good at picking balls up. effortless. the only way I see to hinder them is to prevent them getting into their area to shoot
+785,6324,64,Jennifer,2.00,3.00,3.00,3.00,3.00,0.00,1.00,3.00,3.00,3.00,3.00,0.00,3.00,0.00,Had technical issues. after one round of shooting. good size hopper.
+786,8724,65,rachel,2.00,2.00,3.00,1.00,2.00,0.00,4.00,2.00,2.00,1.00,2.00,0.00,2.00,0.00,Shooter problems. very inaccurate
+787,3958,65,Jennifer,2.00,2.00,2.00,0.00,3.00,0.00,2.00,3.00,2.00,0.00,3.00,0.00,2.00,3.00,Defense and feeder by shooting from middle. slow to pickup. 
+788,1073,66,rachel,2.00,2.00,2.00,2.00,2.00,0.00,6.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,
+789,5813,66,Jennifer,1.00,1.00,1.00,2.00,2.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Shooting fuel from middle. big hopper. auto stopped after grabbing more for first cycle.
+790,9710,67,rachel,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,2.00,Seems scared to commjt to a long term realationship
+791,173,67,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,0.00,0.00,"can shoot and move at same time.
+didn't see auto. jean"
+792,175,68,rachel,1.00,0.00,0.00,0.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Did the defence the whole time
+793,2876,68,Jennifer,0.00,0.00,0.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,2.00,3.00,Played defense. Shoot a few low balls. only moved to middle in auto.
+794,133,69,rachel,2.00,0.00,0.00,0.00,0.00,0.00,8.00,0.00,0.00,0.00,0.00,0.00,4.00,0.00,
+795,10910,69,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,1.00,0.00,Good feeder to endzone. On human player side.
+796,8567,70,rachel,1.00,2.00,2.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,very shy. isn't sure about defending
+797,2170,70,Jennifer,1.00,2.00,1.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,2.00,2.00,Only pushed balls to endzone. or a little defense. 4 small cycles of balls pushef.
+798,2713,71,Aurelia,2.00,3.00,3.00,3.00,3.00,0.00,1.00,0.00,0.00,0.00,3.00,0.00,1.00,2.00,Can pick from the floor. Broke down. Can go underneath trench. Played defense. 
+799,155,71,Jeanette ,1.00,2.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Played defense. just stayed on the opposing side but was not that good on defense
+800,2370,72,Aurelia,2.00,2.00,2.00,2.00,3.00,0.00,7.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,Can pick from the floor. Picks up fuel fast. Can go underneath trench. 
+801,1073,72,Jeanette ,1.00,3.00,3.00,2.00,2.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Can pick from the floor. Can pick from the outpost. Picks up fuel fast. Good feeder to endzone. Good bot
+802,1768,73,Aurelia,2.00,3.00,3.00,3.00,3.00,0.00,2.00,3.00,3.00,3.00,3.00,0.00,2.00,2.00,Can go underneath trench. Can pick from the floor. Picks up fuel fast. Broke down. 
+803,5687,73,Jeanette ,2.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,0.00,5.00,Yes very good bot Can pick from the floor. Can pick from the outpost. Picks up fuel fast. Good feeder to endzone. hard to move out of the way 
+804,230,74,Aurelia,0.00,0.00,0.00,0.00,0.00,0.00,7.00,3.00,3.00,2.00,2.00,0.00,3.00,0.00,Can pick from the floor. Can go underneath trench. 
+805,348,74,Jeanette ,1.00,2.00,1.00,0.00,0.00,0.00,6.00,2.00,2.00,2.00,2.00,0.00,0.00,3.00,Can pick from the floor. Can pick from the outpost. Good feeder to endzone. Not bad
+806,58,75,Aurelia,1.00,2.00,2.00,2.00,3.00,0.00,2.00,1.00,1.00,2.00,3.00,0.00,2.00,2.00,Can pick from the floor. 
+807,131,75,Jeanette ,2.00,2.00,2.00,2.00,2.00,0.00,8.00,2.00,3.00,3.00,3.00,0.00,0.00,3.00,When they have hopper full they do not unload it all they do half or so. pick from floor 
+808,6324,76,Aurelia,1.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,4.00,2.00,Can pick from the floor. Picks up fuel fast. Can go underneath trench. Played defense. 
+809,1058,76,Jeanette ,2.00,3.00,0.00,0.00,0.00,0.00,2.00,3.00,2.00,2.00,3.00,0.00,0.00,3.00,Lost a part 
+810,172,77,thomas,1.00,3.00,2.00,3.00,3.00,0.00,4.00,3.00,2.00,3.00,3.00,1.00,4.00,0.00,Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Can go underneath trench. 
+811,4311,77,Patrick ,2.00,2.00,3.00,2.00,2.00,0.00,5.00,2.00,3.00,2.00,2.00,0.00,4.00,3.00,Can pick from the floor. Picks up fuel fast. Played defense. 
+812,78,78,thomas,1.00,2.00,3.00,3.00,2.00,1.00,7.00,3.00,3.00,2.00,3.00,0.00,3.00,0.00,Can pick from the floor. Good feeder to endzone. Can go underneath trench. 
+813,5687,78,Patrick ,0.00,0.00,0.00,0.00,0.00,0.00,2.00,3.00,3.00,2.00,2.00,0.00,4.00,0.00,
+814,1729,79,thomas,1.00,1.00,0.00,0.00,0.00,0.00,1.00,2.00,3.00,3.00,2.00,0.00,3.00,2.00,"Feeder jammed, spun to clear, full court feeder shot "
+815,125,79,Patrick ,0.00,0.00,0.00,0.00,0.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Can go underneath trench. Good robot
+816,2370,80,thomas,1.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,2.00,3.00,2.00,0.00,3.00,3.00,Turret shooter. can shoot from bump if defended. almost can full court feed while hoovering. 
+817,11175,80,Patrick ,0.00,2.00,1.00,2.00,1.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,3.00,5.00,Played defense. Played defense. Played defense. Played defense. 
+818,10254,81,Aurelia,1.00,2.00,2.00,3.00,2.00,0.00,3.00,3.00,3.00,2.00,2.00,0.00,2.00,0.00,Can pick from the floor. Picks up fuel fast. 
+819,2876,81,Jennifer,0.00,0.00,0.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,4.00,4.00,Played defense. On opposing alliance field. only moved to middle in auto. can push balls into alliance. Can go underneath trench. 
+820,2079,82,Aurelia,2.00,3.00,3.00,2.00,3.00,0.00,7.00,3.00,2.00,2.00,3.00,0.00,3.00,2.00,Can pick from the floor. Picks up fuel fast. 
+821,155,82,Jennifer,1.00,2.00,1.00,2.00,2.00,0.00,5.00,3.00,2.00,3.00,3.00,0.00,4.00,0.00,Feeding by shooting from middle or endzone. 
+822,3623,83,Aurelia,1.00,2.00,1.00,3.00,1.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,3.00,Played defense. Can go underneath trench. 
+823,571,83,Jennifer,2.00,3.00,3.00,3.00,3.00,0.00,1.00,2.00,2.00,3.00,3.00,0.00,4.00,4.00,Feed by shooting from middle. then play defense. and push balls into human players. maybe did defense to keep that alliance score low?
+824,1073,84,Aurelia,1.00,3.00,2.00,0.00,2.00,0.00,6.00,3.00,3.00,2.00,2.00,0.00,3.00,2.00,Can pick from the floor. Can go underneath trench. Picks up fuel fast. 
+825,133,84,Jennifer,1.00,3.00,3.00,3.00,3.00,0.00,10.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Excellent!!! pick me for sure. 
+826,5687,85,Aurelia,1.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,1.00,Can pick from the floor. Can pick from the outpost. Picks up fuel fast. Can go underneath trench. 
+827,7127,85,Jennifer,1.00,0.00,2.00,3.00,3.00,0.00,2.00,2.00,2.00,2.00,3.00,0.00,2.00,0.00,Push fuel to endzone. stuck on ramp 2x. 
+828,348,86,James the pear 23,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Played defense. Kept hitting another robot.
+829,2713,86,Jennifer,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Turet. feed from middle by shooting.
+830,236,87,James the pear 23,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,3.00,2.00,0.00,2.00,0.00,
+831,9710,87,Jennifer,1.00,1.00,0.00,0.00,1.00,0.00,3.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,
+832,2876,88,James the pear 23,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,3.00,2.00,2.00,0.00,0.00,0.00,
+833,10910,88,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Robot didn't come.
+834,509,89,James the pear 23,1.00,2.00,1.00,3.00,0.00,0.00,4.00,2.00,2.00,3.00,3.00,0.00,3.00,0.00,"Tends to move slower while holding balls, otherwise fast when they are going across the field."
+835,3146,89,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,3rd pick 
+836,5000,90,James the pear 23,0.00,0.00,0.00,0.00,0.00,0.00,3.00,3.00,2.00,3.00,3.00,0.00,3.00,0.00,Good robot.
+837,10063,90,Jennifer,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,2.00,3.00,Pushed fuel 3x to endzone. and did defense.
+838,8724,91,Aurelia,0.00,0.00,0.00,0.00,0.00,0.00,7.00,2.00,2.00,2.00,2.00,0.00,2.00,1.00,Can pick from the floor. Can go underneath trench. 
+839,6324,91,Jean,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,"During off, collects and shoots fuel, sometimes from opposing alliance side.  very good offensive bot."
+840,9644,92,Aurelia,2.00,3.00,2.00,2.00,3.00,0.00,8.00,3.00,2.00,2.00,3.00,0.00,3.00,2.00,Can pick from the floor. Picks up fuel fast. Can go underneath trench. 
+841,175,92,Jean,1.00,2.00,1.00,3.00,1.00,0.00,5.00,2.00,3.00,2.00,2.00,0.00,2.00,0.00,Missed probably 40% of shots.  it was like the robot wasn't lined up correctly with QR codes.
+842,10910,93,Aurelia,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Broke down. Had technical issues. barely moved 
+843,1768,93,Jean,2.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Intake broke right after auto.  spent the rest of the match pushing fuel towards their alliance end.
+844,3146,94,Aurelia,1.00,3.00,2.00,2.00,2.00,0.00,4.00,2.00,2.00,3.00,3.00,0.00,3.00,1.00,Can pick from the floor. Picks up fuel fast. Can go underneath trench. 
+845,509,94,Jean,2.00,2.00,1.00,2.00,2.00,0.00,1.00,2.00,1.00,2.00,3.00,0.00,0.00,4.00,played counter defense protecting Outliers.  did a good job keeping two opposing bots away from 5687.
+846,151,95,Aurelia,2.00,2.00,2.00,1.00,2.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,Can pick from the floor. Can go underneath trench. 
+847,125,95,Jean,2.00,0.00,0.00,0.00,0.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,"Feeds and shoots at same time, so was continuously shooting during active portions."
+848,5000,96,James the pear 24,1.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,3.00,3.00,2.00,0.00,3.00,0.00,Picks up fuel fast. 
+849,2370,96,thomas,0.00,0.00,0.00,0.00,0.00,0.00,4.00,3.00,2.00,3.00,3.00,0.00,5.00,0.00,Can go underneath trench. Can pick from the floor. Good feeder to endzone. Picks up fuel fast. 
+850,4925,97,James the pear 24,0.00,0.00,0.00,0.00,0.00,0.00,1.00,3.00,2.00,0.00,2.00,0.00,2.00,0.00,
+851,5813,99,James the pear 24,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,3.00,2.00,0.00,0.00,3.00,0.00,Can pick from the floor. 
+852,125,1,Bailey,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,1.00,2.00,0.00,0.00,0.00,0.00,
+853,1512,2,Bailey,0.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,Broke down. 
+854,5112,3,Bailey,2.00,1.00,2.00,2.00,1.00,0.00,3.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,Stayed on the opposing teams side for a majority of the mach. They got stuck and were just shooting balls from that side up until the last few seconds of the match.
+855,2713,4,Bailey,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,1.00,3.00,0.00,3.00,0.00,doesn't pick up many balls. Accuracy is poor.  Stealing as many balls as possible from them might be something we can do.
+856,2370,5,Baileydu,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,did okay.
+857,3146,6,Jean,2.00,2.00,2.00,2.00,1.00,0.00,6.00,2.00,2.00,3.00,2.00,0.00,3.00,1.00,"strategy : during ""on"" get would do a quick sweep in front of hub and go back to shoot.  during ""off"" they would sweep the neutral zone, shoot over to their side, sweep and go to opponent's side to interfere, then head back to shoot.  "
+858,230,7,Jean,1.00,3.00,3.00,3.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,3.00,0.00,"strategy:
+on: quick swipe through middle of neutral zone and back to shoot.
+off: no consistent pattern. swipe through neutral zone then shoot over to their side of the field.
+
+was defended against, so didn't score as much as able to."
+859,1058,8,Jean,0.00,0.00,0.00,0.00,0.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,2.00,0.00,"auto didn't pick up balls and didn't make it back from neutral zone.  
+
+driving during teleop seemed glitchy. 
+
+during off: runaround neutral zone and shoot back to their side."
+860,8708,9,Jean,2.00,3.00,2.00,1.00,2.00,0.00,4.00,3.00,2.00,1.00,2.00,0.00,1.00,0.00,"missed a lot of shots.
+Off:  run down the right side of field to opposing side, pick up fuel, and shoot it back to neutral zone
+On: pick up fuel while running through neutral zone (straight line) over to alliance and then shoot.  missed the hub a lot"
+861,175,10,Jean,2.00,2.00,2.00,0.00,1.00,0.00,5.00,2.00,2.00,1.00,2.00,1.00,1.00,0.00,"Auto: shot from trench, but missed the hub both times.
+On: get fuel in neutral zone , go under trench, shoot from near trench.  finally started going away from trench and became slightly more accurate.
+Off: get fuel in n zone and shoot to their side"
+862,151,11,Jean,1.00,2.00,1.00,1.00,1.00,0.00,2.00,3.00,2.00,3.00,2.00,0.00,1.00,1.00,played defense and was lousy. went back to their side during last 30 seconds and started shooting.
+863,5000,12,Jean,0.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,"Auto didn't work.
+
+runs alongside drivers station shooting into hub at same time. put a robot along the back wall to block their path."
+864,58,13,Jean,1.00,2.00,2.00,3.00,2.00,0.00,3.00,2.00,2.00,3.00,2.00,0.00,0.00,2.00,"at times pushed fuel into opposing area. 
+off: would go into opposing area play defense and steal fuel.
+on: would shoot from neutral zone to feed alliance"
+865,11175,14,Jean,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Robot drive from field before match started. missed the match.
+866,155,15,Jean,1.00,2.00,1.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,I think the intake broke during auto.  It shot the remaining fuel after auto and then drove around inefficiently pushing fuel.
+867,133,16,Jean,2.00,2.00,3.00,2.00,1.00,0.00,4.00,2.00,3.00,2.00,0.00,0.00,5.00,0.00,woooooooooooo we won!!!!!
+868,5000,17,rachel,2.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,2.00,3.00,2.00,0.00,0.00,0.00,Slammed something into the trench. now can't shoot
+869,58,18,rachel,2.00,1.00,1.00,1.00,1.00,0.00,3.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,Very slow shooter
+870,10063,19,rachel,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Just.... there
+871,10910,20,rachel,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,1.00,a lot of spinning in the middle
+872,8708,21,baik,2.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,1.00,2.00,0.00,1.00,0.00,Missed shooting fuel into hub a lot. 
+873,1512,22,baik,1.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,1.00,2.00,2.00,0.00,1.00,0.00,Can pick from the floor. 
+874,3654,23,baik,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,1.00,2.00,2.00,0.00,3.00,0.00,Decent.
+875,2876,24,baik,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,almost broke a robot.
+876,4605,25,baik,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Can pick from the floor. 
+877,9710,26,Zander,0.00,0.00,0.00,0.00,1.00,0.00,1.00,2.00,3.00,2.00,2.00,0.00,2.00,0.00,barely moved in auto. seemed surprised when their shooter worked in endgame and scored once. 
+878,2067,27,Zander,1.00,2.00,3.00,3.00,2.00,0.00,9.00,2.00,3.00,3.00,3.00,0.00,3.00,0.00,Can pick from the floor. 
+879,2079,28,thomas,1.00,3.00,3.00,3.00,2.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Can pick from the floor. Played defense. 
+880,11175,29,terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,did a great job as a defense bot
+881,1729,30,thomas ,1.00,2.00,2.00,3.00,2.00,0.00,0.00,2.00,1.00,0.00,2.00,0.00,0.00,3.00,Can pick from the floor. Good feeder to endzone. 
+882,5112,31,too tired (`~`)-bail,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,3.00,0.00,2.00,0.00,Can pick from the floor. 
+883,78,32,too tired (`~`)-bail,0.00,0.00,0.00,0.00,0.00,0.00,2.00,3.00,1.00,0.00,2.00,0.00,2.00,0.00,Dropped fuel a lot. 
+884,173,33,too tired (`~`)-bail,0.00,0.00,0.00,0.00,0.00,0.00,3.00,3.00,1.00,2.00,0.00,0.00,2.00,0.00,"Can hold a lot of balls, but only shoots 3-4 at a time. Also played defense more than shooting."
+885,1768,34,too tired (`~`)-bail,2.00,2.00,3.00,2.00,2.00,0.00,4.00,3.00,3.00,2.00,3.00,0.00,4.00,0.00,Picks up fuel fast. 
+886,5687,35,too tired (`~`)-bail,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,"Picks up fuel fast. Can hold and shoot a lot, and was a big part of the high score."
+887,236,36,too tired (`~`)-bail,0.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,2.00,2.00,3.00,0.00,2.00,0.00,Can pick from the floor. 
+888,151,37,too tired (`~`)-bail,1.00,2.00,1.00,0.00,1.00,0.00,4.00,1.00,2.00,2.00,2.00,0.00,2.00,0.00,Good feeder to endzone. 
+889,3958,38,too tired (`~`)-bail,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,4.00,Got bumped in auto. pretty good at defence. was successfully annoying and got no fouls 
+890,4905,39,rachel,0.00,0.00,0.00,0.00,0.00,0.00,4.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,no storage for balls. was shooting with 5 in the tank
+891,133,40,rachel,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,DON'T PICK! 
+892,8709,44,b@!l3y (✓`∆`)✓,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,Can pick from the floor. 
+893,151,45,b@!l3y (✓`∆`)✓,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Only defended.
+894,3623,46,b@!l3y (✓`∆`)✓,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+895,571,47,b@!l3y (✓`∆`)✓,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,Can pick from the floor. 
+896,236,48,b@!l3y (✓`∆`)✓,2.00,2.00,1.00,2.00,0.00,0.00,7.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,Good robot.
+897,1768,49,b@!l3y (✓`∆`)✓,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,3.00,3.00,2.00,0.00,3.00,0.00,Good accuracy.
+898,10063,50,b@!l3y (✓`∆`)✓,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,Can pick from the floor. Good feeder to endzone. 
+899,5687,51,DAB,2.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,If filled to capacity does not fit under trench. 
+900,9710,52,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Played defense. 
+901,1729,53,DAB,1.00,2.00,3.00,3.00,2.00,0.00,3.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,"Its inconceivable, they had large capacity, medium speed shooting,  too large to fit under the trench."
+902,2079,54,DAB,2.00,3.00,2.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,5.00,0.00,"didn't shoot all their balls out during auto. could still shoot when pushed, no trench when full."
+903,172,55,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Played defense. 
+904,4925,56,DAB,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,2.00,2.00,1.00,0.00,2.00,0.00,"Stole balls on other side, then got stuck on their ramp."
+905,8567,57,DAB,1.00,1.00,1.00,3.00,1.00,0.00,1.00,1.00,1.00,1.00,2.00,0.00,2.00,3.00,"Played some defense, stole balls from other side and shot into midfield."
+906,3623,58,DAB,1.00,1.00,1.00,1.00,1.00,0.00,2.00,1.00,1.00,1.00,1.00,0.00,1.00,0.00,"Ho hum, didn't shoot or score much, drove around the whole field a bit."
+907,9710,59,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Played defense. 
+908,7127,60,DAB,0.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,"Slow bot, but accurate.  didn't really do much first minute( including auto.)"
+909,173,61,terri,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,Plays defense well. got stuck on fuel.
+910,8709,62,terri,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,4.00,0.00,
+911,175,63,terri,1.00,2.00,2.00,3.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,4.00,"played defense against 125, so 125 put another bot to play counter defense. 125 lost the match."
+912,10910,64,terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"No auto.
+
+they roamed and pushed fuel (~15each) into the opposing alliance 3 times.  ouch"
+913,8567,65,terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,Feeding\herding\defense. not very good
+914,78,66,terri,2.00,2.00,2.00,2.00,2.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+915,2370,67,terri,2.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,hub side shooter. very fast robot.
+916,2067,68,terri,1.00,3.00,3.00,3.00,3.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,0.00,5.00,"team got yellow card earlier. this match they were heavily defended. some shooting off a bit, in the air but missing hub."
+917,5000,69,terri,2.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Awesome robot
+918,6324,70,terri,2.00,3.00,3.00,3.00,3.00,0.00,1.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,Got hit by 2176 and died
+919,5112,71,DAB,1.00,2.00,2.00,3.00,1.00,0.00,1.00,2.00,2.00,1.00,1.00,0.00,0.00,2.00,Played defense. All 3 bots in Alliance took short turns at defence
+920,3623,72,DAB,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Played defense. 
+921,4905,73,DAB,2.00,2.00,2.00,2.00,2.00,0.00,6.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,
+922,11175,74,DAB,1.00,1.00,1.00,2.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"Played defense. Exciting ending.  went back to own side, parked on hump to prevent other side from entering , followed them back and flew off the hump on top of them.  glad it was not us."
+923,195,75,DAB,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,2.00,3.00,3.00,0.00,0.00,4.00,Weren't  filling to capacity.   shot balls into bot on other side of trench.
+924,2713,76,DAB,0.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,2.00,2.00,2.00,0.00,4.00,0.00,"Sorry not totally watching, Bert was playing."
+925,1073,77,DAB,1.00,1.00,1.00,3.00,1.00,0.00,2.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,
+926,509,78,DAB,1.00,1.00,1.00,3.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Played defense. Fed balls away from other side.
+927,3654,79,DAB,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,Played defense. Didn't move during auto. ok defense no pinning.
+928,8709,80,DAB,1.00,2.00,2.00,3.00,2.00,0.00,2.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,"Intake broke cookedly, could still shoot"
+929,9644,81,rachel,1.00,3.00,2.00,2.00,3.00,0.00,2.00,2.00,2.00,2.00,3.00,0.00,1.00,3.00,Very fast. ran into the trench wall a couple times
+930,10063,82,rachel,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Not great. 
+931,8724,83,rachel,0.00,0.00,0.00,0.00,1.00,0.00,6.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,"Not great at anything. struggles picking up balls, struggles shooting"
+932,58,1,Nate,2.00,1.00,1.00,3.00,2.00,0.00,3.00,3.00,1.00,2.00,2.00,0.00,1.00,3.00,Played defense. Had technical issues. Looked like they were having trouble picking up fuel and when they noticed they immediately started playing decent defense.
+933,8567,84,rachel,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,2.00,Got a pinning penalty
+934,1058,85,rachel,2.00,2.00,2.00,2.00,2.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,2.00,1.00,Intake problems. couldn't pick up anythjng
+935,8708,86,jjames,0.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,No auto
+936,3958,87,jjames,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Played defense. 
+937,155,2,Nate,1.00,2.00,1.00,3.00,1.00,0.00,1.00,1.00,2.00,3.00,2.00,0.00,1.00,0.00,"Stayed in middle plowing fuel a majority of the match, when shooting it was slow and accurate but barely did anything during the entire match."
+938,5813,88,jjames,1.00,2.00,2.00,2.00,3.00,0.00,6.00,3.00,2.00,3.00,3.00,0.00,4.00,0.00,Picks up fuel fast. 
+939,11175,3,Nate,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"Played defense. Had technical issues. Was browning out and basically didn't do anything the entire match, might have slightly slowed the enemies down but not enough to matter."
+940,2170,89,jjames,1.00,2.00,1.00,2.00,2.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Can pick from the floor. 
+941,3958,4,Nate,2.00,1.00,1.00,1.00,2.00,0.00,1.00,2.00,1.00,3.00,2.00,0.00,0.00,2.00,"Went to middle and was pushing balls a majority of the match, it also played a little bit of defense and did a decent job at stopping red for a few seconds"
+942,131,90,jjames,1.00,3.00,3.00,2.00,2.00,0.00,4.00,3.00,3.00,2.00,2.00,0.00,4.00,0.00,Stared with balls on top instead of in?
+943,4925,91,Joyce,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,I missed auto. Good feeder to endzone. 
+944,172,92,Joyce,0.00,0.00,3.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,i missed auto. Shot over driver station by mistake. 
+945,3958,93,Joyce,0.00,0.00,0.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Played defense. 
+946,236,5,Nate,1.00,2.00,3.00,3.00,2.00,0.00,8.00,2.00,3.00,3.00,2.00,0.00,5.00,0.00,"Really accurate and huge hopper capacity, only weakness would be hitting their corner due to how they agitate. "
+947,348,94,Joyce,1.00,2.00,2.00,2.00,1.00,0.00,2.00,2.00,2.00,1.00,2.00,0.00,0.00,3.00,Played defense. 
+948,133,6,Nate,2.00,3.00,3.00,3.00,2.00,0.00,8.00,3.00,2.00,3.00,2.00,0.00,4.00,0.00,"had a few points where the bot wasn't shooting far enough to score a few of the balls and got hit in autonomous causing us to not get a full auto, we also need to push the fuel into the midfield for our side instead of leaving it in the trench as it "
+949,151,95,Joyce,1.00,2.00,1.00,2.00,1.00,0.00,3.00,2.00,2.00,1.00,2.00,0.00,1.00,2.00,Attempted defense. Can pick from the outpost. 
+950,9710,7,Nate,1.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,2.00,2.00,0.00,1.00,5.00,"Played some insane defense being a major nuisance, at last 30 seconds went back to own side and shot a few balls but looks to have agitation issues. "
+951,571,96,James,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Got stuck in auto 
+952,1058,97,James,2.00,2.00,2.00,2.00,2.00,0.00,3.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,Can go underneath trench. 
+953,4311,99,James,0.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Got stuck no auto
+954,230,100,James,2.00,3.00,2.00,2.00,2.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,Good night
+955,8567,8,Nate,1.00,1.00,1.00,0.00,1.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,immediately got stuck on fuel and then stole balls from other side but wasn't good at disrupting the other robots.
+956,195,9,Nate,1.00,0.00,0.00,0.00,0.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,"Insane robot, had a issue in autonomous and got a-stopped but ended the match with 699 points with 131 and 5687, based on what I saw it doesn't get pushed around when defensed against"
+957,5112,10,Nate,2.00,1.00,1.00,3.00,2.00,0.00,1.00,2.00,1.00,2.00,2.00,0.00,2.00,0.00,Halfway through the match got hit and ended up turning off. shot a bit where it was out of my vision but wasn't fast or accurate.
+958,3654,11,Nate,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,2.00,1.00,0.00,2.00,0.00,"Good at shuffling fuel, mid zone defense and regular defense.
+"
+959,2170,12,Nate,1.00,1.00,2.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"Drove around aimlessly, then broke their intake and got stuck under trench. "
+960,3146,13,Nate,2.00,1.00,1.00,1.00,1.00,0.00,2.00,1.00,2.00,1.00,2.00,0.00,2.00,0.00,Single non swivel shooter 
+961,173,14,Nate,1.00,1.00,1.00,3.00,0.00,0.00,1.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,"Full court feeder, turret, puts up points too. middle pos auto. not a bad second pick"
+962,8708,15,Nate,0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"missed all auto, cycled once in tele, and then died..."
+963,78,16,Nate,1.00,2.00,2.00,3.00,2.00,0.00,5.00,3.00,3.00,2.00,2.00,0.00,0.00,0.00,"Robot is decent but if anyone plays a decent defense against it, they end up not being super useful and start missing a bunch of shots."
+964,7127,17,Nate,1.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,Match had issue where screen never displayed the progress get was made possibly causing misjudgment during the match of what to do.
+965,175,18,Nate,1.00,0.00,0.00,0.00,0.00,1.00,5.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,"Very mediocre all around, doesn't pick up much and would be easily defended against because of how they aim, a small tap makes them very inaccurate."
+966,2067,19,Nate,1.00,3.00,3.00,3.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,3.00,0.00,"Was pretty good at picking up fuel and getting it where it needed to go, big downside is no trench capabilities so a good defense bot would make this bot only feed from middle to end zone "
+967,2079,20,Nate,1.00,0.00,0.00,0.00,0.00,0.00,2.00,3.00,2.00,1.00,0.00,0.00,0.00,0.00,"Got stuck on ramp in autonomous and caused a penalty for going over midline, Had technical issues. then got stuck on fuel"
+968,9710,21,Nate,1.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,1.00,2.00,2.00,0.00,1.00,4.00,Played some really good defense against red causing them to miss a bunch of shots without getting any penalties. very good at swapping between people when playing defense
+969,236,22,Nate,1.00,0.00,0.00,0.00,0.00,1.00,3.00,1.00,2.00,2.00,0.00,0.00,1.00,0.00,If a ball lands on top of its hopper net it causes the robot go basically stop working as well causing it to take a lot longer to empty its hopper.
+970,8709,23,Nate,1.00,0.00,0.00,0.00,0.00,0.00,4.00,3.00,3.00,3.00,2.00,0.00,3.00,0.00,"Ball got stuck in auto and then they looked lost for a minute during teleop, good bot when they have everything in their favor"
+971,195,24,Nate,1.00,3.00,1.00,2.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,0.00,0.00,"Had heavy defense and was the only bot on its side scoring and they won, very good at everything"
+972,3958,25,Nate,1.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,1.00,1.00,2.00,0.00,0.00,0.00,Caused a penalty. Plays better defence on their own alliance then they do the opponents
+973,509,26,Nate,0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Defense
+974,8708,27,logan,0.00,3.00,3.00,3.00,2.00,0.00,0.00,2.00,2.00,2.00,3.00,0.00,0.00,0.00,Shoots across field
+975,172,28,logan,0.00,3.00,3.00,3.00,2.00,0.00,0.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,
+976,10063,29,logan,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Shuttle bot
+977,10910,30,logan,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Like to spin lost a bumper and fed the opposite Alliance fuel
+978,4925,31,logan,0.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,
+979,3623,32,logan,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Did nothing
+980,6324,33,logan,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,They died very very sad
+981,2067,34,logan,1.00,2.00,2.00,2.00,2.00,0.00,1.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,
+982,8709,35,logan,1.00,3.00,3.00,3.00,3.00,0.00,0.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,
+983,1058,36,logan,1.00,3.00,3.00,3.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,
+984,4311,37,logan,1.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,
+985,2876,38,Patrick,1.00,1.00,2.00,2.00,1.00,0.00,3.00,1.00,1.00,1.00,2.00,0.00,2.00,0.00,Can pick from the floor. Can pick from the outpost. Got a fuel stuck inside. Missed shooting fuel into hub a lot. Can go underneath trench. 
+986,131,39,Patrick,1.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,3.00,2.00,3.00,0.00,3.00,0.00,Was a robot
+987,11175,40,Patrick,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,1.00,4.00,Played defense. Can go underneath trench. Caused a penalty. Got beached
+988,1058,44,Nate,2.00,1.00,1.00,3.00,2.00,0.00,5.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,"Really weak to defense bots, any defense causes them to not be able to aim"
+989,78,45,Nate,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,2.00,0.00,4.00,0.00,"Had some defensive maneuvers in their own area and played very well, did a bunch of half cycles where they only filled the bot halfway or shot half of it but loved shooting balls back to their alliance area from midfield"
+990,5112,46,Nate,1.00,2.00,2.00,3.00,1.00,0.00,1.00,2.00,2.00,2.00,3.00,0.00,1.00,4.00,"Played really good defense, stole a lot of fuel from opponents side and shot it back to their side helping feed us and outliers"
+991,11175,47,Nate,1.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,1.00,3.00,2.00,0.00,0.00,3.00,Caused a penalty. Played defence the entire match but isn't super effective against turret shooters
+992,10910,48,Nate,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"Played a lot of defence but doesn't have the wheel power to push most bots and often blocks their alliance from where they're going, then got beached at the end of the match going over the enemies hump"
+993,2370,49,Nate,1.00,0.00,0.00,0.00,0.00,0.00,5.00,1.00,2.00,3.00,2.00,0.00,4.00,3.00,
+994,5813,50,Nate,1.00,0.00,0.00,0.00,0.00,0.00,7.00,3.00,3.00,2.00,2.00,0.00,4.00,3.00,"Was taking fuel from other alliance instead of going for scraps in middle, very good at countering defense played against them."
+995,2067,51,logan,1.00,2.00,2.00,2.00,2.00,0.00,3.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,
+996,4905,52,logan,1.00,1.00,1.00,1.00,1.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,
+997,7127,53,logan,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,They did not move all match
+998,3146,54,logan,2.00,3.00,3.00,3.00,3.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,
+999,509,55,logan,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Defense
+1000,2170,56,logan,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Defense
+1001,8709,57,logan,1.00,1.00,1.00,1.00,1.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,
+1002,131,58,logan,2.00,2.00,2.00,2.00,2.00,0.00,3.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,
+1003,1729,59,logan,1.00,3.00,3.00,3.00,3.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,
+1004,5112,60,logan,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Defense
+1005,8708,61,Nate,2.00,2.00,2.00,2.00,2.00,0.00,2.00,2.00,2.00,3.00,2.00,0.00,0.00,2.00,Defense but took all the fuel from the opposite Alliance side and sent it back to theirs
+1006,4925,62,Nate,1.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,
+1007,3654,63,Nate,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,4.00,Played a lot of counter defense to protect 125 and bulldozed fuel to them
+1008,1058,64,Nate,1.00,0.00,0.00,0.00,2.00,0.00,5.00,3.00,2.00,3.00,3.00,0.00,4.00,0.00,Caused a penalty. Then a stopped under the hub and caused even more during auto and got stuck immediately after
+1009,5687,65,Nate,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Insane match
+1010,172,66,Nate,1.00,2.00,2.00,3.00,2.00,0.00,3.00,2.00,2.00,3.00,2.00,0.00,3.00,3.00,Had technical issues mid match but came back but seems to have lost the ability to intake/shoot
+1011,3623,67,Nate,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,2.00,0.00,0.00,1.00,Chose wrong auto then didn't do much in the terms of actual disrupting the other alliance
+1012,571,68,Nate,1.00,3.00,2.00,3.00,2.00,0.00,5.00,3.00,2.00,3.00,2.00,0.00,4.00,0.00,Would have been a lot better but a defense bot was trapping them in the corner
+1013,4311,69,Nate,1.00,3.00,3.00,3.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,4.00,0.00,Very good at what it does just looks like they need some better directions
+1014,125,70,Nate,2.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,"Was shooting non stop the entire match, when not into their hub they were shooting the balls from the middle to their side"
+1015,1729,71,logan1729,1.00,2.00,2.00,3.00,2.00,0.00,4.00,1.00,1.00,2.00,1.00,0.00,2.00,0.00,
+1016,1512,72,logan1729,1.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,
+1017,10254,73,logan1729,1.00,3.00,3.00,3.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+1018,236,74,logan1729,2.00,3.00,3.00,3.00,3.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,
+1019,5813,75,logan1729,2.00,3.00,3.00,3.00,3.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+1020,133,76,logan1729,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,
+1021,4925,77,logan1729,1.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,
+1022,10910,78,Nate,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Had technical issues. Broke down. 
+1023,8708,79,Nate,2.00,3.00,2.00,3.00,2.00,0.00,1.00,3.00,2.00,3.00,2.00,0.00,0.00,3.00,Played defence and was decent but would help if they tried blocking both of the humps instead of only focusing on one
+1024,151,80,Nate,2.00,2.00,1.00,3.00,1.00,0.00,1.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,Would have a higher defense score but it intentionally damaged another robots intake causing that robot to not be able to intake costing that robot the win it would have got had they not done that. none of the refs called it for pinning or damaging 
+1025,5000,81,Nate,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,2.00,"Basically never stopped shooting the entire match, and had heavy defense played against it. it dealt most of the 300 fuel in the entire match for their side."
+1026,1512,82,Nate,0.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,2.00,2.00,2.00,0.00,0.00,1.00,Looked to have intake issues so it went to play defense
+1027,2170,83,Nate,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Had technical issues. Played defense. Broke down. 
+1028,230,84,Nate,1.00,3.00,3.00,1.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Caused a penalty by driving under the hub while fuel was dropping
+1029,125,85,Nate,3.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,You need to watch this match to realize how insane it was
+1030,151,86,Nate,2.00,2.00,1.00,3.00,1.00,0.00,4.00,2.00,1.00,2.00,2.00,0.00,2.00,0.00,"Very uninteresting, slow and only like 70% accurate "
+1031,172,87,Nate,1.00,2.00,2.00,3.00,3.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,
+1032,571,88,Nate,2.00,2.00,3.00,3.00,3.00,0.00,4.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,
+1033,4311,89,Nate,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Broke down after autonomous
+1034,1512,90,Nate,1.00,1.00,2.00,3.00,2.00,0.00,5.00,2.00,3.00,3.00,2.00,0.00,3.00,0.00,"Had technical issues, lots of parts everywhere"
+1035,3623,91,Nate,1.00,0.00,2.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,Could have just died in the way
+1036,11175,92,Nate,1.00,1.00,1.00,2.00,1.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,3.00,kept balancing robots on the hub so they couldn't move
+1037,173,93,Nate,1.00,3.00,2.00,2.00,1.00,0.00,6.00,2.00,2.00,2.00,2.00,0.00,0.00,4.00,Tall. got slammed against the trench. turret was a little iffy that match
+1038,9710,94,Nate,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Pinning penalty. but was always in the way
+1039,8567,95,Nate,1.00,0.00,0.00,0.00,3.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,1.00,he just kinda. was there. didn't really do defence. didn't do ball passing. was just there
+1040,6324,96,Nate,2.00,3.00,2.00,2.00,2.00,0.00,3.00,3.00,3.00,2.00,2.00,0.00,0.00,3.00,Got beached half the match
+1041,7127,97,Nate,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,1.00,2.00,2.00,0.00,2.00,0.00,Should have been the defence robot this match. didn't do thag
+1042,155,98,Nate,1.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,Was basically the only scorer and got 125. still not good though
+1043,9644,99,Nate,2.00,2.00,1.00,1.00,3.00,0.00,6.00,2.00,2.00,2.00,3.00,0.00,0.00,2.00,So fast. too fast that it kept hitting things
+1044,4905,100,Nate,1.00,1.00,2.00,3.00,1.00,0.00,3.00,1.00,2.00,3.00,1.00,0.00,2.00,0.00,Very slow shooter. not even worth shooting slow
+1045,1073,1,Zander,0.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,No auto. lots of feeding 
+1046,3623,2,Zander,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,2.00,1.00,0.00,1.00,0.00,No auto. drove around without doing much. struggled to shoot when they had the chance. fed the human players. 
+1047,1729,3,Zander,1.00,2.00,3.00,1.00,2.00,0.00,3.00,1.00,3.00,2.00,2.00,0.00,3.00,0.00,Got stuck on the ramp in auto. can only go over the ramp. filled up their robot in the off period and didnt do any feeding
+1048,10910,4,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,No auto. died in the middle of the field after failing to shoot. 
+1049,8724,5,Zander,1.00,2.00,3.00,2.00,1.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Auto collected from depot and human player station. seemed to have issues collecting balls when moving. when it worked it worked really well
+1050,509,1,DAB,2.00,1.00,1.00,1.00,1.00,0.00,3.00,1.00,1.00,1.00,2.00,0.00,2.00,3.00,shooting arc very high.
+1051,2876,2,DAB,0.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00, Good middle of road robot.
+1052,5000,6,Zander,2.00,3.00,3.00,2.00,3.00,0.00,5.00,2.00,3.00,3.00,3.00,0.00,5.00,0.00,Very fast auto getting the balls in the middle. strong continuous shooting. sweeps the back walls very well. went to opponents side to sweep the back wall
+1053,2067,3,DAB,1.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Cannot go under trench .  Can still shoot when heavily defended against.
+1054,2170,7,Zander,0.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,0.00,2.00,0.00,0.00,2.00,3.00,No auto. lost a belt and couldnt shoot or pickup more. moved to defense and clearing out the opposite side of balls
+1055,6324,4,DAB,1.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Got bumped on first round of auto messed up their routine.  then sometimes. seemed to not pick as many.
+1056,7127,8,Zander,2.00,2.00,2.00,3.00,3.00,0.00,4.00,2.00,3.00,2.00,3.00,0.00,3.00,0.00,Turret shooter. okay performance. a little slow at shooting but smooth
+1057,175,5,DAB,2.00,0.00,1.00,3.00,1.00,0.00,1.00,2.00,1.00,3.00,1.00,0.00,3.00,4.00,Mostly played  defense.
+1058,3654,6,DAB,0.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,2.00,1.00,
+1059,1768,7,DAB,2.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Can't fit under trench when full of cargo.  was slightly delayed when bumped during shooting.
+1060,348,8,DAB,1.00,2.00,1.00,3.00,1.00,0.00,5.00,1.00,1.00,3.00,2.00,0.00,2.00,0.00,
+1061,6324,9,Zander,2.00,3.00,2.00,3.00,2.00,0.00,2.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,Shooter stopped working halfway through the match. they tried to still collect balls. didnt play defense 
+1062,5687,9,DAB,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Can't go thru trench when full.  can still shoot when bumped.  browned out in end. was a little jerky when picking up.
+1063,3958,10,Zander,2.00,2.00,1.00,1.00,2.00,0.00,6.00,2.00,1.00,2.00,2.00,0.00,3.00,0.00,Cant hold very many balls so they can get a lot of cycles in. very focused on collecting balls from the opposing side of the field. 
+1064,2370,10,DAB,2.00,3.00,3.00,3.00,3.00,0.00,1.00,2.00,2.00,3.00,3.00,0.00,0.00,0.00,Can shoot next to the trench.  good shooter but shoots singlely.
+1065,4925,11,jmeasssssszz,1.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,Broke down. 
+1066,509,11,logan,0.00,1.00,1.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,2.00,0.00,0.00,0.00,
+1067,2079,12,logan,0.00,1.00,1.00,1.00,2.00,0.00,0.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,Fast and furious
+1068,172,13,logan,0.00,1.00,1.00,2.00,2.00,0.00,0.00,1.00,1.00,2.00,2.00,0.00,0.00,0.00,Defense
+1069,10910,14,logan,0.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,
+1070,230,12,jmeasssssszz,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,It was mid
+1071,236,15,logan,0.00,2.00,2.00,2.00,2.00,0.00,0.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,They died
+1072,125,13,jmeasssssszz,2.00,2.00,2.00,2.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,5.00,0.00,Shoot and get balls
+1073,1058,16,logan,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,0.00,2.00,0.00,0.00,0.00,Really slow
+1074,9710,14,jmeasssssszz,1.00,1.00,1.00,1.00,1.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,2.00,0.00,only moved back in auto
+1075,3623,17,logan,0.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,1.00,0.00,1.00,0.00,0.00,0.00,
+1076,172,18,logan,0.00,2.00,1.00,1.00,2.00,0.00,0.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,
+1077,151,19,logan,0.00,2.00,2.00,2.00,2.00,0.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,Stuck at the end
+1078,155,20,logan,1.00,1.00,1.00,2.00,1.00,0.00,2.00,1.00,1.00,2.00,1.00,0.00,2.00,0.00,Intake broke.
+1079,1058,21,logan,1.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,1.00,2.00,3.00,0.00,2.00,0.00,"Didn't intake shoot or 2 cycle auto
+
+having some issues shooting in tele"
+1080,9644,15,jmeasssssszz,2.00,3.00,2.00,3.00,2.00,0.00,4.00,3.00,2.00,3.00,3.00,0.00,3.00,0.00,Tried to get over the bump didn't
+1081,1768,22,logan,2.00,2.00,2.00,2.00,2.00,0.00,2.00,2.00,3.00,2.00,3.00,0.00,5.00,0.00,"Great bot, great shooter, decent feeder, fast "
+1082,4311,16,Zander,1.00,3.00,3.00,2.00,0.00,0.00,5.00,3.00,2.00,2.00,2.00,0.00,4.00,0.00,"they struggled to fill up their robot will balls. holds a lot when filled, but it rarely got there"
+1083,1073,23,logan,2.00,1.00,1.00,2.00,2.00,0.00,3.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,"Turret shooter, good bot, can feed and put up points"
+1084,8709,17,Zander,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,3.00,2.00,0.00,2.00,0.00,intake wasnt working for half the match. then suddenly it was and they did okay. 
+1085,8567,24,logan,1.00,2.00,2.00,2.00,2.00,0.00,2.00,2.00,2.00,2.00,1.00,0.00,0.00,2.00,
+1086,2170,18,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,"no auto. pushed some balls, then died. might be unplugged. no lights. "
+1087,9644,25,logan,1.00,2.00,2.00,1.00,2.00,0.00,1.00,1.00,1.00,1.00,0.00,0.00,1.00,0.00,Swapped to defense mid match
+1088,5000,26,Dawn,2.00,2.00,2.00,2.00,2.00,0.00,5.00,2.00,2.00,2.00,2.00,0.00,4.00,0.00,"Shoots from French on auto, and not accurate when pushed. Also briefly got stranded on the hump."
+1089,5813,27,Dawn,2.00,2.00,2.00,2.00,2.00,0.00,6.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,In auto they took only from their own side.
+1090,6324,19,Zander,2.00,3.00,3.00,2.00,3.00,0.00,7.00,3.00,3.00,2.00,2.00,0.00,5.00,0.00,Launched balls from the opposing side of the field
+1091,5000,28,Dawn,2.00,2.00,2.00,3.00,2.00,0.00,7.00,3.00,2.00,3.00,2.00,0.00,4.00,0.00,"Only finished 1.5 auto, as they didn't finish unloading second load. on Tele fairly fast, but didn't always finish filling robot."
+1092,2370,20,Zander,2.00,3.00,2.00,3.00,0.00,0.00,5.00,3.00,2.00,2.00,2.00,0.00,4.00,0.00,
+1093,11175,21,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,No auto. straight to defense. didnt push any balls. took precautions to make sure they were not pinning. got a penalty in endgame while defending. 
+1094,1073,29,Dawn,2.00,0.00,2.00,2.00,1.00,0.00,4.00,2.00,2.00,3.00,2.00,0.00,4.00,0.00,Good medium range bot.
+1095,230,30,Dawn,2.00,3.00,2.00,2.00,3.00,0.00,7.00,3.00,3.00,2.00,2.00,0.00,4.00,0.00,"The bot didn't line up once in auto, and twice on Tele for shooting and missed alot."
+1096,2170,31,Dawn,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,0.00,"Died after auto, came back to life in last 30 seconds."
+1097,5813,22,Zander,2.00,3.00,3.00,3.00,0.00,0.00,7.00,2.00,3.00,2.00,2.00,0.00,4.00,0.00,good shooting. carried the team. lots of variety in where they collect
+1098,3958,32,Dawn,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,"auto spit out balls, went to midfield, hesitated then shot balls to their side. tele.  they mostly played defense, and shot balls from midfield."
+1099,78,23,Zander,0.00,0.00,0.00,0.00,0.00,0.00,4.00,3.00,3.00,2.00,2.00,0.00,3.00,0.00,Got stuck on the ramp in auto. 
+1100,133,33,Dawn,1.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,0.00,0.00,0.00,0.00,
+1101,173,24,Zander,2.00,2.00,1.00,2.00,1.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,good continuous shooting. worked well around defense. 
+1102,8567,34,Dawn,1.00,1.00,1.00,3.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,4.00,"Auto:  shot one ball
+tele: played defense on red side, and shot balls back to middle."
+1103,3623,25,Zander,0.00,0.00,0.00,0.00,0.00,0.00,1.00,1.00,1.00,0.00,2.00,0.00,0.00,4.00,Shot two (2) balls and then moved to defense. pretty solid defense bot. did a good job on the opposite side of the field. then defended the defense bots in endgame. 
+1104,9710,35,Dawn,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,Played defense. Not effective against outliers.
+1105,131,26,jeanette,2.00,2.00,2.00,2.00,0.00,0.00,7.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Can pick from the floor. Good feeder to endzone. Can pick from the outpost. Can go underneath trench. 
+1106,5000,36,Nate,2.00,3.00,3.00,3.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,4.00,2.00,"They basically never stopped shooting the entire match, in their area they were constantly scoring and everywhere else they were sending the fuel back to their side."
+1107,125,27,jeanette,2.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Picks up fuel fast. Can pick from the floor. Good feeder to endzone. Number one pick could get around field fast
+1108,8724,37,Nate,1.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,"Got beached in auto, was fairly consistent the test of the match but lacks capacity"
+1109,3654,28,jeanette,1.00,1.00,1.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Got a fuel stuck inside. Were there climbing piece is. so just drove around here and there 
+1110,3623,38,Nate,1.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,"Drove around and did basically nothing, did have a moment where they trapped the opponent in their side while the opponent was trying to get to the opponents hub to score."
+1111,8567,29,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,5.00,1.00,2.00,1.00,0.00,0.00,1.00,0.00,8567 is my bot not 8657 hard for me to see the red numbers at times Missed shooting fuel into hub a lot. Can go underneath trench. Can pick from the floor. Can pick from the outpost. 
+1112,1512,39,Nate,1.00,0.00,0.00,0.00,0.00,0.00,6.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,For a decent portion of the match they just drove back and forward on the midline
+1113,5687,30,jeanette,2.00,3.00,3.00,3.00,0.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Number one pick. when hopper is full can not go under trench 
+1114,58,40,Nate,1.00,1.00,1.00,2.00,2.00,0.00,4.00,1.00,1.00,2.00,2.00,0.00,1.00,0.00,Missed 90% of their shots as well as didn't shoot much and didn't play any defense besides for failing to go and take fuel from red
+1115,3146,44,Terri,1.00,0.00,0.00,0.00,0.00,0.00,5.00,2.00,1.00,2.00,1.00,0.00,3.00,0.00,
+1116,2713,45,Terri,1.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,Did very well while being defended
+1117,5687,46,Terri,2.00,3.00,3.00,3.00,3.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+1118,125,47,Terri,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+1119,1512,31,jeanette,1.00,1.00,1.00,1.00,0.00,0.00,5.00,1.00,1.00,1.00,0.00,0.00,2.00,0.00,When they shoot the fuel they could not empty there hopper all the way every time
+1120,6324,48,Terri,2.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+1121,7127,32,jeanette,2.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Got a ball stuck once but recovery was good. Can pick from the floor. Can pick from the outpost. Good feeder to endzone. 
+1122,4925,49,Terri,1.00,2.00,2.00,2.00,2.00,0.00,1.00,1.00,1.00,1.00,1.00,0.00,3.00,0.00,Ended up playing defense
+1123,4505,33,jeanette,0.00,0.00,0.00,0.00,0.00,0.00,4.00,0.00,1.00,1.00,2.00,0.00,0.00,0.00,Can pick from the outpost. Can pick from the floor. 
+1124,175,50,Terri,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,2.00,0.00,
+1125,133,51,Thomas,1.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,2.00,Can pick from the floor. Good feeder to endzone. Picks up fuel fast. Can go underneath trench. 
+1126,5112,52,Thomas,1.00,2.00,1.00,3.00,1.00,0.00,1.00,2.00,2.00,3.00,2.00,0.00,3.00,3.00,Played defense. Can pick from the floor. 
+1127,1512,53,Thomas,1.00,2.00,2.00,3.00,2.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,3.00,0.00,The only working robot on the field. Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Can go underneath trench. 
+1128,172,34,jeanette,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Can pick from the floor. Can pick from the outpost. Picks up fuel fast. can shoot from mid field back to there side when hub is down  
+1129,58,54,Thomas,1.00,2.00,1.00,1.00,3.00,0.00,1.00,2.00,1.00,1.00,3.00,0.00,2.00,3.00,Played defense. Had technical issues. Can go underneath trench. 
+1130,2370,35,jeanette,1.00,0.00,0.00,0.00,0.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,0.00,5.00,Can pick from the floor. Can pick from the outpost. Can shoot from any direction they are sitting 
+1131,230,55,Thomas,1.00,2.00,3.00,3.00,2.00,0.00,7.00,3.00,3.00,2.00,3.00,0.00,3.00,0.00,Can pick from the floor. Picks up fuel fast. Can go underneath trench. 
+1132,571,36,Zander,1.00,2.00,2.00,1.00,0.00,0.00,4.00,2.00,2.00,1.00,0.00,0.00,3.00,0.00,"If they werent dead on with the center of the goal, their shots were very close to the edge of the goal and very easily missed"
+1133,10063,56,James,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Played defense. 
+1134,4311,57,James,1.00,2.00,3.00,1.00,2.00,0.00,1.00,3.00,2.00,1.00,2.00,0.00,3.00,0.00,big hoper
+1135,11175,58,James,1.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,1.00,2.00,3.00,0.00,2.00,3.00,Played defense. 
+1136,2876,59,James,1.00,0.00,0.00,0.00,0.00,0.00,2.00,3.00,2.00,2.00,2.00,0.00,3.00,0.00,Got stuck a little
+1137,10910,37,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2.00,0.00,0.00,0.00,No auto. didnt score. just pushed balls to their side of the field. 
+1138,5000,60,James,1.00,3.00,3.00,2.00,2.00,0.00,5.00,3.00,3.00,1.00,0.00,0.00,4.00,0.00,Not very accurate in the beginning
+1139,173,38,Zander,1.00,2.00,2.00,2.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,2.00,0.00,Did okay. was heavily defended. fell over on a ramp at the start of endgame
+1140,2713,61,Thomas,2.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Slow them down because they have a ramp to their feeder so if we slow them down they wouldn't have enough speed to intake. Can pick from the floor. Picks up fuel fast. Can go underneath trench. Good feeder to endzone. 
+1141,10254,39,Zander,1.00,2.00,3.00,2.00,2.00,0.00,3.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Too tall for trench. holds a lot of balls. 
+1142,10063,62,Thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,4.00,Played defense. 
+1143,4905,63,Thomas,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,3.00,Played defense. Had technical issues. 
+1144,151,64,Thomas,1.00,3.00,3.00,3.00,0.00,0.00,1.00,3.00,3.00,3.00,3.00,0.00,0.00,3.00,Can pick from the floor. Played defense. Can go underneath trench. Picks up fuel fast. 
+1145,348,65,Thomas,1.00,3.00,2.00,3.00,3.00,0.00,1.00,3.00,2.00,3.00,3.00,0.00,2.00,3.00,Played defense. Can pick from the floor. Can go underneath trench. 
+1146,155,66,james,2.00,2.00,1.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,Played defense. 
+1147,4925,40,Zander,1.00,1.00,1.00,1.00,1.00,0.00,4.00,1.00,1.00,2.00,2.00,0.00,1.00,0.00,Very slow shooter. i didnt even realize they were shooting until their storage was empty
+1148,131,67,james,2.00,2.00,2.00,2.00,2.00,0.00,5.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Big hopper
+1149,2876,44,Zander,0.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,1.00,2.00,2.00,0.00,1.00,0.00,Ran around like aimlessly for most of the match. cannot pick up balls from corners very well
+1150,4925,68,james,1.00,0.00,0.00,0.00,0.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,2.00,0.00,DON'T PICK! 
+1151,10254,45,Zander,1.00,2.00,3.00,2.00,2.00,0.00,4.00,2.00,3.00,2.00,0.00,0.00,3.00,0.00,Very high capacity for balls. can only go over the ramps so they can be essily stopped by a good defense bot. 
+1152,8709,69,james,2.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,8708 ITS 8708 NOT 8079
+1153,4311,46,Zander,1.00,2.00,1.00,2.00,2.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,3.00,0.00,Decent shooting. got around defense fairly well
+1154,8709,70,james,1.00,2.00,2.00,2.00,2.00,0.00,4.00,3.00,2.00,3.00,2.00,0.00,4.00,0.00,Good
+1155,78,71,Joyce,2.00,2.00,2.00,2.00,2.00,0.00,4.00,2.00,1.00,2.00,2.00,0.00,1.00,3.00,Played defense. Can go underneath trench. Broke down. 
+1156,8724,72,Joyce,2.00,1.00,1.00,1.00,2.00,0.00,8.00,1.00,1.00,2.00,2.00,0.00,2.00,1.00,"Got a fuel stuck inside. Don't score a full Hooper at once, grab more even with fuel still in bot. Score very few at once"
+1157,10063,73,Joyce,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"No auto. Only can play defense, have a broken intake (I know due to pit scouting). cannot intake at alk currently"
+1158,8708,47,Zander,1.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,"Auto interfered with the other robots going into the middle of the field. their intake also stopped working shortly into the match. Okay at defense, mostly pushed and stole balls"
+1159,3654,74,Joyce,1.00,1.00,1.00,2.00,0.00,0.00,3.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00,"Scored only preload in auto, did not move. Attempting to play defense, not well. Played defense. "
+1160,1729,48,Zander,1.00,2.00,2.00,1.00,2.00,0.00,4.00,1.00,2.00,1.00,2.00,0.00,3.00,2.00,their shots were all over the place. they got two consecutive penalties for pinning while defending but were otherwise okay at disrupting opponent scoring. 
+1161,151,75,Joyce,1.00,1.00,1.00,2.00,1.00,0.00,3.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Scored in auto from hub. Good feeder to endzone. 
+1162,155,49,Zander,1.00,2.00,1.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Stole balls from the other side. i didnt see them try to shoot in teleop. they were not great at defense.
+1163,175,76,Joyce,1.00,2.00,2.00,2.00,2.00,0.00,4.00,2.00,2.00,2.00,2.00,0.00,2.00,1.00,
+1164,509,50,Zander,1.00,1.00,2.00,2.00,2.00,0.00,2.00,1.00,1.00,2.00,2.00,0.00,1.00,0.00,"Struggled the whole time. they werent intaking, shooting, or aligning properly. "
+1165,173,77,rachel?000,1.00,2.00,2.00,2.00,1.00,0.00,5.00,2.00,2.00,2.00,1.00,0.00,2.00,0.00,Auto messed up. not confident. always confused and lost
+1166,8567,78,rachel?000,1.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,2.00,2.00,2.00,0.00,1.00,3.00,Was doing really good defending. then seemed to switch tactics and did less good. it was more shooting and fuel focused
+1167,1768,79,rachel?000,2.00,3.00,3.00,3.00,2.00,0.00,6.00,3.00,3.00,3.00,2.00,0.00,5.00,0.00,When being defended they always use the trench wall to prevent being moved one direction. one of the defenders was able to push it towards the wall and it did move
+1168,195,80,rachel?000,2.00,3.00,3.00,2.00,2.00,0.00,8.00,3.00,3.00,3.00,2.00,0.00,5.00,0.00,Uses the trench wall and ladder during end game to deter defence bots
+1169,2876,51,Jean,1.00,2.00,1.00,3.00,1.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,2.00,"played defense. was okay. BERT pushed fuel right to them, so they pushed it right back to neutral zone. 
+Strategy: shoot the fuel behind the defense bot.  DON'T push fuel to the defense bot!
+"
+1170,5000,81,Joyce,2.00,3.00,2.00,3.00,2.00,0.00,9.00,3.00,3.00,3.00,3.00,0.00,3.00,0.00,Shoot on the fly. Can feed from other end of field. Picks up fuel fast. Can pick from the floor. Can pick from the outpost. Good feeder to endzone. 
+1171,151,52,Jean,1.00,2.00,1.00,3.00,1.00,0.00,5.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,"Auto went wonky on second run. bot spun in circles.
+pushed a lot of fuel to their side, but slow to intake balls."
+1172,1512,82,Joyce,1.00,1.00,1.00,2.00,1.00,0.00,3.00,2.00,2.00,2.00,0.00,0.00,2.00,2.00,Attempted defense. 
+1173,571,53,Jean,2.00,3.00,2.00,3.00,2.00,0.00,6.00,3.00,2.00,3.00,2.00,0.00,3.00,0.00,"auto: shooter didn't work at first.
+off: gathered fuel in neutral and shoots over two their alliance. 
+on: takes collected fuel and shoots into hopper.
+distruption would best happen during off by moving fuel away from tgem."
+1174,4905,83,Joyce,0.00,0.00,0.00,0.00,0.00,0.00,4.00,2.00,1.00,2.00,1.00,0.00,2.00,1.00,I missed auto. 
+1175,1729,84,Joyce,1.00,1.00,1.00,2.00,1.00,0.00,4.00,1.00,2.00,1.00,1.00,0.00,1.00,0.00,
+1176,173,85,Joyce,1.00,0.00,0.00,0.00,0.00,0.00,7.00,3.00,2.00,2.00,2.00,0.00,3.00,1.00,Good feeder to endzone. Picks up fuel fast. 
+1177,175,86,thomas,1.00,2.00,2.00,3.00,2.00,1.00,3.00,2.00,3.00,3.00,3.00,0.00,3.00,0.00,Can pick from the floor. Picks up fuel fast. Can go underneath trench. 
+1178,58,87,thomas,1.00,2.00,2.00,3.00,3.00,0.00,5.00,2.00,2.00,2.00,3.00,0.00,3.00,0.00,Can pick from the floor. Picks up fuel fast. Can go underneath trench. 
+1179,1058,54,Jean,2.00,3.00,3.00,3.00,2.00,0.00,7.00,3.00,3.00,3.00,2.00,0.00,4.00,0.00,"General strategy: they go under trench into neutral zone pick up balls with sweep of field, go back under oppposite trench, and shoot.
+To block: defense bot notes the side they go out and shoots over to the opposite side to block trench."
+1180,2079,88,thomas,1.00,3.00,3.00,0.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Wicked fast! Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Can go underneath trench. 
+1181,2713,55,Jean,2.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,they liked to switch up how they collect fuel. they target fuller areas from neutral zone to running along a wall into opposing alliance area to pick up fuel.
+1182,2370,89,thomas,1.00,2.00,2.00,3.00,3.00,0.00,6.00,3.00,2.00,3.00,3.00,0.00,4.00,0.00,Good feeder to endzone. Picks up fuel fast. Can pick from the floor. Can go underneath trench. 
+1183,8708,56,Jean,1.00,3.00,2.00,3.00,2.00,0.00,3.00,3.00,2.00,1.00,3.00,0.00,1.00,3.00,They would run over to opposing alliance and shoot fuel back to their alliance side. 
+1184,78,90,thomas,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Can pick from the floor. Picks up fuel fast. Good feeder to endzone. Can go underneath trench. 
+1185,230,91,terri,1.00,3.00,3.00,3.00,3.00,0.00,8.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+1186,4905,92,terri,0.00,0.00,0.00,0.00,0.00,0.00,1.00,2.00,1.00,3.00,3.00,0.00,2.00,0.00,Played defense majority of the match
+1187,1073,93,terri,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Feeder shooter
+1188,5687,94,terri,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,
+1189,5813,57,Jean,2.00,3.00,3.00,3.00,2.00,0.00,12.00,3.00,2.00,3.00,3.00,0.00,4.00,0.00,"great shooter. during of, would go into neutral zone and collect fuel and shoot to their side. then during on, would collect fuel on their side and shoot into hub.
+
+strategy: go into their alliance and steal fuel so not as much is available."
+1190,133,95,terri,2.00,3.00,3.00,3.00,3.00,0.00,6.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Awesome robot
+1191,10910,58,Jean,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,"No auto. promptly lost connection 20 seconds into teleop.
+
+don't pick."
+1192,1729,96,terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,Barely moved. Broke down. 
+1193,78,59,Jean,2.00,3.00,3.00,3.00,3.00,0.00,7.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,"during off: run down wall into opposing alliance, steal fuel, shoot into their side. then runs around neutral zone eating fuel abd shooting to their side."
+1194,2079,97,terri,1.00,0.00,0.00,0.00,0.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,5.00,0.00,Super fast. feed shooter
+1195,571,60,Jean,1.00,3.00,3.00,3.00,3.00,0.00,4.00,3.00,3.00,3.00,3.00,0.00,4.00,0.00,Died for about 1 minute. can shoot and move at the same time. really good robot.
+1196,11175,98,terri,1.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Did a great job defending in the neutral zone
+1197,2713,99,terri,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Had technical issues. Could not pick up or shoot. played defence.
+1198,8709,100,terri,1.00,3.00,3.00,3.00,3.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,0.00,0.00,Feed shooter
+1199,1512,61,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,Robot launched balls wrong way auto. might have caught on the wall and misaligned? then the robot didnt move rest of match. i think connection issues. couldnt see the light but they were talking to the fta and some other people. FIELD FAULT-REPLAYED
+1200,133,62,Zander,1.00,2.00,3.00,2.00,2.00,0.00,6.00,2.00,3.00,3.00,3.00,0.00,5.00,0.00,Great work getting around the defense
+1201,4311,63,Zander,2.00,2.00,3.00,2.00,2.00,0.00,3.00,2.00,3.00,2.00,0.00,0.00,3.00,0.00,Focused a lot on defense/stealing balls. good at shooting when they did. 
+1202,11175,64,Zander,1.00,2.00,2.00,2.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,i didnt see them do a lot. they collected some balls. then they got beached on some balls. someone helped them down then they ran into a wall and died.  
+1203,2170,65,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,4.00,Good defense. got stuck the ramp for a little bit. 
+1204,3146,66,Zander,1.00,2.00,2.00,3.00,0.00,0.00,2.00,2.00,1.00,2.00,1.00,0.00,1.00,0.00,They only shot while pressed up against the hub. died for a minute or so. got a couple penalties doing defense. 
+1205,236,67,Zander,0.00,0.00,0.00,0.00,0.00,0.00,6.00,1.00,2.00,2.00,2.00,0.00,3.00,0.00,They wiggle when they shoot
+1206,509,68,Zander,2.00,2.00,2.00,1.00,0.00,0.00,4.00,1.00,1.00,2.00,2.00,0.00,2.00,0.00,Very lackluster. they look like they can shoot continuously but it was a steady dribble during this match
+1207,7127,69,Zander,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,3.00,2.00,2.00,0.00,3.00,0.00,Good shooter. intake stopped working at some point. they did good pushing the balls to their side. 
+1208,2079,70,Zander,1.00,2.00,3.00,2.00,1.00,0.00,4.00,1.00,3.00,1.00,2.00,0.00,2.00,0.00,"Two of their shots plopped out of the robot onto the floor, nowhere even close to scoring. "
+1209,1058,71,Jean,2.00,3.00,3.00,3.00,3.00,0.00,9.00,3.00,3.00,3.00,2.00,0.00,4.00,0.00,"Doing much better today.  off: they will go into opposing alliance to steal and shoot fuel to their side. continues in neutral.
+on: stay mostly in their alliance area, gather, and shoot.
+
+best bet: steal from their alliance side"
+1210,172,72,Jean,2.00,2.00,2.00,3.00,2.00,0.00,6.00,2.00,2.00,3.00,2.00,0.00,3.00,0.00,Had a few issues with their shooter.  fuel got stuck a couple of times.
+1211,9644,73,Jean,1.00,0.00,0.00,0.00,0.00,0.00,4.00,0.00,0.00,0.00,0.00,0.00,2.00,2.00,"fuel intake isn't the most efficient. they played some defense during off. didn't appear to be strong enough to make much of an impact, but was still an annoyance to opposing alliance."
+1212,3146,74,Jean,2.00,3.00,2.00,3.00,2.00,0.00,6.00,3.00,2.00,3.00,2.00,0.00,3.00,0.00,"Note: they like to shoot while stopped next to the hub.  they can shoot from elsewhere, but parking a defense bot in front of the hub would probably slow them down."
+1213,3958,75,Jean,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,4.00,auto: moved to other side of neutral and shot fuel toward their alliance.  played good defense and really interfered with 131 & 5813 ability to shoot and score.
+1214,9710,76,Jean,0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,"They pinned BERT in the corner and we couldn't move for 5ish seconds. no counting done by refs.  other defense was legal.
+
+careful about this robot when it comes to alliances."
+1215,2067,77,Jean,1.00,3.00,3.00,3.00,2.00,0.00,5.00,3.00,3.00,3.00,3.00,0.00,3.00,0.00,I think it died shortly before the end - i lost sight of it.
+1216,5112,78,Jean,1.00,2.00,2.00,3.00,2.00,0.00,4.00,2.00,3.00,3.00,2.00,0.00,3.00,0.00,seemed to have problems shooting at times.  single shot turret.
+1217,3146,79,Jean,1.00,2.00,2.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,2.00,0.00,3.00,0.00,stole fuel from opposing alliance during off time.
+1218,7127,80,Jean,1.00,3.00,1.00,3.00,0.00,0.00,3.00,3.00,3.00,3.00,3.00,0.00,2.00,0.00,Didn't do a great job of collecting and shooting fuel. 
+1219,236,81,Zander,2.00,2.00,1.00,3.00,2.00,0.00,4.00,1.00,3.00,3.00,2.00,0.00,3.00,0.00,Can go underneath trench. 
+1220,58,82,Zander,1.00,1.00,2.00,2.00,2.00,0.00,4.00,1.00,1.00,3.00,2.00,0.00,3.00,0.00,quick to help their allies. weak performance other than that
+1221,5813,83,Zander,1.00,2.00,3.00,3.00,2.00,0.00,2.00,2.00,3.00,2.00,2.00,0.00,2.00,0.00,Heavily defended against and seemed to be having shootet issues. 
+1222,131,84,Zander,2.00,3.00,2.00,2.00,2.00,0.00,6.00,2.00,2.00,3.00,2.00,0.00,4.00,0.00,Good shooting
+1223,1768,85,Zander,1.00,2.00,3.00,3.00,2.00,0.00,7.00,3.00,3.00,3.00,2.00,0.00,5.00,0.00,Great performance
+1224,5112,86,Patrick,1.00,1.00,0.00,3.00,1.00,0.00,4.00,1.00,3.00,3.00,3.00,0.00,3.00,0.00,Can pick from the floor. side note camera on turret
+1225,2067,87,Patrick,1.00,0.00,0.00,0.00,0.00,0.00,4.00,3.00,3.00,2.00,3.00,0.00,4.00,0.00,
+1226,155,89,Patrick,1.00,2.00,2.00,2.00,2.00,0.00,1.00,2.00,1.00,2.00,2.00,0.00,1.00,0.00,Did a little shooting then didnt pick and they didnt pick up any more. 
+1227,3654,90,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00,Sat on the opposite side of the field and played bad defense. 
+1228,10254,91,Zander,1.00,2.00,3.00,3.00,1.00,0.00,5.00,2.00,3.00,3.00,1.00,0.00,4.00,0.00,The regal eagles did great this match
+1229,8709,92,Zander,0.00,0.00,0.00,0.00,0.00,0.00,3.00,2.00,3.00,0.00,2.00,0.00,2.00,0.00,
+1230,5112,93,Zander,1.00,2.00,2.00,2.00,1.00,0.00,4.00,1.00,2.00,2.00,2.00,0.00,3.00,0.00,When they spin they look like they are going to fall on top of their intake. 
+1231,195,94,Zander,2.00,3.00,3.00,2.00,2.00,0.00,6.00,3.00,3.00,2.00,2.00,0.00,5.00,0.00,Hey i think your shoe is untied
+1232,236,95,Zander,2.00,2.00,2.00,3.00,2.00,0.00,7.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,Excellent scorer
+1233,10063,96,Zander,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.00,0.00,1.00,0.00,no auto. seemed subpar on defense. didnt notice anything special
+1234,131,97,Zander,1.00,3.00,2.00,3.00,2.00,0.00,4.00,1.00,3.00,2.00,2.00,0.00,3.00,0.00,They looked like their shooter jammed when it was really full. 
+1235,10254,98,Zander,1.00,1.00,3.00,3.00,0.00,0.00,3.00,1.00,3.00,3.00,2.00,0.00,3.00,0.00,Decent scorer. big and bulky so cant go under the trench
+1236,2067,99,Zander,1.00,2.00,3.00,3.00,1.00,0.00,5.00,2.00,3.00,3.00,2.00,0.00,4.00,0.00,Solid overall. lost a few cycles to heavy defense. 
+1237,8708,100,Zander,2.00,2.00,3.00,2.00,2.00,0.00,2.00,0.00,1.00,3.00,3.00,0.00,3.00,0.00,fed from the opposite side of the field. 
